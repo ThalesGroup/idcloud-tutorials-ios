@@ -30,7 +30,7 @@
  */
 static NSURL *C_PROVISION_URL()
 {
-    return [NSURL URLWithString:@"https://"];
+    return [NSURL URLWithString:@"C_PROVISION_URL"];
 }
 
 
@@ -41,7 +41,7 @@ static NSURL *C_PROVISION_URL()
  */
 static NSString *C_RSA_KEY_ID()
 {
-    return @"";
+    return @"C_RSA_KEY_ID";
 }
 
 
@@ -98,3 +98,26 @@ static EMTlsConfiguration *C_TLS_CONFIGURATION()
                                                    selfSignedCertAllowed:YES
                                                  hostnameMismatchAllowed:YES];
 }
+
+/**
+ Gets the custom fingerprint data.
+ 
+ @return Custom fingerprint data.
+ */
+static NSData * C_CUSTOM_FINGERPRINT_DATA()
+{
+    static const NSString* customFingerPrintData = @"C_CUSTOM_FINGERPRINT_DATA";
+    
+    return [customFingerPrintData dataUsingEncoding:NSUTF8StringEncoding];
+}
+
+/**
+ Gets the domain.
+ 
+ @return Domain.
+ */
+static NSString * C_DOMAIN()
+{
+    return @"C_DOMAIN";
+}
+

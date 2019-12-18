@@ -43,36 +43,39 @@
     
     @try
     {
+        EMDeviceFingerprintSource *deviceFingerprintSource = [[EMDeviceFingerprintSource alloc] initWithCustomData:C_CUSTOM_FINGERPRINT_DATA()];
+        EMDeviceFingerprintTokenPolicy *deviceFingerprintTokenPolicy = [[EMDeviceFingerprintTokenPolicy alloc]
+                                                                        initWithDeviceFingerprintSource:deviceFingerprintSource
+                                                                        failIfInvalid:YES];
+        
         // Prepare provisioning configuration based on app data.
         EMProvisioningConfiguration *config = [EMProvisioningConfiguration
                                                epsConfigurationWithURL:C_PROVISION_URL()
+                                               domain:C_DOMAIN()
                                                rsaKeyId:C_RSA_KEY_ID()
                                                rsaExponent:C_RSA_KEY_EXPONENT()
                                                rsaModulus:C_RSA_KEY_MODULUS()
                                                registrationCode:regCode
-                                               provisioningProtocol:EMMobileProvisioningProtocolVersion3
+                                               provisioningProtocol:EMMobileProvisioningProtocolVersion5
                                                optionalParameters:^(EMEpsConfigurationBuilder *builder) {
                                                    // We can waken TLS configuration for debug purposes ( forbidden in release mode ).
                                                    builder.tlsConfiguration = C_TLS_CONFIGURATION();
                                                }];
         
-        // Provision token with given config.
+            // Provision token with given config.
         [oathManager createTokenWithName:userId
-               provisioningConfiguration:config
-                       completionHandler:^(id<EMOathToken> token, NSError *error) {
-                           // Notify in UI thread.
-                           if (completionHandler)
-                           {
-                               dispatch_async(dispatch_get_main_queue(), ^{
-                                   completionHandler(token, error);
-                               });
-                           }
-                       }];
-    }
-    @catch (NSException *exception)
-    {
-        completionHandler(nil, NSErrorFromNSException(exception));
-    }
+                   provisioningConfiguration:config
+                deviceFingerprintTokenPolicy:deviceFingerprintTokenPolicy
+                                  capability:EMTokenCapabilityOTP
+                           extendedCompletionHandler:^(id<EMOathToken> token, NSDictionary *extensions, NSError *error) {
+                                completionHandler(token, error);
+                           }];
+        }
+        @catch (NSException *exception) {
+            completionHandler(nil, [NSError errorWithDomain:NSStringFromClass(self)
+                                                       code:-1
+                                                   userInfo:@{NSLocalizedDescriptionKey: exception.description}]);
+        }
 }
 
 + (id<EMOathToken>)token:(NSError *__autoreleasing *)error
@@ -91,7 +94,7 @@
         
         // Try to get stored token
         if (tokens.count)
-            retValue = [oathManager tokenWithName:tokens.anyObject error:&internalErr];
+            retValue = [oathManager tokenWithName:tokens.anyObject fingerprintCustomData:C_CUSTOM_FINGERPRINT_DATA() error:&internalErr];
     } while (false);
     
     // Something went wrong? Propagate error.
