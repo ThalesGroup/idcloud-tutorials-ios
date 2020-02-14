@@ -1,6 +1,6 @@
 //  MIT License
 //
-//  Copyright (c) 2019 Thales DIS
+//  Copyright (c) 2020 Thales DIS
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -20,7 +20,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-// IMPORTANT: This source code is intended to serve training information purposes only. Please make sure to review our IdCloud documentation, including security guidelines.
+// IMPORTANT: This source code is intended to serve training information purposes only.
+//            Please make sure to review our IdCloud documentation, including security guidelines.
 
 #import "LoadingIndicatorView.h"
 
@@ -39,8 +40,7 @@
 
 - (nullable instancetype)initWithCoder:(NSCoder *)decoder
 {
-    if (self = [super initWithCoder:decoder])
-    {
+    if (self = [super initWithCoder:decoder]) {
         [self setupWithFrame:self.bounds];
     }
     
@@ -49,8 +49,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    if (self = [super initWithFrame:frame])
-    {
+    if (self = [super initWithFrame:frame]) {
         [self setupWithFrame:frame];
     }
     
@@ -63,7 +62,7 @@
     self.backgroundColor = [UIColor clearColor];
     
     // Get our view from storyboard.
-    UIView *contentView = [[[NSBundle bundleForClass:self.class] loadNibNamed:@"LoadingIndicatorView" owner:self options:nil] firstObject];
+    UIView *contentView = [[[NSBundle bundleForClass:self.class] loadNibNamed:NSStringFromClass(self.class) owner:self options:nil] firstObject];
     contentView.layer.cornerRadius = 20.f;
     contentView.frame = frame;
     
@@ -82,23 +81,23 @@
 - (void)loadingBarShowInternal:(NSString *)caption show:(BOOL)show animated:(BOOL)animated
 {
     // Avoid multiple call with same result.
-    if (_isPresent == show)
+    if (_isPresent == show) {
         return;
+    }
     
     // Start / Stop iOS loading indicator animation.
-    if (show)
+    if (show) {
         [_indicator startAnimating];
-    else
+    } else {
         [_indicator stopAnimating];
+    }
     
     // Stop any possible previous animations since we are not waiting for result.
     [self.layer removeAllAnimations];
     
     // Animate transition.
-    if (animated)
-    {
-        if (show)
-        {
+    if (animated) {
+        if (show) {
             // Update caption
             [_labelCaption setText:caption];
             self.hidden = NO;
@@ -108,8 +107,7 @@
         [UIView animateWithDuration:.5 delay:.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             self.alpha = show ? kVisibleAlpha : .0;
         } completion:^(BOOL finished) {
-            if (finished && !show)
-            {
+            if (finished && !show) {
                 [self.labelCaption setText:nil];
                 self.hidden = YES;
             }

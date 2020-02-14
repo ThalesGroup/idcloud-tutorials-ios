@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProvisionerView">
             <connections>
                 <outlet property="buttonProvision" destination="L9K-oX-p6m" id="jQd-Ou-34k"/>
+                <outlet property="buttonProvisionUsingQr" destination="PRt-i4-DUr" id="Adu-oU-9im"/>
                 <outlet property="buttonRemoveToken" destination="bLH-I0-050" id="7IT-OR-YOQ"/>
                 <outlet property="textRegistrationCode" destination="ehk-2S-Wc9" id="TCa-Pu-nLv"/>
                 <outlet property="textUserId" destination="abG-Ze-45k" id="Uuz-dG-CcO"/>
@@ -19,7 +20,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="305" height="191"/>
+            <rect key="frame" x="0.0" y="0.0" width="305" height="229"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Registration Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehk-2S-Wc9" userLabel="RegistrationCode_Text">
@@ -57,6 +58,13 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" returnKeyType="next"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRt-i4-DUr" customClass="UIButtonAutoSize">
+                    <rect key="frame" x="16" y="183" width="273" height="30"/>
+                    <state key="normal" title="Provision Using QR Code"/>
+                    <connections>
+                        <action selector="onButtonPressedProvisionUsingQr:" destination="-1" eventType="touchUpInside" id="bnW-qI-esM"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -69,17 +77,21 @@
                 <constraint firstItem="abG-Ze-45k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="M9J-NH-Z1n"/>
                 <constraint firstItem="L9K-oX-p6m" firstAttribute="width" secondItem="bLH-I0-050" secondAttribute="width" id="OeK-ZO-Ckb"/>
                 <constraint firstAttribute="trailing" secondItem="bLH-I0-050" secondAttribute="trailing" constant="16" id="P6h-y3-3km"/>
+                <constraint firstAttribute="trailing" secondItem="PRt-i4-DUr" secondAttribute="trailing" constant="16" id="RKe-gc-Xl2"/>
                 <constraint firstItem="L9K-oX-p6m" firstAttribute="centerY" secondItem="bLH-I0-050" secondAttribute="centerY" id="SPg-KU-fLA"/>
                 <constraint firstItem="abG-Ze-45k" firstAttribute="top" secondItem="cRg-z3-Ybc" secondAttribute="bottom" constant="8" id="XN4-Fc-a2O"/>
                 <constraint firstAttribute="trailing" secondItem="abG-Ze-45k" secondAttribute="trailing" constant="16" id="e0D-kT-CVf"/>
+                <constraint firstAttribute="bottom" secondItem="PRt-i4-DUr" secondAttribute="bottom" priority="1" constant="16" id="iUJ-Ic-vkL"/>
                 <constraint firstItem="cRg-z3-Ybc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="odJ-fJ-ksx"/>
+                <constraint firstItem="PRt-i4-DUr" firstAttribute="top" secondItem="L9K-oX-p6m" secondAttribute="bottom" priority="1" constant="16" id="uhv-7u-5Uy"/>
                 <constraint firstItem="cRg-z3-Ybc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="xHC-pZ-6y2"/>
+                <constraint firstItem="PRt-i4-DUr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="xZa-ao-at6"/>
                 <constraint firstAttribute="trailing" secondItem="cRg-z3-Ybc" secondAttribute="trailing" constant="16" id="yzd-sN-IGV"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="175.19999999999999" y="-177.66116941529236"/>
+            <point key="canvasLocation" x="175.19999999999999" y="-158.77061469265368"/>
         </view>
     </objects>
 </document>

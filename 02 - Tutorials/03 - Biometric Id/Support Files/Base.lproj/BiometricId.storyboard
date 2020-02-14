@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9xA-Hh-7uA">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="bs9-Qv-E68">
+            <objects>
+                <navigationController id="9xA-Hh-7uA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3CH-2h-NsB">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.87843137250000003" green="0.058823529409999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WVs-li-cLu" kind="relationship" relationship="rootViewController" id="GfH-8a-gPH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDe-L3-w7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-862" y="121"/>
+        </scene>
+        <!--Biometric Id View Controller-->
+        <scene sceneID="18B-qa-Cjf">
+            <objects>
+                <viewController id="WVs-li-cLu" customClass="BiometricId_ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U2j-Pw-biN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUA-Ru-Xc5" customClass="ProvisionerView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="228.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTo-wm-5El" customClass="ResultView">
+                                <rect key="frame" x="0.0" y="430.5" width="320" height="57.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jj-9S-95g">
+                                <rect key="frame" x="16" y="281.5" width="60" height="48"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="IconOTPPin"/>
+                                <connections>
+                                    <action selector="onButtonPressedOTPPin:" destination="WVs-li-cLu" eventType="touchUpInside" id="OcL-hh-nXF"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQN-9j-gck">
+                                <rect key="frame" x="92" y="281.5" width="60" height="48"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="IconOTPFingerprint"/>
+                                <connections>
+                                    <action selector="onButtonPressedOTPTouchId:" destination="WVs-li-cLu" eventType="touchUpInside" id="Ors-p2-Naj"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mql-uy-1vz">
+                                <rect key="frame" x="168" y="281.5" width="60" height="48"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="IconOTPFaceId"/>
+                                <connections>
+                                    <action selector="onButtonPressedOTPFaceId:" destination="WVs-li-cLu" eventType="touchUpInside" id="6De-m9-KtD"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDX-Cu-m4p">
+                                <rect key="frame" x="244" y="281.5" width="60" height="48"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="IconOTPProtectorFaceid"/>
+                                <connections>
+                                    <action selector="onButtonPressedOTPProtectorFaceId:" destination="WVs-li-cLu" eventType="touchUpInside" id="WFU-9x-H2k"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Time Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bc1-T3-RNY">
+                                <rect key="frame" x="16" y="244.5" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TQB-bX-WbA">
+                                <rect key="frame" x="97.5" y="345.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onSwitchToggledOTPTouchId:" destination="WVs-li-cLu" eventType="touchUpInside" id="emM-sw-edR"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wdC-iq-Pbk">
+                                <rect key="frame" x="173.5" y="345.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onSwitchToggledOTPFaceId:" destination="WVs-li-cLu" eventType="touchUpInside" id="Mfz-qv-HQX"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TNM-KY-6or">
+                                <rect key="frame" x="249.5" y="345.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onSwitchToggledOTPProtectorFaceId:" destination="WVs-li-cLu" eventType="touchUpInside" id="uY6-Mt-a3Z"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzq-o6-lvE">
+                                <rect key="frame" x="254.5" y="384.5" width="39" height="30"/>
+                                <state key="normal" title="Enroll"/>
+                                <connections>
+                                    <action selector="onButtonPressedOTPProtectorFaceIdEnroll:" destination="WVs-li-cLu" eventType="touchUpInside" id="EyE-7h-DBH"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-K1-AiD" customClass="LoadingIndicatorView">
+                                <rect key="frame" x="85" y="177" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Tn3-IG-iMC"/>
+                                    <constraint firstAttribute="height" constant="150" id="ejr-74-aLx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bzq-o6-lvE" firstAttribute="top" secondItem="TNM-KY-6or" secondAttribute="bottom" constant="8" id="0Yy-fz-cIk"/>
+                            <constraint firstItem="Bc1-T3-RNY" firstAttribute="top" secondItem="HUA-Ru-Xc5" secondAttribute="bottom" constant="16" id="18R-Zm-Epo"/>
+                            <constraint firstItem="Mql-uy-1vz" firstAttribute="leading" secondItem="PQN-9j-gck" secondAttribute="trailing" constant="16" id="1Yd-Eb-GKd"/>
+                            <constraint firstItem="MTo-wm-5El" firstAttribute="top" secondItem="bzq-o6-lvE" secondAttribute="bottom" constant="16" id="2Ia-1v-Q3V"/>
+                            <constraint firstItem="TQB-bX-WbA" firstAttribute="centerY" secondItem="TNM-KY-6or" secondAttribute="centerY" id="446-uq-aOW"/>
+                            <constraint firstItem="TNM-KY-6or" firstAttribute="centerX" secondItem="YDX-Cu-m4p" secondAttribute="centerX" id="8ww-lo-pm5"/>
+                            <constraint firstItem="Cjj-lj-rOw" firstAttribute="trailing" secondItem="MTo-wm-5El" secondAttribute="trailing" id="8x6-Ow-Bpe"/>
+                            <constraint firstItem="HUA-Ru-Xc5" firstAttribute="leading" secondItem="Cjj-lj-rOw" secondAttribute="leading" id="B2G-xK-tip"/>
+                            <constraint firstItem="1jj-9S-95g" firstAttribute="width" secondItem="Mql-uy-1vz" secondAttribute="width" id="GkQ-7r-0I6"/>
+                            <constraint firstItem="PQN-9j-gck" firstAttribute="leading" secondItem="1jj-9S-95g" secondAttribute="trailing" constant="16" id="L6G-Ww-pWw"/>
+                            <constraint firstItem="TQB-bX-WbA" firstAttribute="centerX" secondItem="PQN-9j-gck" secondAttribute="centerX" id="OA9-rw-UNp"/>
+                            <constraint firstItem="1jj-9S-95g" firstAttribute="top" secondItem="Bc1-T3-RNY" secondAttribute="bottom" constant="16" id="OlF-sD-jor"/>
+                            <constraint firstItem="Cjj-lj-rOw" firstAttribute="bottom" secondItem="MTo-wm-5El" secondAttribute="bottom" constant="16" id="Or8-hB-FO8"/>
+                            <constraint firstItem="1jj-9S-95g" firstAttribute="centerY" secondItem="PQN-9j-gck" secondAttribute="centerY" id="PFo-4Y-JIK"/>
+                            <constraint firstItem="bzq-o6-lvE" firstAttribute="centerX" secondItem="TNM-KY-6or" secondAttribute="centerX" id="Qol-3z-Muy"/>
+                            <constraint firstItem="wdC-iq-Pbk" firstAttribute="centerX" secondItem="Mql-uy-1vz" secondAttribute="centerX" id="TZG-Ql-fgk"/>
+                            <constraint firstItem="TQB-bX-WbA" firstAttribute="top" secondItem="1jj-9S-95g" secondAttribute="bottom" constant="16" id="XPW-zD-IUz"/>
+                            <constraint firstItem="1jj-9S-95g" firstAttribute="leading" secondItem="Cjj-lj-rOw" secondAttribute="leading" constant="16" id="Xaj-GS-Hza"/>
+                            <constraint firstItem="Cjj-lj-rOw" firstAttribute="trailing" secondItem="Bc1-T3-RNY" secondAttribute="trailing" constant="16" id="c05-3K-P9A"/>
+                            <constraint firstItem="TQB-bX-WbA" firstAttribute="centerY" secondItem="wdC-iq-Pbk" secondAttribute="centerY" id="chO-iQ-Y55"/>
+                            <constraint firstItem="Cjj-lj-rOw" firstAttribute="trailing" secondItem="HUA-Ru-Xc5" secondAttribute="trailing" id="fSc-Qz-Ehg"/>
+                            <constraint firstItem="YDX-Cu-m4p" firstAttribute="leading" secondItem="Mql-uy-1vz" secondAttribute="trailing" constant="16" id="fiI-l4-xCm"/>
+                            <constraint firstItem="HUA-Ru-Xc5" firstAttribute="top" secondItem="Cjj-lj-rOw" secondAttribute="top" id="l6s-7T-85h"/>
+                            <constraint firstItem="1jj-9S-95g" firstAttribute="width" secondItem="YDX-Cu-m4p" secondAttribute="width" id="m1f-HZ-LCs"/>
+                            <constraint firstItem="MTo-wm-5El" firstAttribute="leading" secondItem="Cjj-lj-rOw" secondAttribute="leading" id="m4P-6Y-d2G"/>
+                            <constraint firstItem="oBy-K1-AiD" firstAttribute="centerX" secondItem="Cjj-lj-rOw" secondAttribute="centerX" id="mad-WR-zoX"/>
+                            <constraint firstItem="Bc1-T3-RNY" firstAttribute="leading" secondItem="Cjj-lj-rOw" secondAttribute="leading" constant="16" id="ntE-cL-LC1"/>
+                            <constraint firstItem="1jj-9S-95g" firstAttribute="centerY" secondItem="Mql-uy-1vz" secondAttribute="centerY" id="nzi-Q8-uf4"/>
+                            <constraint firstItem="1jj-9S-95g" firstAttribute="width" secondItem="PQN-9j-gck" secondAttribute="width" id="qHQ-Mz-Roc"/>
+                            <constraint firstItem="1jj-9S-95g" firstAttribute="centerY" secondItem="YDX-Cu-m4p" secondAttribute="centerY" id="rBj-9R-2cK"/>
+                            <constraint firstItem="Cjj-lj-rOw" firstAttribute="trailing" secondItem="YDX-Cu-m4p" secondAttribute="trailing" constant="16" id="wDo-8M-Kni"/>
+                            <constraint firstItem="oBy-K1-AiD" firstAttribute="centerY" secondItem="Cjj-lj-rOw" secondAttribute="centerY" id="yoZ-Qx-Y6c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cjj-lj-rOw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a3v-O4-eam"/>
+                    <connections>
+                        <outlet property="buttonOTPFaceId" destination="Mql-uy-1vz" id="OMD-dP-Vbe"/>
+                        <outlet property="buttonOTPPin" destination="1jj-9S-95g" id="YcG-eX-jxQ"/>
+                        <outlet property="buttonOTPProtectorFaceId" destination="YDX-Cu-m4p" id="heF-6M-U5p"/>
+                        <outlet property="buttonOTPProtectorFaceIdEnroll" destination="bzq-o6-lvE" id="CzJ-zi-X1A"/>
+                        <outlet property="buttonOTPTouchId" destination="PQN-9j-gck" id="EPP-ut-mFD"/>
+                        <outlet property="loadingIndicator" destination="oBy-K1-AiD" id="vuA-3b-4Dd"/>
+                        <outlet property="provisionView" destination="HUA-Ru-Xc5" id="Dlp-d8-zed"/>
+                        <outlet property="resultView" destination="MTo-wm-5El" id="4tB-Cn-w7y"/>
+                        <outlet property="switchOTPFaceId" destination="wdC-iq-Pbk" id="fSr-gz-dXa"/>
+                        <outlet property="switchOTPProtectorFaceId" destination="TNM-KY-6or" id="vNx-vN-bQu"/>
+                        <outlet property="switchOTPTouchID" destination="TQB-bX-WbA" id="chU-IA-RvT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fas-dN-J9E" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.375" y="120.4225352112676"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IconOTPFaceId" width="48" height="48"/>
+        <image name="IconOTPFingerprint" width="48" height="48"/>
+        <image name="IconOTPPin" width="48" height="48"/>
+        <image name="IconOTPProtectorFaceid" width="48" height="48"/>
+    </resources>
+</document>

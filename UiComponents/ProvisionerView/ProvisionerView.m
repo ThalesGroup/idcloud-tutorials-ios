@@ -1,6 +1,6 @@
 //  MIT License
 //
-//  Copyright (c) 2019 Thales DIS
+//  Copyright (c) 2020 Thales DIS
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -20,15 +20,27 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-// IMPORTANT: This source code is intended to serve training information purposes only. Please make sure to review our IdCloud documentation, including security guidelines.
+// IMPORTANT: This source code is intended to serve training information purposes only.
+//            Please make sure to review our IdCloud documentation, including security guidelines.
 
 #import "ProvisionerView.h"
+
+@implementation UIButtonAutoSize
+
+- (CGSize)intrinsicContentSize
+{
+    return self.isHidden ? CGSizeZero : [super intrinsicContentSize];
+}
+
+@end
 
 @interface ProvisionerView() <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField    *textUserId;
 @property (weak, nonatomic) IBOutlet UITextField    *textRegistrationCode;
+
 @property (weak, nonatomic) IBOutlet UIButton       *buttonProvision;
+@property (weak, nonatomic) IBOutlet UIButton       *buttonProvisionUsingQr;
 @property (weak, nonatomic) IBOutlet UIButton       *buttonRemoveToken;
 
 @end
@@ -37,10 +49,9 @@
 
 // MARK: - Life Cycle
 
-- (nullable instancetype)initWithCoder:(NSCoder *)decoder
+- (instancetype)initWithCoder:(NSCoder *)decoder
 {
-    if (self = [super initWithCoder:decoder])
-    {
+    if (self = [super initWithCoder:decoder]) {
         [self setupWithFrame:self.bounds];
     }
     
@@ -49,8 +60,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    if (self = [super initWithFrame:frame])
-    {
+    if (self = [super initWithFrame:frame]) {
         [self setupWithFrame:frame];
     }
     
@@ -63,7 +73,7 @@
     self.backgroundColor = [UIColor clearColor];
     
     // Get our view from storyboard.
-    UIView *contentView = [[[NSBundle bundleForClass:self.class] loadNibNamed:@"ProvisionerView" owner:self options:nil] firstObject];
+    UIView *contentView = [[[NSBundle bundleForClass:self.class] loadNibNamed:NSStringFromClass(self.class) owner:self options:nil] firstObject];
     contentView.frame = frame;
     
     // Add it as child of current View.
@@ -72,20 +82,35 @@
     // Used to handle return key.
     [_textUserId            setDelegate:self];
     [_textRegistrationCode  setDelegate:self];
+    
+    // QR Code button is by default hidden.
+    [_buttonProvisionUsingQr setHidden:YES];
 }
 
 // MARK: - Public API
 
 - (void)updateGUI:(BOOL)enabled token:(id<EMOathToken>)token;
 {
-    [_textUserId            setEnabled:enabled && !token];
-    [_textRegistrationCode  setEnabled:enabled && !token];
-    [_buttonProvision       setEnabled:enabled && !token];
-    [_buttonRemoveToken     setEnabled:enabled && token];
+    [_textUserId                setEnabled:enabled && !token];
+    [_textRegistrationCode      setEnabled:enabled && !token];
+    [_buttonProvision           setEnabled:enabled && !token];
+    [_buttonProvisionUsingQr    setEnabled:enabled && !token];
+    [_buttonRemoveToken         setEnabled:enabled && token];
     
     // Update token name
     [_textUserId setText:token ? token.name : @""];
-    [_textRegistrationCode setText:@""];
+    if (token) {
+        [_textRegistrationCode setSecureTextEntry:NO];
+        [_textRegistrationCode setText:@"--"];
+    } else {
+        [_textRegistrationCode setSecureTextEntry:YES];
+        [_textRegistrationCode setText:@""];
+    }
+}
+
+- (void)setQrCodeButtonVisible
+{
+    [_buttonProvisionUsingQr setHidden:NO];
 }
 
 // MARK: - UITextFieldDelegate
@@ -96,8 +121,9 @@
     [textField resignFirstResponder];
     
     // Jump to next one.
-    if ([textField isEqual:_textUserId])
+    if ([textField isEqual:_textUserId]) {
         [_textRegistrationCode becomeFirstResponder];
+    }
     
     // All actions are allowed
     return YES;
@@ -109,10 +135,10 @@
 {
     // Check user input.
     if (!_textUserId.text.length) {
-        [_delegate onDisplayMessage:NSLocalizedString(@"STRING_PROVISION_MISSING_USER_ID", nil)];
+        [_delegate displayMessageDialog:NSLocalizedString(@"STRING_PROVISION_MISSING_USER_ID", nil)];
         return;
     } else if (!_textRegistrationCode.text.length) {
-        [_delegate onDisplayMessage:NSLocalizedString(@"STRING_PROVISION_MISSING_REG_CODE", nil)];
+        [_delegate displayMessageDialog:NSLocalizedString(@"STRING_PROVISION_MISSING_REG_CODE", nil)];
         return;
     }
     
@@ -121,23 +147,19 @@
     
     // Notify controller.
     [_delegate onProvision:_textUserId.text withRegistrationCode:regCode];
-    
-    // Wipe sensitive data.
-    [regCode wipe];
 }
 - (IBAction)onButtonPressedRemoveToken:(UIButton *)sender
 {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"STRING_PROVISION_REMOVE_TOKEN", nil)
-                                                                   message:NSLocalizedString(@"STRING_PROVISION_REMOVE_TOKEN_MSG", nil)
-                                                            preferredStyle:UIAlertControllerStyleAlert];
-        
-    [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"STRING_OK", nil) style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-        [self.delegate onRemoveToken];
-    }]];
-    [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"STRING_CANCEL", nil) style:UIAlertActionStyleCancel handler:nil]];
-    
-    [_delegate presentViewController:alert animated:true completion:^{}];
-    
+    [_delegate displayOnCancelDialog:NSLocalizedString(@"STRING_PROVISION_REMOVE_TOKEN_MSG", nil) completionHandler:^(BOOL result) {
+        if (result) {
+            [self.delegate onRemoveToken];
+        }
+    }];
+}
+
+- (IBAction)onButtonPressedProvisionUsingQr:(UIButton *)sender
+{
+    [_delegate onProvisionUsingQr];
 }
 
 @end
