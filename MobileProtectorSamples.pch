@@ -26,8 +26,6 @@
 #ifndef GettingStarted_pch
 #define GettingStarted_pch
 
-#define USE_FACE_ID 1
-
 // Import iOS Frameworks
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -35,10 +33,6 @@
 
 // Import custom frameworks
 #import <EzioMobile/EzioMobile.h>
-
-#if USE_FACE_ID
-    #import "EMFaceManager.h"
-#endif
 
 // Helpers common across all samples
 
@@ -108,65 +102,6 @@
 
 
 @end
-
-typedef enum : NSInteger {
-    // Face Id service was not even started.
-    ProtectorFaceIdStateUndefined,
-    // Face id is not supported
-    ProtectorFaceIdStateNotSupported,
-    // Failed to registered.
-    ProtectorFaceIdStateUnlicensed,
-    // Sucesfully registered.
-    ProtectorFaceIdStateLicensed,
-    // Failed to init service.
-    ProtectorFaceIdStateInitFailed,
-    // Registered and initialised.
-    ProtectorFaceIdStateInited,
-    // Registered, initialised and configured with at least one user enrolled.
-    ProtectorFaceIdStateReadyToUse
-} ProtectorFaceIdState;
-
-__unused static NSString * ProtectorFaceIdState_ToString(ProtectorFaceIdState state)
-{
-    switch (state)
-    {
-        case ProtectorFaceIdStateUndefined:
-            return NSLocalizedString(@"STRING_PROTECTOR_FACE_ID_STATE_UNDEFINED", nil);
-        case ProtectorFaceIdStateNotSupported:
-            return NSLocalizedString(@"STRING_PROTECTOR_FACE_ID_STATE_NOT_SUPPORTED", nil);
-        case ProtectorFaceIdStateReadyToUse:
-            return NSLocalizedString(@"STRING_PROTECTOR_FACE_ID_STATE_READY", nil);
-        case ProtectorFaceIdStateInited:
-            return NSLocalizedString(@"STRING_PROTECTOR_FACE_ID_STATE_INITED", nil);
-        case ProtectorFaceIdStateLicensed:
-            return NSLocalizedString(@"STRING_PROTECTOR_FACE_ID_STATE_LICENSED", nil);
-        case ProtectorFaceIdStateUnlicensed:
-            return NSLocalizedString(@"STRING_PROTECTOR_FACE_ID_STATE_UNLICENSED", nil);
-        case ProtectorFaceIdStateInitFailed:
-            return NSLocalizedString(@"STRING_PROTECTOR_FACE_ID_STATE_INIT_FAILED", nil);
-    }
-    
-    return @"";
-}
-
-__unused static UIColor * ProtectorFaceIdState_ToColor(ProtectorFaceIdState state)
-{
-    switch (state)
-    {
-        case ProtectorFaceIdStateUndefined:
-        case ProtectorFaceIdStateNotSupported:
-        case ProtectorFaceIdStateUnlicensed:
-        case ProtectorFaceIdStateInitFailed:
-            return [UIColor redColor];
-        case ProtectorFaceIdStateInited:
-        case ProtectorFaceIdStateLicensed:
-            return [UIColor orangeColor];
-        case ProtectorFaceIdStateReadyToUse:
-            return [UIColor greenColor];
-    }
-    
-    return [UIColor blackColor];
-}
 
 typedef struct
 {

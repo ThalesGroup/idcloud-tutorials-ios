@@ -29,8 +29,7 @@
  
  @return Jailbreak policy
  */
-static EMOobJailbreakPolicy CFG_JAILBREAK_POLICY_OOB()
-{
+static EMOobJailbreakPolicy CFG_JAILBREAK_POLICY_OOB() {
     return EMOobJailbreakPolicyIgnore;
 }
 
@@ -39,16 +38,14 @@ static EMOobJailbreakPolicy CFG_JAILBREAK_POLICY_OOB()
  
  @return TLS Configuration
  */
-static EMTlsConfiguration *CFG_TLS_CONFIGURATION()
-{
+static EMTlsConfiguration *CFG_TLS_CONFIGURATION() {
     return [[EMTlsConfiguration alloc] initWithInsecureConnectionAllowed:NO
                                                    selfSignedCertAllowed:NO
                                                  hostnameMismatchAllowed:NO];
 }
 
 // Review: SNE add javadoc
-static EMDeviceFingerprintSource *CFG_DEVICE_FINGERPRINT_SOURCE()
-{
+static EMDeviceFingerprintSource *CFG_DEVICE_FINGERPRINT_SOURCE() {
     NSData *customFP = [@"" dataUsingEncoding:NSUTF8StringEncoding];
     return [[EMDeviceFingerprintSource alloc] initWithCustomData:customFP
                                            deviceFingerprintType:[NSSet setWithObject:@(EMDeviceFingerprintTypeSoft)]];

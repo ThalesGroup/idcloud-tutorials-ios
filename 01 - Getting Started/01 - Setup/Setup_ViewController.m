@@ -41,6 +41,7 @@
     
     // Set navigation bar title. 
     [self setTitle:[self caption]];
+    
 }
 
 // MARK: - MainViewProtocol

@@ -25,19 +25,15 @@
 
 typedef struct
 {
-    // Whever is Sytem Touch ID supported by device and SDK
+    // Whever is System Touch ID supported by device and SDK
     BOOL isTouchSupported;
     // Whever is System Face ID supported by device and SDK
     BOOL isFaceSupported;
-    // Whever is Mobile Protector Face ID supported by device and SDK
-    BOOL isProtectorFaceSupported;
     
-    // Whever is Sytem Touch ID supported and enabled
+    // Whever is System Touch ID supported and enabled
     BOOL isTouchEnabled;
     // Whever is System Face ID supported and enabled
     BOOL isFaceEnabled;
-    // Whever is Mobile Protector Face ID supported and enabled
-    BOOL isProtectorFaceEnabled;
 }TokenStatus;
 
 

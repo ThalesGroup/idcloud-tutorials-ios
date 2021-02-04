@@ -33,12 +33,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonOTPPin;
 @property (weak, nonatomic) IBOutlet UIButton *buttonOTPTouchId;
 @property (weak, nonatomic) IBOutlet UIButton *buttonOTPFaceId;
-@property (weak, nonatomic) IBOutlet UIButton *buttonOTPProtectorFaceId;
-@property (weak, nonatomic) IBOutlet UIButton *buttonOTPProtectorFaceIdEnroll;
 
 @property (weak, nonatomic) IBOutlet UISwitch *switchOTPTouchID;
 @property (weak, nonatomic) IBOutlet UISwitch *switchOTPFaceId;
-@property (weak, nonatomic) IBOutlet UISwitch *switchOTPProtectorFaceId;
 
 @end
 
@@ -50,18 +47,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Register notifications
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(onFaceStateChanged:)
-                                                 name:C_NOTIFICATION_ID_FACE_STATE_CHANGED
-                                               object:nil];
 }
 
 - (void)dealloc
 {
-    // Unregister all notifications.
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 // MARK: - Helpers
@@ -71,7 +60,6 @@
     // Check all auth mode states so we can enable / disable proper buttons.
     id<EMOathToken>         token   = [super updateGUI];
     TokenStatus             status  = [BiometricId_Logic tokenStatus];
-    ProtectorFaceIdState    state   = [AdvancedSetup_Logic state];
     BOOL                    enabled = ![self loadingBarIsPresent];
     
     _buttonOTPPin.enabled                   = enabled && token != nil;
@@ -81,21 +69,6 @@
     _buttonOTPFaceId.enabled                = enabled && status.isFaceEnabled;
     _switchOTPFaceId.enabled                = enabled && status.isFaceSupported;
     _switchOTPFaceId.on                     = status.isFaceEnabled;
-#if USE_FACE_ID
-    _buttonOTPProtectorFaceIdEnroll.enabled = enabled && (state == ProtectorFaceIdStateInited || state == ProtectorFaceIdStateReadyToUse);
-    if (state == ProtectorFaceIdStateInited) {
-        [_buttonOTPProtectorFaceIdEnroll setTitle:NSLocalizedString(@"STRING_PROTECTOR_FACE_ID_ENROLL", nil) forState:UIControlStateNormal];
-    } else {
-        [_buttonOTPProtectorFaceIdEnroll setTitle:NSLocalizedString(@"STRING_PROTECTOR_FACE_ID_UNENROLL", nil) forState:UIControlStateNormal];
-    }
-#else
-    _buttonOTPProtectorFaceIdEnroll.enabled = NO;
-#endif
-    _buttonOTPProtectorFaceId.enabled       = enabled && (state == ProtectorFaceIdStateReadyToUse) && status.isProtectorFaceEnabled;
-    _switchOTPProtectorFaceId.enabled       = enabled && (state == ProtectorFaceIdStateReadyToUse) && status.isProtectorFaceSupported;
-    _switchOTPProtectorFaceId.on            = status.isProtectorFaceEnabled;
-    
-
     
     return token;
 }
@@ -124,38 +97,6 @@
         // Pin is not needed any more.
         [pin wipe];
     }];
-}
-
-- (void)enroll
-{
-#if USE_FACE_ID
-    [EMFaceManager enrollWithPresentingViewController:self timeout:60 completion:^(EMFaceManagerProcessStatus code) {
-        
-        // Display possible errors.
-        if (code == EMFaceManagerProcessStatusFail) {
-            [self displayMessageDialog:[[EMFaceManager sharedInstance] faceStatusError]];
-        }
-        
-        // Notify others.
-        [AdvancedSetup_Logic updateProtectorFaceIdStatus];
-        
-    }];
-#endif
-}
-
--(void)unenroll
-{
-#if USE_FACE_ID
-    [EMFaceManager unenrollWithCompletion:^(EMFaceManagerProcessStatus code) {
-        // Display possible errors.
-        if (code == EMFaceManagerProcessStatusFail) {
-            [self displayMessageDialog:[[EMFaceManager sharedInstance] faceStatusError]];
-        }
-        
-        // Notify others.
-        [AdvancedSetup_Logic updateProtectorFaceIdStatus];
-    }];
-#endif
 }
 
 - (void)enableOrDisableAuthMode:(UISwitch *)sender enabled:(BOOL)enabled service:(id<EMAuthService>)authService
@@ -247,36 +188,6 @@
     [BiometricId_Logic userFaceId:token completionHandler:[self handleBiometricId:token]];
 }
 
-- (void)generateAndDisplayOtp_MobileProtectorFaceId
-{
-#if USE_FACE_ID
-    // Trigger authentication
-    id<EMOathToken> token = [Provisioning_Logic token];
-    [EMFaceManager verifyWithPresentingViewController:self
-                                      authenticatable:token
-                                              timeout:30000
-                                           completion:^(EMFaceManagerProcessStatus code, id<EMFaceAuthInput> authInput)
-     {
-         // Call in UI thread. New sdk is already doing that, but we want to support all versions.
-         dispatch_async(dispatch_get_main_queue(), ^{
-             // Display possible errors.
-             if (code == EMFaceManagerProcessStatusFail) {
-                 [self displayMessageDialog:[[EMFaceManager sharedInstance] faceStatusError]];
-             } else if (authInput) {
-                 [self generateAndDisplayOtp:token authInput:authInput];
-             }
-         });
-     }];
-#endif
-}
-
-// MARK: - NSNotificationCenter
-
-- (void)onFaceStateChanged:(NSNotification *) notification
-{
-    [self updateGUI];
-}
-
 // MARK: - User Interface
 
 - (IBAction)onButtonPressedOTPPin:(UIButton *)sender
@@ -294,11 +205,6 @@
     [self generateAndDisplayOtp_FaceId];
 }
 
-- (IBAction)onButtonPressedOTPProtectorFaceId:(UIButton *)sender
-{
-    [self generateAndDisplayOtp_MobileProtectorFaceId];
-}
-
 - (IBAction)onSwitchToggledOTPTouchId:(UISwitch *)sender
 {
     // Toggle auth mode
@@ -313,29 +219,6 @@
     [self enableOrDisableAuthMode:sender
                           enabled:[BiometricId_Logic tokenStatus].isFaceEnabled
                          service:[EMSystemFaceAuthService serviceWithModule:[EMAuthModule authModule]]];
-}
-
-- (IBAction)onSwitchToggledOTPProtectorFaceId:(UISwitch *)sender
-{
-    // Toggle auth mode
-    [self enableOrDisableAuthMode:sender
-                          enabled:[BiometricId_Logic tokenStatus].isProtectorFaceEnabled
-                          service:[EMFaceAuthService serviceWithModule:[EMAuthModule authModule]]];
-}
-
-- (IBAction)onButtonPressedOTPProtectorFaceIdEnroll:(UIButton *)sender
-{
-    // Do proper action based on current state.
-    if ([AdvancedSetup_Logic state] == ProtectorFaceIdStateInited) {
-        [self enroll];
-    } else {
-        // Ask user before un-enrolling.
-        [self displayOnCancelDialog:NSLocalizedString(@"STRING_BIOMETRIC_UNENROLL_FACE_MSG", nil) completionHandler:^(BOOL result) {
-            if (result) {
-                [self unenroll];
-            }
-        }];
-    }
 }
 
 @end

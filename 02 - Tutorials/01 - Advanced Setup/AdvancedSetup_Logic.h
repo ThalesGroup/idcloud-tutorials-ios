@@ -25,7 +25,6 @@
 
 // Register those notifications to NSNotificationCenter in case you want to track some state changes.
 // By default it's tracked by SDKStateView component.
-extern NSString * const C_NOTIFICATION_ID_FACE_STATE_CHANGED;
 extern NSString * const C_NOTIFICATION_ID_LOG_STATE_CHANGED;
 
 // Review: SNE Add javadoc
@@ -35,13 +34,6 @@ extern NSString * const C_NOTIFICATION_ID_LOG_STATE_CHANGED;
  Initialise all Mobile Protector SDK component.
  */
 + (void)setup;
-
-/**
- Return actual state of Mobile Protector Face Id module.
-
- @return Current Mobile Protector Face Id State.
- */
-+ (ProtectorFaceIdState)state;
 
 /**
  Used for demonstration cases to keep track about SDK states. No log's should be stored in production environment.
@@ -65,10 +57,5 @@ extern NSString * const C_NOTIFICATION_ID_LOG_STATE_CHANGED;
  */
 + (void)logError:(NSError *)error;
 
-
-/**
- Method for Protector Face Id licensing and activation.
- */
-+ (void)updateProtectorFaceIdStatus;
 
 @end

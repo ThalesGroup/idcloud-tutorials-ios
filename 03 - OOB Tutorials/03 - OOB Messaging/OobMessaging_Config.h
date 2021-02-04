@@ -29,7 +29,6 @@
  
  @return OOB server provider id
  */
-static NSString *CFG_OOB_PROVIDER_ID()
-{
-    return @"";
+static NSString *CFG_OOB_PROVIDER_ID() {
+    return @"0";
 }

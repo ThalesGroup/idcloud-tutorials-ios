@@ -47,9 +47,8 @@
 
 // MARK: - BiometricId
 
-"STRING_BIOMETRIC_UNENROLL_FACE_MSG"            = "Do you want to un-enroll face id?";
-"STRING_BIOMETRIC_TOUCH_ID_DESC"                = "TODO";
-"STRING_BIOMETRIC_FACE_ID_DESC"                 = "TODO";
+"STRING_BIOMETRIC_TOUCH_ID_DESC"                = "Authenticate with Touch ID";
+"STRING_BIOMETRIC_FACE_ID_DESC"                 = "Authenticate with Face ID";
 
 // MARK: - Authentication
 
@@ -63,21 +62,6 @@
 // MARK: - QR Code Basic
 
 "STRING_QR_CODE_BASIC_FAILED_TO_PARSE"          = "Failed to parse QR Code!";
-
-// Mobile Protector Face Id
-
-"STRING_PROTECTOR_FACE_ID_STATE_DISABLED"       = "FaceId Is disabled by build settings. Set USE_FACE_ID 1 in order to enable it.";
-"STRING_PROTECTOR_FACE_ID_STATE_CHANGED"        = "FaceId state changed: %@";
-
-"STRING_PROTECTOR_FACE_ID_STATE_UNDEFINED"      = "Undefined";
-"STRING_PROTECTOR_FACE_ID_STATE_NOT_SUPPORTED"  = "Not supported";
-"STRING_PROTECTOR_FACE_ID_STATE_LICENSED"       = "Licensed";
-"STRING_PROTECTOR_FACE_ID_STATE_UNLICENSED"     = "Not licensed";
-"STRING_PROTECTOR_FACE_ID_STATE_INITED"         = "Initialised";
-"STRING_PROTECTOR_FACE_ID_STATE_INIT_FAILED"    = "Failed to init";
-"STRING_PROTECTOR_FACE_ID_STATE_READY"          = "Ready to use";
-"STRING_PROTECTOR_FACE_ID_ENROLL"               = "Enroll";
-"STRING_PROTECTOR_FACE_ID_UNENROLL"             = "Unenroll";
 
 // MARK: - Oob Messaging
 "STRING_REGISTERING_LOADING"                    = "Registering...";

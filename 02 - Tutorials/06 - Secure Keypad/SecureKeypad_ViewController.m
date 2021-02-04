@@ -52,10 +52,10 @@
 {
     NSLog(@"%@", [EMCore version]);
     
-    id<EMSecureInputBuilderV2> builder = [[EMSecureInputService serviceWithModule:[EMUIModule uiModule]] secureInputBuilderV2];
+    id<EMSecureInputBuilder> builder = [[EMSecureInputService serviceWithModule:[EMUIModule uiModule]] secureInputBuilder];
     
     [builder setScreenBackgroundColor:[UIColor colorWithRed:249 green:254 blue:255 alpha:1]];
-    [builder setKeys:@"1234567890" andSubscripts:@[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"0"]];
+    [builder setKeys:[@"1234567890" dataUsingEncoding:NSUTF16StringEncoding] andSubscripts:@[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"0"]];
     [builder setOkButtonText:@" "];
     [builder setDeleteButtonText:@" "];
     [builder setDistanceBetweenKeyAndSubscript:2];
@@ -80,13 +80,10 @@
     [builder setMinimumInputLength:3 andMaximumInputLength:3];
     [builder setOkButtonBehavior:EMSecureInputUiOkButtonCustom];
     
-    // Make sure, that configuration is valid.
-    [builder validateUiConfiguration];
-    
     // Build keypad and add handler.
     id<EMSecureInputUi> secureInput =
     [builder buildWithScrambling:NO
-              isDoubleInputField:NO isDialog:NO onFinishBlock:^(id<EMPinAuthInput> firstPin, id<EMPinAuthInput> secondPin) {
+              isDoubleInputField:NO displayMode:EMSecureInputUiDisplayModeFullScreen onFinishBlock:^(id<EMPinAuthInput> firstPin, id<EMPinAuthInput> secondPin) {
                   // Wipe pinpad builder for security purpose.
                   // This part is also important because of builder life cycle, otherwise this block will never be triggered!
                   [builder wipe];
@@ -103,7 +100,7 @@
 
 - (IBAction)onButtonPressedVariant02:(UIButton *)sender
 {
-    id<EMSecureInputBuilderV2> builder = [[EMSecureInputService serviceWithModule:[EMUIModule uiModule]] secureInputBuilderV2];
+    id<EMSecureInputBuilder> builder = [[EMSecureInputService serviceWithModule:[EMUIModule uiModule]] secureInputBuilder];
     
     [builder setNumberOfRows:4 andColumns:4];
     [builder setKeypadHeightRatio:0.25];
@@ -112,13 +109,10 @@
     [builder setKeypadGridGradientColors:[UIColor colorWithRed:121 green:128 blue:255 alpha:1]
                     gridGradientEndColor:[UIColor colorWithRed:121 green:128 blue:255 alpha:1]];
     
-    // Make sure, that configuration is valid.
-    [builder validateUiConfiguration];
-    
     // Build keypad and add handler.
     id<EMSecureInputUi> secureInput =
     [builder buildWithScrambling:YES
-              isDoubleInputField:YES isDialog:NO onFinishBlock:^(id<EMPinAuthInput> firstPin, id<EMPinAuthInput> secondPin) {
+              isDoubleInputField:YES displayMode:EMSecureInputUiDisplayModeFullScreen onFinishBlock:^(id<EMPinAuthInput> firstPin, id<EMPinAuthInput> secondPin) {
                   
                   // Wipe pinpad builder for security purpose.
                   // This part is also important because of builder life cycle, otherwise this block will never be triggered!
@@ -134,7 +128,7 @@
 
 - (IBAction)onButtonPressedVariant03:(UIButton *)sender
 {
-    id<EMSecureInputBuilderV2> builder = [[EMSecureInputService serviceWithModule:[EMUIModule uiModule]] secureInputBuilderV2];
+    id<EMSecureInputBuilder> builder = [[EMSecureInputService serviceWithModule:[EMUIModule uiModule]] secureInputBuilder];
     
     [builder setFirstLabel:@"Old Pin"];
     [builder setSecondLabel:@"New Pin"];
@@ -143,13 +137,10 @@
     [builder setLabelAlignment:EMSecureInputUiLabelAlignmentLeft];
     [builder setInputFieldBackgroundColor:[UIColor colorWithRed:121 green:128 blue:255 alpha:1] forState:EMSecureInputUiControlFocused];
     
-    // Make sure, that configuration is valid.
-    [builder validateUiConfiguration];
-    
     // Build keypad and add handler.
     id<EMSecureInputUi> secureInput =
     [builder buildWithScrambling:NO
-              isDoubleInputField:YES isDialog:NO onFinishBlock:^(id<EMPinAuthInput> firstPin, id<EMPinAuthInput> secondPin) {
+              isDoubleInputField:YES displayMode:EMSecureInputUiDisplayModeFullScreen onFinishBlock:^(id<EMPinAuthInput> firstPin, id<EMPinAuthInput> secondPin) {
                   
                   // Wipe pinpad builder for security purpose.
                   // This part is also important because of builder life cycle, otherwise this block will never be triggered!
@@ -165,21 +156,18 @@
 
 - (IBAction)onButtonPressedVariant04:(UIButton *)sender
 {
-    id<EMSecureInputBuilderV2> builder = [[EMSecureInputService serviceWithModule:[EMUIModule uiModule]] secureInputBuilderV2];
+    id<EMSecureInputBuilder> builder = [[EMSecureInputService serviceWithModule:[EMUIModule uiModule]] secureInputBuilder];
     
     [builder setFirstLabel:@"Enter Password"];
     [builder setMinimumInputLength:6 andMaximumInputLength:16];
     [builder setNumberOfRows:6 andColumns:6];
-    [builder setKeys:@"abcdefghijklmnopqrstuvwxyz"];
+    [builder setKeys:[@"abcdefghijklmnopqrstuvwxyz" dataUsingEncoding:NSUTF16StringEncoding]];
     [builder setIsDeleteButtonAlwaysEnabled:YES];
-    
-    // Make sure, that configuration is valid.
-    [builder validateUiConfiguration];
     
     // Build keypad and add handler.
     id<EMSecureInputUi> secureInput =
     [builder buildWithScrambling:YES
-              isDoubleInputField:NO isDialog:NO onFinishBlock:^(id<EMPinAuthInput> firstPin, id<EMPinAuthInput> secondPin) {
+              isDoubleInputField:NO displayMode:EMSecureInputUiDisplayModeFullScreen onFinishBlock:^(id<EMPinAuthInput> firstPin, id<EMPinAuthInput> secondPin) {
                   
                   // Wipe pinpad builder for security purpose.
                   // This part is also important because of builder life cycle, otherwise this block will never be triggered!

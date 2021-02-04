@@ -54,7 +54,7 @@
     if (!token) {
         [_resultView hide];
     }
-
+    
     return token;
 }
 
@@ -104,17 +104,16 @@
 - (void)userPinWithCompletionHandler:(AuthPinHandler)completionHandler
 {
     // Get secure keypad builder.
-    id<EMSecureInputBuilderV2> builder = [[EMSecureInputService serviceWithModule:[EMUIModule uiModule]] secureInputBuilderV2];
+    id<EMSecureInputBuilder> builder = [[EMSecureInputService serviceWithModule:[EMUIModule uiModule]] secureInputBuilder];
     
     // Configure secure keypad behaviour and visual.
     [builder showNavigationBar:YES];
-    [builder validateUiConfiguration];
     
     // Build keypad and add handler.
     id<EMSecureInputUi> secureInput =
     [builder buildWithScrambling:NO
               isDoubleInputField:NO
-                        isDialog:NO
+                     displayMode:EMSecureInputUiDisplayModeFullScreen
                    onFinishBlock:^(id<EMPinAuthInput> firstPin, id<EMPinAuthInput> secondPin)
      {
          // Wipe pinpad builder for security purpose.

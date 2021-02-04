@@ -29,30 +29,6 @@
  
  @return Jailbreak policy
  */
-static EMTokenJailbreakPolicy CFG_JAILBREAK_POLICY_OTP()
-{
+static EMTokenJailbreakPolicy CFG_JAILBREAK_POLICY_OTP() {
     return EMTokenJailbreakPolicyIgnore;
 }
-
-#if USE_FACE_ID
-
-/**
- Use in order to activate Protector Face ID support.
- 
- @return Protector Face ID product key
- */
-__unused static NSString *CFG_FACE_ID_PRODUCT_KEY()
-{
-    return @"";
-}
-
-/**
- Use in order to activate Protector Face ID support.
- 
- @return Protector Face ID server url.
- */
-__unused static NSString *CFG_FACE_ID_SERVER_URL()
-{
-    return @"";
-}
-#endif

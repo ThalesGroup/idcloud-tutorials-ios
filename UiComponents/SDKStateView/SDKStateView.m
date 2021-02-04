@@ -69,17 +69,11 @@
     
     // Register notifications
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(onFaceStateChanged:)
-                                                 name:C_NOTIFICATION_ID_FACE_STATE_CHANGED
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(onLogStateChanged:)
                                                  name:C_NOTIFICATION_ID_LOG_STATE_CHANGED
                                                object:nil];
     
     // Load current values
-    [self onFaceStateChanged:nil];
     [self onLogStateChanged:nil];
 }
 
@@ -90,14 +84,6 @@
 }
 
 // MARK: - Notifications
-
-- (void)onFaceStateChanged:(NSNotification *) notification
-{
-    ProtectorFaceIdState state = [AdvancedSetup_Logic state];
-    
-    _labelStateValue.text       = ProtectorFaceIdState_ToString(state);
-    _labelStateValue.textColor  = ProtectorFaceIdState_ToColor(state);
-}
 
 - (void)onLogStateChanged:(NSNotification *) notification
 {

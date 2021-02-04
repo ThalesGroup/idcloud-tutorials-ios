@@ -44,15 +44,6 @@
     retValue.isTouchEnabled      = retValue.isTouchSupported     ? [token isAuthModeActive:[touchService authMode]]   : NO;
     retValue.isFaceEnabled       = retValue.isFaceSupported      ? [token isAuthModeActive:[faceService authMode]]    : NO;
 
-#if USE_FACE_ID
-    EMFaceAuthService *gemFaceService   = [[EMFaceManager sharedInstance] service];
-    retValue.isProtectorFaceSupported   = token && [gemFaceService isSupported:nil] && [gemFaceService isConfigured:nil];
-    retValue.isProtectorFaceEnabled     = retValue.isProtectorFaceSupported ? [token isAuthModeActive:[gemFaceService authMode]] : NO;
-#else
-    retValue.isProtectorFaceSupported   = NO;
-    retValue.isProtectorFaceEnabled     = NO;
-#endif
-    
     return retValue;
 }
 

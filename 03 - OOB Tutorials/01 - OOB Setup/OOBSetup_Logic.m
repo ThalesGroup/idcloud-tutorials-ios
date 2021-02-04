@@ -38,7 +38,15 @@
 {
     // Make sure, that we will always check isConfigured first. Multiple call of init will cause crash / run time exception.
     if (![EMCore isConfigured]) {
+        // Configure core with secure log.
+        SecureLogConfig *secureLogConfig = [[SecureLogConfig alloc] initWithConfigComponentsBuilder:^(SecureLogConfigComponents * _Nonnull components) {
+            components.publicKeyExponent = CFG_SECURE_LOG_RSA_KEY_EXPONENT();
+            components.publicKeyModulus = CFG_SECURE_LOG_RSA_KEY_MODULUS();
+        }];
+        [EMCore configureSecureLog:secureLogConfig];
+
         NSError *error = nil;
+        // Configure core with given key and set of required modules.
         EMCore *core = [EMCore configureWithActivationCode:CFG_ACTIVATION_CODE()
                                             configurations:[OOBSetup_Logic moduleConfigurations]];
         

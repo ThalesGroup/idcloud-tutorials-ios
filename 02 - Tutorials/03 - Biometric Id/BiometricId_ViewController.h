@@ -57,10 +57,5 @@
 - (void)generateAndDisplayOtp_FaceId;
 
 
-/**
- Method to generate OTP and display result on screen using Mobile Protector Face Id.
- */
-- (void)generateAndDisplayOtp_MobileProtectorFaceId;
-
 @end
 
