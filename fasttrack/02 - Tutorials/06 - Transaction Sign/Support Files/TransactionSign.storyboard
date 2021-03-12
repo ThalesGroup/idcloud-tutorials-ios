@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3po-A4-gKv">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="I2t-bR-eug">
+            <objects>
+                <navigationController id="3po-A4-gKv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="zVW-f4-ISx">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.87843137250000003" green="0.058823529409999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rPB-af-AtB" kind="relationship" relationship="rootViewController" id="CFn-zP-bek"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3tp-DI-uc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1739" y="-137"/>
+        </scene>
+        <!--Transaction Sign View Controller-->
+        <scene sceneID="KAc-K1-VIE">
+            <objects>
+                <viewController id="rPB-af-AtB" customClass="TransactionSignViewController" customModule="_2___06___Transaction_Sign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UUB-xc-qHu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MsE-5y-URo" customClass="ProvisionerView" customModule="_2___06___Transaction_Sign" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="229.33333333333334"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Time Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pq1-Py-OHI">
+                                <rect key="frame" x="16" y="245.33333333333331" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Beneficiary" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LbT-c8-GeC" userLabel="RegistrationCode_Text">
+                                <rect key="frame" x="16" y="324" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mVX-XI-UYH" userLabel="UserId_Text">
+                                <rect key="frame" x="16" y="282" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCC-37-FeC" userLabel="buttonOTPPin">
+                                <rect key="frame" x="163.66666666666666" y="374" width="48" height="48"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="IconOTPPin"/>
+                                <connections>
+                                    <action selector="buttonGenerateSignatureOTPPressed:" destination="rPB-af-AtB" eventType="touchUpInside" id="jpb-a5-JHn"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYr-1K-Zt2" customClass="ResultView" customModule="_2___06___Transaction_Sign" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="422" width="375" height="268"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="pNg-tT-iau"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MI8-qW-NEl" customClass="LoadingView" customModule="_2___06___Transaction_Sign" customModuleProvider="target">
+                                <rect key="frame" x="112.66666666666669" y="270" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1Ik-PE-aui"/>
+                                    <constraint firstAttribute="height" constant="150" id="69n-8z-IZv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pq1-Py-OHI" firstAttribute="leading" secondItem="UhT-Z5-OUq" secondAttribute="leading" constant="16" id="0iE-H4-eDy"/>
+                            <constraint firstItem="UhT-Z5-OUq" firstAttribute="trailing" secondItem="pq1-Py-OHI" secondAttribute="trailing" constant="16" id="0p8-Ek-IbN"/>
+                            <constraint firstItem="vYr-1K-Zt2" firstAttribute="leading" secondItem="UhT-Z5-OUq" secondAttribute="leading" id="3Tk-YD-NZg"/>
+                            <constraint firstItem="UhT-Z5-OUq" firstAttribute="trailing" secondItem="LbT-c8-GeC" secondAttribute="trailing" constant="16" id="3pK-DF-UvS"/>
+                            <constraint firstItem="MsE-5y-URo" firstAttribute="leading" secondItem="UhT-Z5-OUq" secondAttribute="leading" id="AK9-i8-S1i"/>
+                            <constraint firstItem="LbT-c8-GeC" firstAttribute="top" secondItem="mVX-XI-UYH" secondAttribute="bottom" constant="8" id="H8e-14-tNb"/>
+                            <constraint firstItem="mVX-XI-UYH" firstAttribute="top" secondItem="pq1-Py-OHI" secondAttribute="bottom" constant="15.666666666666686" id="HFM-le-9Ic"/>
+                            <constraint firstItem="UhT-Z5-OUq" firstAttribute="trailing" secondItem="mVX-XI-UYH" secondAttribute="trailing" constant="16" id="J6R-hk-YrR"/>
+                            <constraint firstItem="UhT-Z5-OUq" firstAttribute="trailing" secondItem="MsE-5y-URo" secondAttribute="trailing" id="RnY-TV-gA3"/>
+                            <constraint firstItem="mVX-XI-UYH" firstAttribute="leading" secondItem="UhT-Z5-OUq" secondAttribute="leading" constant="16" id="ajZ-Ke-zvW"/>
+                            <constraint firstItem="MI8-qW-NEl" firstAttribute="centerX" secondItem="UhT-Z5-OUq" secondAttribute="centerX" id="bVv-z0-eYo"/>
+                            <constraint firstItem="UhT-Z5-OUq" firstAttribute="bottom" secondItem="vYr-1K-Zt2" secondAttribute="bottom" id="gEi-HC-RWc"/>
+                            <constraint firstItem="pq1-Py-OHI" firstAttribute="top" secondItem="MsE-5y-URo" secondAttribute="bottom" constant="16" id="mSb-Wx-keJ"/>
+                            <constraint firstItem="bCC-37-FeC" firstAttribute="top" secondItem="LbT-c8-GeC" secondAttribute="bottom" constant="16" id="mtL-B7-KWV"/>
+                            <constraint firstItem="UhT-Z5-OUq" firstAttribute="trailing" secondItem="vYr-1K-Zt2" secondAttribute="trailing" id="pXJ-DO-q0L"/>
+                            <constraint firstItem="bCC-37-FeC" firstAttribute="centerX" secondItem="UhT-Z5-OUq" secondAttribute="centerX" id="rRp-PV-3vt"/>
+                            <constraint firstItem="LbT-c8-GeC" firstAttribute="leading" secondItem="UhT-Z5-OUq" secondAttribute="leading" constant="16" id="tbp-Ll-Vb9"/>
+                            <constraint firstItem="vYr-1K-Zt2" firstAttribute="top" secondItem="bCC-37-FeC" secondAttribute="bottom" id="vfD-KF-68h"/>
+                            <constraint firstItem="MI8-qW-NEl" firstAttribute="centerY" secondItem="UhT-Z5-OUq" secondAttribute="centerY" id="vfY-py-2Dj"/>
+                            <constraint firstItem="MsE-5y-URo" firstAttribute="top" secondItem="UhT-Z5-OUq" secondAttribute="top" id="zb0-Nj-l21"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UhT-Z5-OUq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="igg-6h-wfQ"/>
+                    <connections>
+                        <outlet property="buttonOtp" destination="bCC-37-FeC" id="kYW-ms-NXa"/>
+                        <outlet property="loadingIndicator" destination="MI8-qW-NEl" id="cng-3u-KGW"/>
+                        <outlet property="provisionView" destination="MsE-5y-URo" id="UgB-4R-1uo"/>
+                        <outlet property="resultView" destination="vYr-1K-Zt2" id="mAH-ov-Eaw"/>
+                        <outlet property="textAmountTextField" destination="mVX-XI-UYH" id="eMC-v9-Uwv"/>
+                        <outlet property="textBeneficiaryTextField" destination="LbT-c8-GeC" id="NAI-7i-liD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ztr-Z7-UDA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-855.20000000000005" y="-138.17733990147784"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IconOTPPin" width="48" height="48"/>
+    </resources>
+</document>

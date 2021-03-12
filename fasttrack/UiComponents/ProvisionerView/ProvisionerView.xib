@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProvisionerView" customModule="_1_02_Provisioning" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonProvision" destination="cbM-KC-qbd" id="xRp-Lf-aKw"/>
+                <outlet property="buttonRemoveToken" destination="GMs-jA-XjN" id="07P-h7-1Qm"/>
+                <outlet property="textRegistrationCode" destination="gNg-pc-mxc" id="Foz-HK-yKb"/>
+                <outlet property="textUserId" destination="V39-4K-5Td" id="oqz-dr-GcQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provisioning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNy-t5-mH3">
+                    <rect key="frame" x="20" y="64" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V39-4K-5Td">
+                    <rect key="frame" x="20" y="105" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Registration code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gNg-pc-mxc">
+                    <rect key="frame" x="20" y="159" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbM-KC-qbd">
+                    <rect key="frame" x="35" y="233" width="120" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="bXc-nr-YhG"/>
+                    </constraints>
+                    <state key="normal" title="Provision"/>
+                    <connections>
+                        <action selector="onButtonPressedProvision:" destination="-1" eventType="touchUpInside" id="ZPV-rY-LYV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMs-jA-XjN">
+                    <rect key="frame" x="259" y="233" width="120" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="7jI-eW-8bQ"/>
+                    </constraints>
+                    <state key="normal" title="Remove Token"/>
+                    <connections>
+                        <action selector="onButtonPressedRemoveToken:" destination="-1" eventType="touchUpInside" id="Z3Z-YJ-htm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gNg-pc-mxc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Avo-Cw-ciC"/>
+                <constraint firstItem="gNg-pc-mxc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="BGP-PZ-mIw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GMs-jA-XjN" secondAttribute="trailing" constant="35" id="Bn6-Hg-tcV"/>
+                <constraint firstItem="V39-4K-5Td" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KXt-ew-t1G"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gNg-pc-mxc" secondAttribute="trailing" constant="20" id="Kfc-mX-Fdq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="V39-4K-5Td" secondAttribute="trailing" constant="20" id="Kze-3x-8Gg"/>
+                <constraint firstItem="V39-4K-5Td" firstAttribute="top" secondItem="vNy-t5-mH3" secondAttribute="bottom" constant="20" id="MGy-qy-sjy"/>
+                <constraint firstItem="GMs-jA-XjN" firstAttribute="top" secondItem="gNg-pc-mxc" secondAttribute="bottom" constant="40" id="Pym-80-H4C"/>
+                <constraint firstItem="gNg-pc-mxc" firstAttribute="top" secondItem="V39-4K-5Td" secondAttribute="bottom" constant="20" id="bwk-qS-QSF"/>
+                <constraint firstItem="V39-4K-5Td" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="hBc-d5-o77"/>
+                <constraint firstItem="cbM-KC-qbd" firstAttribute="top" secondItem="gNg-pc-mxc" secondAttribute="bottom" constant="40" id="mQE-nh-IDI"/>
+                <constraint firstItem="vNy-t5-mH3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="pZv-g4-zJA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vNy-t5-mH3" secondAttribute="trailing" constant="20" id="rzz-6h-2CC"/>
+                <constraint firstItem="vNy-t5-mH3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="vqp-hZ-XAk"/>
+                <constraint firstItem="cbM-KC-qbd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="yrq-Ex-Jj1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="140"/>
+        </view>
+        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="oU4-el-qR4">
+            <rect key="frame" x="0.0" y="0.0" width="97" height="34"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <textInputTraits key="textInputTraits"/>
+            <point key="canvasLocation" x="133" y="498"/>
+        </textField>
+    </objects>
+</document>

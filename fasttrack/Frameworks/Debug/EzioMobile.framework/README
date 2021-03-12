@@ -1,0 +1,83 @@
+How to include EzioMobile.framework in a Xcode project
+======================================================
+
+1- In the project navigator, select your project
+2- Select your target
+3- Select the 'Build Phases' tab
+4- Open 'Link Binaries With Libraries' expander
+5- Click the '+' button
+6- Select your EzioMobile.framework
+7- (optional) Drag and drop the added framework to the 'Frameworks' group
+
+Others dependencies required
+============================
+
+Add the Security.framework into your project
+----------------------------------------------
+
+1- In the project navigator, select your project
+2- Select your target
+3- Select the 'Build Phases' tab
+4- Open 'Link Binaries With Libraries' expander
+5- Click the '+' button
+6- Select your Security.framework
+7- (optional) Drag and drop the added framework to the 'Frameworks' group
+
+Add the SystemConfiguration.framework into your project
+----------------------------------------------
+
+1- In the project navigator, select your project
+2- Select your target
+3- Select the 'Build Phases' tab
+4- Open 'Link Binaries With Libraries' expander
+5- Click the '+' button
+6- Select your SystemConfiguration.framework
+7- (optional) Drag and drop the added framework to the 'Frameworks' group
+
+
+Add the libsqlite3.0.dylib into your poject
+----------------------------------------
+
+1- In the project navigator, select your project
+2- Select your target
+3- Select the 'Build Phases' tab
+4- Open 'Link Binaries With Libraries' expander
+5- Click the '+' button
+6- Select your libsqlite3.0.dylib
+7- (optional) Drag and drop the added framework to the 'Frameworks' group
+
+Add the libc++.dylib into your poject
+----------------------------------------
+
+1- In the project navigator, select your project
+2- Select your target
+3- Select the 'Build Phases' tab
+4- Open 'Link Binaries With Libraries' expander
+5- Click the '+' button
+6- Select your libc++.dylib
+7- (optional) Drag and drop the added framework to the 'Frameworks' group
+
+
+Add the -ObjC compilation option in the "Other Linker Flags"
+------------------------------------------------------------
+
+1- In the project navigator, select your project
+2- Select your target
+3- Select the 'Build Settings' tab
+4- Open 'Linking' group
+5- In the "Other Linker Flags" item add -ObjC
+
+If DEBUG version of the framework is used
+============================
+
+Enable "Enable Code Coverage Support" and "Instrument Program Flow"
+------------------------------------------------------------
+1- In the project navigator, select your project
+2- Select your target
+3- Select the 'Build Settings' tab
+4- Open 'Code generation' group
+5- In "Enable Code Coverage Support" set to YES
+6- In "Instrument Program Flow" set to YES
+
+
+

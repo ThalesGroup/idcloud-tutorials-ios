@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="61e-IZ-Rll">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uOi-QI-MeM">
+            <objects>
+                <navigationController id="61e-IZ-Rll" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="lXZ-OO-5AU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.87843137250000003" green="0.058823529409999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FPq-gp-GHT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AQ0-Jh-NO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1739" y="-137"/>
+        </scene>
+        <!--Messaging View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OOBMessagingViewController" customModule="_3___03___OOB_Messaging" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kf6-J1-Y8J" customClass="ProvisionerView" customModule="_3___03___OOB_Messaging" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="268"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="VGJ-uj-bzI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TPc-1X-G0U" customClass="ResultView" customModule="_3___03___OOB_Messaging" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="290.5" width="375" height="312.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cz2-Ac-JpZ" customClass="LoadingView" customModule="_3___03___OOB_Messaging" customModuleProvider="target">
+                                <rect key="frame" x="112.5" y="236.5" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="QKG-AR-BGf"/>
+                                    <constraint firstAttribute="width" constant="150" id="hlC-Kh-wWC"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRN-qA-sD7">
+                                <rect key="frame" x="16" y="284" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="t1S-1V-4r0"/>
+                                </constraints>
+                                <state key="normal" title="Fetch Messages"/>
+                                <connections>
+                                    <action selector="fetchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZ4-Fu-Re9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cz2-Ac-JpZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="3mM-NT-j6U"/>
+                            <constraint firstItem="Kf6-J1-Y8J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="94C-ZC-0Ou"/>
+                            <constraint firstItem="CRN-qA-sD7" firstAttribute="top" secondItem="Kf6-J1-Y8J" secondAttribute="bottom" constant="16" id="Dgu-YY-UbE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TPc-1X-G0U" secondAttribute="trailing" id="MRY-nx-NdT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TPc-1X-G0U" secondAttribute="bottom" id="N22-5B-mgl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kf6-J1-Y8J" secondAttribute="trailing" id="ND6-MU-mVA"/>
+                            <constraint firstItem="CRN-qA-sD7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SUt-6y-e52"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CRN-qA-sD7" secondAttribute="trailing" constant="16" id="aJT-OS-ODZ"/>
+                            <constraint firstItem="TPc-1X-G0U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cKJ-Fz-lAE"/>
+                            <constraint firstItem="Cz2-Ac-JpZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rHF-Y4-a8w"/>
+                            <constraint firstItem="Kf6-J1-Y8J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sv8-np-TYs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XRm-zs-4SO"/>
+                    <connections>
+                        <outlet property="fetchButton" destination="CRN-qA-sD7" id="W3l-zO-hg9"/>
+                        <outlet property="loadingIndicator" destination="Cz2-Ac-JpZ" id="Ifm-kn-t1O"/>
+                        <outlet property="provisionView" destination="Kf6-J1-Y8J" id="0nA-ux-t87"/>
+                        <outlet property="resultView" destination="TPc-1X-G0U" id="E7d-36-cNY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-855.20000000000005" y="-138.0809595202399"/>
+        </scene>
+    </scenes>
+</document>

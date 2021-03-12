@@ -1,0 +1,2577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		206CDB1B25FB5AB000F81971 /* OOBSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CDB1A25FB5AB000F81971 /* OOBSetupViewController.swift */; };
+		206CDB1C25FB5B2100F81971 /* OOBSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CDB1A25FB5AB000F81971 /* OOBSetupViewController.swift */; };
+		206CDB1D25FB5B2200F81971 /* OOBSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CDB1A25FB5AB000F81971 /* OOBSetupViewController.swift */; };
+		206CDB1E25FB748300F81971 /* TransactionSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449404D25ED10F400211BF1 /* TransactionSignViewController.swift */; };
+		208457C625ECC8C700D7C26F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208457C525ECC8C700D7C26F /* Default-568h@2x.png */; };
+		208457C825ECC8D700D7C26F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208457C525ECC8C700D7C26F /* Default-568h@2x.png */; };
+		208457C925ECC95E00D7C26F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208457C525ECC8C700D7C26F /* Default-568h@2x.png */; };
+		208457CA25ECC95F00D7C26F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208457C525ECC8C700D7C26F /* Default-568h@2x.png */; };
+		208457CB25ECC95F00D7C26F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208457C525ECC8C700D7C26F /* Default-568h@2x.png */; };
+		208457CC25ECC96000D7C26F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208457C525ECC8C700D7C26F /* Default-568h@2x.png */; };
+		208457CD25ECC96100D7C26F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208457C525ECC8C700D7C26F /* Default-568h@2x.png */; };
+		208457CE25ECC96200D7C26F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208457C525ECC8C700D7C26F /* Default-568h@2x.png */; };
+		208457CF25ECC96300D7C26F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 208457C525ECC8C700D7C26F /* Default-568h@2x.png */; };
+		208457D125ECCBBB00D7C26F /* AdvancedSetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D025ECCBBB00D7C26F /* AdvancedSetupConfig.swift */; };
+		208457D525ECCC0900D7C26F /* AdvancedSetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D425ECCC0900D7C26F /* AdvancedSetupLogic.swift */; };
+		208457D625ECCC0D00D7C26F /* AdvancedSetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D425ECCC0900D7C26F /* AdvancedSetupLogic.swift */; };
+		208457D725ECCC0E00D7C26F /* AdvancedSetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D425ECCC0900D7C26F /* AdvancedSetupLogic.swift */; };
+		208457D825ECCC0F00D7C26F /* AdvancedSetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D425ECCC0900D7C26F /* AdvancedSetupLogic.swift */; };
+		208457D925ECCC1000D7C26F /* AdvancedSetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D425ECCC0900D7C26F /* AdvancedSetupLogic.swift */; };
+		208457DA25ECCC1100D7C26F /* AdvancedSetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D425ECCC0900D7C26F /* AdvancedSetupLogic.swift */; };
+		208457DB25ECCC1400D7C26F /* AdvancedSetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D025ECCBBB00D7C26F /* AdvancedSetupConfig.swift */; };
+		208457DC25ECCC1600D7C26F /* AdvancedSetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D025ECCBBB00D7C26F /* AdvancedSetupConfig.swift */; };
+		208457DD25ECCC1700D7C26F /* AdvancedSetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D025ECCBBB00D7C26F /* AdvancedSetupConfig.swift */; };
+		208457DE25ECCC1700D7C26F /* AdvancedSetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D025ECCBBB00D7C26F /* AdvancedSetupConfig.swift */; };
+		208457DF25ECCC1900D7C26F /* AdvancedSetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D025ECCBBB00D7C26F /* AdvancedSetupConfig.swift */; };
+		208457E125ECD88600D7C26F /* AdvancedSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E025ECD88600D7C26F /* AdvancedSetupViewController.swift */; };
+		208457E325ECDBC700D7C26F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E225ECDBC700D7C26F /* AppDelegate.swift */; };
+		208457E425ECDBC700D7C26F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E225ECDBC700D7C26F /* AppDelegate.swift */; };
+		208457E525ECDBC700D7C26F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E225ECDBC700D7C26F /* AppDelegate.swift */; };
+		208457E625ECDBC700D7C26F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E225ECDBC700D7C26F /* AppDelegate.swift */; };
+		208457E725ECDBC700D7C26F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E225ECDBC700D7C26F /* AppDelegate.swift */; };
+		208457E825ECDBC700D7C26F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E225ECDBC700D7C26F /* AppDelegate.swift */; };
+		208457EB25ECE01300D7C26F /* BiometricIdLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E925ECE01300D7C26F /* BiometricIdLogic.swift */; };
+		208457EC25ECE01300D7C26F /* BiometricIdLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E925ECE01300D7C26F /* BiometricIdLogic.swift */; };
+		208457ED25ECE01300D7C26F /* BiometricIdLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E925ECE01300D7C26F /* BiometricIdLogic.swift */; };
+		208457EE25ECE01300D7C26F /* BiometricIdLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E925ECE01300D7C26F /* BiometricIdLogic.swift */; };
+		208457EF25ECE01300D7C26F /* BiometricIdLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E925ECE01300D7C26F /* BiometricIdLogic.swift */; };
+		208457F225ECE02700D7C26F /* BiometricIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457F025ECE02700D7C26F /* BiometricIdViewController.swift */; };
+		208457F325ECE02700D7C26F /* BiometricIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457F025ECE02700D7C26F /* BiometricIdViewController.swift */; };
+		208457F425ECE02700D7C26F /* BiometricIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457F025ECE02700D7C26F /* BiometricIdViewController.swift */; };
+		208457F525ECE02700D7C26F /* BiometricIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457F025ECE02700D7C26F /* BiometricIdViewController.swift */; };
+		208457F625ECE02700D7C26F /* BiometricIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457F025ECE02700D7C26F /* BiometricIdViewController.swift */; };
+		20CFAC5625ED55FC0033EBDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CFAC5525ED55FC0033EBDD /* Media.xcassets */; };
+		20CFAC5725ED55FC0033EBDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CFAC5525ED55FC0033EBDD /* Media.xcassets */; };
+		20CFAC5825ED55FC0033EBDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CFAC5525ED55FC0033EBDD /* Media.xcassets */; };
+		20CFAC5925ED55FC0033EBDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CFAC5525ED55FC0033EBDD /* Media.xcassets */; };
+		20CFAC5A25ED55FC0033EBDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CFAC5525ED55FC0033EBDD /* Media.xcassets */; };
+		20CFAC5B25ED55FC0033EBDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CFAC5525ED55FC0033EBDD /* Media.xcassets */; };
+		20CFAC5C25ED55FC0033EBDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CFAC5525ED55FC0033EBDD /* Media.xcassets */; };
+		20CFAC5D25ED55FC0033EBDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CFAC5525ED55FC0033EBDD /* Media.xcassets */; };
+		20CFAC5E25ED55FC0033EBDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CFAC5525ED55FC0033EBDD /* Media.xcassets */; };
+		20CFAC5F25ED55FC0033EBDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CFAC5525ED55FC0033EBDD /* Media.xcassets */; };
+		20CFAC6025ED55FC0033EBDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CFAC5525ED55FC0033EBDD /* Media.xcassets */; };
+		20CFAC6125ED55FC0033EBDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CFAC5525ED55FC0033EBDD /* Media.xcassets */; };
+		20CFAC6425EDCE570033EBDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E225ECDBC700D7C26F /* AppDelegate.swift */; };
+		20D92BDE25E890B000F6760C /* OtpConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832C24095D54000AC84D /* OtpConfig.swift */; };
+		20D92BDF25E890B000F6760C /* ProvisioningConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */; };
+		20D92BE025E890B000F6760C /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48335240963E3000AC84D /* ResultView.swift */; };
+		20D92BE225E890B000F6760C /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48339240972FD000AC84D /* OtpViewController.swift */; };
+		20D92BE325E890B000F6760C /* SetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482A524041F67000AC84D /* SetupConfig.swift */; };
+		20D92BE425E890B000F6760C /* SetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482AF240423AD000AC84D /* SetupLogic.swift */; };
+		20D92BE525E890B000F6760C /* ProvisioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F52406C904000AC84D /* ProvisioningViewController.swift */; };
+		20D92BE625E890B000F6760C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482B724050F2D000AC84D /* LoadingView.swift */; };
+		20D92BE725E890B000F6760C /* Lifespan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833224096080000AC84D /* Lifespan.swift */; };
+		20D92BE825E890B000F6760C /* ProvisioningLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */; };
+		20D92BE925E890B000F6760C /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482BA240528DC000AC84D /* MainViewProtocol.swift */; };
+		20D92BEA25E890B000F6760C /* ProvisionerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F7240809CC000AC84D /* ProvisionerView.swift */; };
+		20D92BEB25E890B000F6760C /* OtpLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832E24095F9A000AC84D /* OtpLogic.swift */; };
+		20D92BEC25E890B000F6760C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4829324041D27000AC84D /* SetupViewController.swift */; };
+		20D92BED25E890B000F6760C /* OtpValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833024095FE4000AC84D /* OtpValue.swift */; };
+		20D92BEF25E890B000F6760C /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A82404234A000AC84D /* EzioMobile.framework */; };
+		20D92BF025E890B000F6760C /* EzioMobileFastTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */; };
+		20D92BF225E890B000F6760C /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482FA24081783000AC84D /* ProvisionerView.xib */; };
+		20D92BF325E890B000F6760C /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4833724096465000AC84D /* ResultView.xib */; };
+		20D92BF425E890B000F6760C /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4832A24094DB8000AC84D /* OTP.storyboard */; };
+		20D92BF525E890B000F6760C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C482C324054C40000AC84D /* Localizable.strings */; };
+		20D92BF625E890B000F6760C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */; };
+		20D92BF825E890B000F6760C /* Provisioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C482D224069C44000AC84D /* Provisioning.storyboard */; };
+		20D92BFA25E890B000F6760C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482BC240531D1000AC84D /* LoadingView.xib */; };
+		20D92C0225E890B900F6760C /* OtpConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832C24095D54000AC84D /* OtpConfig.swift */; };
+		20D92C0325E890B900F6760C /* ProvisioningConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */; };
+		20D92C0425E890B900F6760C /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48335240963E3000AC84D /* ResultView.swift */; };
+		20D92C0625E890B900F6760C /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48339240972FD000AC84D /* OtpViewController.swift */; };
+		20D92C0725E890B900F6760C /* SetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482A524041F67000AC84D /* SetupConfig.swift */; };
+		20D92C0825E890B900F6760C /* SetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482AF240423AD000AC84D /* SetupLogic.swift */; };
+		20D92C0925E890B900F6760C /* ProvisioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F52406C904000AC84D /* ProvisioningViewController.swift */; };
+		20D92C0A25E890B900F6760C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482B724050F2D000AC84D /* LoadingView.swift */; };
+		20D92C0B25E890B900F6760C /* Lifespan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833224096080000AC84D /* Lifespan.swift */; };
+		20D92C0C25E890B900F6760C /* ProvisioningLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */; };
+		20D92C0D25E890B900F6760C /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482BA240528DC000AC84D /* MainViewProtocol.swift */; };
+		20D92C0E25E890B900F6760C /* ProvisionerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F7240809CC000AC84D /* ProvisionerView.swift */; };
+		20D92C0F25E890B900F6760C /* OtpLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832E24095F9A000AC84D /* OtpLogic.swift */; };
+		20D92C1025E890B900F6760C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4829324041D27000AC84D /* SetupViewController.swift */; };
+		20D92C1125E890B900F6760C /* OtpValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833024095FE4000AC84D /* OtpValue.swift */; };
+		20D92C1325E890B900F6760C /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A82404234A000AC84D /* EzioMobile.framework */; };
+		20D92C1425E890B900F6760C /* EzioMobileFastTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */; };
+		20D92C1625E890B900F6760C /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482FA24081783000AC84D /* ProvisionerView.xib */; };
+		20D92C1725E890B900F6760C /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4833724096465000AC84D /* ResultView.xib */; };
+		20D92C1825E890B900F6760C /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4832A24094DB8000AC84D /* OTP.storyboard */; };
+		20D92C1925E890B900F6760C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C482C324054C40000AC84D /* Localizable.strings */; };
+		20D92C1A25E890B900F6760C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */; };
+		20D92C1C25E890B900F6760C /* Provisioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C482D224069C44000AC84D /* Provisioning.storyboard */; };
+		20D92C1E25E890B900F6760C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482BC240531D1000AC84D /* LoadingView.xib */; };
+		20D92C2625E89D5200F6760C /* OtpConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832C24095D54000AC84D /* OtpConfig.swift */; };
+		20D92C2725E89D5200F6760C /* ProvisioningConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */; };
+		20D92C2825E89D5200F6760C /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48335240963E3000AC84D /* ResultView.swift */; };
+		20D92C2925E89D5200F6760C /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48339240972FD000AC84D /* OtpViewController.swift */; };
+		20D92C2A25E89D5200F6760C /* SetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482A524041F67000AC84D /* SetupConfig.swift */; };
+		20D92C2B25E89D5200F6760C /* SetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482AF240423AD000AC84D /* SetupLogic.swift */; };
+		20D92C2C25E89D5200F6760C /* ProvisioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F52406C904000AC84D /* ProvisioningViewController.swift */; };
+		20D92C2D25E89D5200F6760C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482B724050F2D000AC84D /* LoadingView.swift */; };
+		20D92C2E25E89D5200F6760C /* Lifespan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833224096080000AC84D /* Lifespan.swift */; };
+		20D92C2F25E89D5200F6760C /* ProvisioningLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */; };
+		20D92C3025E89D5200F6760C /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482BA240528DC000AC84D /* MainViewProtocol.swift */; };
+		20D92C3125E89D5200F6760C /* ProvisionerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F7240809CC000AC84D /* ProvisionerView.swift */; };
+		20D92C3225E89D5200F6760C /* OtpLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832E24095F9A000AC84D /* OtpLogic.swift */; };
+		20D92C3325E89D5200F6760C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4829324041D27000AC84D /* SetupViewController.swift */; };
+		20D92C3425E89D5200F6760C /* OtpValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833024095FE4000AC84D /* OtpValue.swift */; };
+		20D92C3625E89D5200F6760C /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A82404234A000AC84D /* EzioMobile.framework */; };
+		20D92C3725E89D5200F6760C /* EzioMobileFastTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */; };
+		20D92C3925E89D5200F6760C /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482FA24081783000AC84D /* ProvisionerView.xib */; };
+		20D92C3A25E89D5200F6760C /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4833724096465000AC84D /* ResultView.xib */; };
+		20D92C3B25E89D5200F6760C /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4832A24094DB8000AC84D /* OTP.storyboard */; };
+		20D92C3C25E89D5200F6760C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C482C324054C40000AC84D /* Localizable.strings */; };
+		20D92C3D25E89D5200F6760C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */; };
+		20D92C3F25E89D5200F6760C /* Provisioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C482D224069C44000AC84D /* Provisioning.storyboard */; };
+		20D92C4125E89D5200F6760C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482BC240531D1000AC84D /* LoadingView.xib */; };
+		20D92C4925E89D5400F6760C /* OtpConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832C24095D54000AC84D /* OtpConfig.swift */; };
+		20D92C4A25E89D5400F6760C /* ProvisioningConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */; };
+		20D92C4B25E89D5400F6760C /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48335240963E3000AC84D /* ResultView.swift */; };
+		20D92C4C25E89D5400F6760C /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48339240972FD000AC84D /* OtpViewController.swift */; };
+		20D92C4D25E89D5400F6760C /* SetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482A524041F67000AC84D /* SetupConfig.swift */; };
+		20D92C4E25E89D5400F6760C /* SetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482AF240423AD000AC84D /* SetupLogic.swift */; };
+		20D92C4F25E89D5400F6760C /* ProvisioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F52406C904000AC84D /* ProvisioningViewController.swift */; };
+		20D92C5025E89D5400F6760C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482B724050F2D000AC84D /* LoadingView.swift */; };
+		20D92C5125E89D5400F6760C /* Lifespan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833224096080000AC84D /* Lifespan.swift */; };
+		20D92C5225E89D5400F6760C /* ProvisioningLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */; };
+		20D92C5325E89D5400F6760C /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482BA240528DC000AC84D /* MainViewProtocol.swift */; };
+		20D92C5425E89D5400F6760C /* ProvisionerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F7240809CC000AC84D /* ProvisionerView.swift */; };
+		20D92C5525E89D5400F6760C /* OtpLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832E24095F9A000AC84D /* OtpLogic.swift */; };
+		20D92C5625E89D5400F6760C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4829324041D27000AC84D /* SetupViewController.swift */; };
+		20D92C5725E89D5400F6760C /* OtpValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833024095FE4000AC84D /* OtpValue.swift */; };
+		20D92C5925E89D5400F6760C /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A82404234A000AC84D /* EzioMobile.framework */; };
+		20D92C5A25E89D5400F6760C /* EzioMobileFastTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */; };
+		20D92C5C25E89D5400F6760C /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482FA24081783000AC84D /* ProvisionerView.xib */; };
+		20D92C5D25E89D5400F6760C /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4833724096465000AC84D /* ResultView.xib */; };
+		20D92C5E25E89D5400F6760C /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4832A24094DB8000AC84D /* OTP.storyboard */; };
+		20D92C5F25E89D5400F6760C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C482C324054C40000AC84D /* Localizable.strings */; };
+		20D92C6025E89D5400F6760C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */; };
+		20D92C6225E89D5400F6760C /* Provisioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C482D224069C44000AC84D /* Provisioning.storyboard */; };
+		20D92C6425E89D5400F6760C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482BC240531D1000AC84D /* LoadingView.xib */; };
+		20D92C6C25E89D5700F6760C /* OtpConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832C24095D54000AC84D /* OtpConfig.swift */; };
+		20D92C6D25E89D5700F6760C /* ProvisioningConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */; };
+		20D92C6E25E89D5700F6760C /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48335240963E3000AC84D /* ResultView.swift */; };
+		20D92C6F25E89D5700F6760C /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48339240972FD000AC84D /* OtpViewController.swift */; };
+		20D92C7025E89D5700F6760C /* SetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482A524041F67000AC84D /* SetupConfig.swift */; };
+		20D92C7125E89D5700F6760C /* SetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482AF240423AD000AC84D /* SetupLogic.swift */; };
+		20D92C7225E89D5700F6760C /* ProvisioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F52406C904000AC84D /* ProvisioningViewController.swift */; };
+		20D92C7325E89D5700F6760C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482B724050F2D000AC84D /* LoadingView.swift */; };
+		20D92C7425E89D5700F6760C /* Lifespan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833224096080000AC84D /* Lifespan.swift */; };
+		20D92C7525E89D5700F6760C /* ProvisioningLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */; };
+		20D92C7625E89D5700F6760C /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482BA240528DC000AC84D /* MainViewProtocol.swift */; };
+		20D92C7725E89D5700F6760C /* ProvisionerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F7240809CC000AC84D /* ProvisionerView.swift */; };
+		20D92C7825E89D5700F6760C /* OtpLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832E24095F9A000AC84D /* OtpLogic.swift */; };
+		20D92C7925E89D5700F6760C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4829324041D27000AC84D /* SetupViewController.swift */; };
+		20D92C7A25E89D5700F6760C /* OtpValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833024095FE4000AC84D /* OtpValue.swift */; };
+		20D92C7C25E89D5700F6760C /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A82404234A000AC84D /* EzioMobile.framework */; };
+		20D92C7D25E89D5700F6760C /* EzioMobileFastTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */; };
+		20D92C7F25E89D5700F6760C /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482FA24081783000AC84D /* ProvisionerView.xib */; };
+		20D92C8025E89D5700F6760C /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4833724096465000AC84D /* ResultView.xib */; };
+		20D92C8125E89D5700F6760C /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4832A24094DB8000AC84D /* OTP.storyboard */; };
+		20D92C8225E89D5700F6760C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C482C324054C40000AC84D /* Localizable.strings */; };
+		20D92C8325E89D5700F6760C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */; };
+		20D92C8525E89D5700F6760C /* Provisioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C482D224069C44000AC84D /* Provisioning.storyboard */; };
+		20D92C8725E89D5700F6760C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482BC240531D1000AC84D /* LoadingView.xib */; };
+		20D92C8F25E89D5900F6760C /* OtpConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832C24095D54000AC84D /* OtpConfig.swift */; };
+		20D92C9025E89D5900F6760C /* ProvisioningConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */; };
+		20D92C9125E89D5900F6760C /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48335240963E3000AC84D /* ResultView.swift */; };
+		20D92C9225E89D5900F6760C /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48339240972FD000AC84D /* OtpViewController.swift */; };
+		20D92C9325E89D5900F6760C /* SetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482A524041F67000AC84D /* SetupConfig.swift */; };
+		20D92C9425E89D5900F6760C /* SetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482AF240423AD000AC84D /* SetupLogic.swift */; };
+		20D92C9525E89D5900F6760C /* ProvisioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F52406C904000AC84D /* ProvisioningViewController.swift */; };
+		20D92C9625E89D5900F6760C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482B724050F2D000AC84D /* LoadingView.swift */; };
+		20D92C9725E89D5900F6760C /* Lifespan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833224096080000AC84D /* Lifespan.swift */; };
+		20D92C9825E89D5900F6760C /* ProvisioningLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */; };
+		20D92C9925E89D5900F6760C /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482BA240528DC000AC84D /* MainViewProtocol.swift */; };
+		20D92C9A25E89D5900F6760C /* ProvisionerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F7240809CC000AC84D /* ProvisionerView.swift */; };
+		20D92C9B25E89D5900F6760C /* OtpLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832E24095F9A000AC84D /* OtpLogic.swift */; };
+		20D92C9C25E89D5900F6760C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4829324041D27000AC84D /* SetupViewController.swift */; };
+		20D92C9D25E89D5900F6760C /* OtpValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833024095FE4000AC84D /* OtpValue.swift */; };
+		20D92C9F25E89D5900F6760C /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A82404234A000AC84D /* EzioMobile.framework */; };
+		20D92CA025E89D5900F6760C /* EzioMobileFastTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */; };
+		20D92CA225E89D5900F6760C /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482FA24081783000AC84D /* ProvisionerView.xib */; };
+		20D92CA325E89D5900F6760C /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4833724096465000AC84D /* ResultView.xib */; };
+		20D92CA425E89D5900F6760C /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4832A24094DB8000AC84D /* OTP.storyboard */; };
+		20D92CA525E89D5900F6760C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C482C324054C40000AC84D /* Localizable.strings */; };
+		20D92CA625E89D5900F6760C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */; };
+		20D92CA825E89D5900F6760C /* Provisioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C482D224069C44000AC84D /* Provisioning.storyboard */; };
+		20D92CAA25E89D5900F6760C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482BC240531D1000AC84D /* LoadingView.xib */; };
+		20D92CB225E89D5B00F6760C /* OtpConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832C24095D54000AC84D /* OtpConfig.swift */; };
+		20D92CB325E89D5B00F6760C /* ProvisioningConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */; };
+		20D92CB425E89D5B00F6760C /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48335240963E3000AC84D /* ResultView.swift */; };
+		20D92CB525E89D5B00F6760C /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48339240972FD000AC84D /* OtpViewController.swift */; };
+		20D92CB625E89D5B00F6760C /* SetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482A524041F67000AC84D /* SetupConfig.swift */; };
+		20D92CB725E89D5B00F6760C /* SetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482AF240423AD000AC84D /* SetupLogic.swift */; };
+		20D92CB825E89D5B00F6760C /* ProvisioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F52406C904000AC84D /* ProvisioningViewController.swift */; };
+		20D92CB925E89D5B00F6760C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482B724050F2D000AC84D /* LoadingView.swift */; };
+		20D92CBA25E89D5B00F6760C /* Lifespan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833224096080000AC84D /* Lifespan.swift */; };
+		20D92CBB25E89D5B00F6760C /* ProvisioningLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */; };
+		20D92CBC25E89D5B00F6760C /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482BA240528DC000AC84D /* MainViewProtocol.swift */; };
+		20D92CBD25E89D5B00F6760C /* ProvisionerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F7240809CC000AC84D /* ProvisionerView.swift */; };
+		20D92CBE25E89D5B00F6760C /* OtpLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832E24095F9A000AC84D /* OtpLogic.swift */; };
+		20D92CBF25E89D5B00F6760C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4829324041D27000AC84D /* SetupViewController.swift */; };
+		20D92CC025E89D5B00F6760C /* OtpValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833024095FE4000AC84D /* OtpValue.swift */; };
+		20D92CC225E89D5B00F6760C /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A82404234A000AC84D /* EzioMobile.framework */; };
+		20D92CC325E89D5B00F6760C /* EzioMobileFastTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */; };
+		20D92CC525E89D5B00F6760C /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482FA24081783000AC84D /* ProvisionerView.xib */; };
+		20D92CC625E89D5B00F6760C /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4833724096465000AC84D /* ResultView.xib */; };
+		20D92CC725E89D5B00F6760C /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4832A24094DB8000AC84D /* OTP.storyboard */; };
+		20D92CC825E89D5B00F6760C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C482C324054C40000AC84D /* Localizable.strings */; };
+		20D92CC925E89D5B00F6760C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */; };
+		20D92CCB25E89D5B00F6760C /* Provisioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C482D224069C44000AC84D /* Provisioning.storyboard */; };
+		20D92CCD25E89D5B00F6760C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482BC240531D1000AC84D /* LoadingView.xib */; };
+		20D92CD525E89D5D00F6760C /* OtpConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832C24095D54000AC84D /* OtpConfig.swift */; };
+		20D92CD625E89D5D00F6760C /* ProvisioningConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */; };
+		20D92CD725E89D5D00F6760C /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48335240963E3000AC84D /* ResultView.swift */; };
+		20D92CD825E89D5D00F6760C /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48339240972FD000AC84D /* OtpViewController.swift */; };
+		20D92CD925E89D5D00F6760C /* SetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482A524041F67000AC84D /* SetupConfig.swift */; };
+		20D92CDA25E89D5D00F6760C /* SetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482AF240423AD000AC84D /* SetupLogic.swift */; };
+		20D92CDB25E89D5D00F6760C /* ProvisioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F52406C904000AC84D /* ProvisioningViewController.swift */; };
+		20D92CDC25E89D5D00F6760C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482B724050F2D000AC84D /* LoadingView.swift */; };
+		20D92CDD25E89D5D00F6760C /* Lifespan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833224096080000AC84D /* Lifespan.swift */; };
+		20D92CDE25E89D5D00F6760C /* ProvisioningLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */; };
+		20D92CDF25E89D5D00F6760C /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482BA240528DC000AC84D /* MainViewProtocol.swift */; };
+		20D92CE025E89D5D00F6760C /* ProvisionerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F7240809CC000AC84D /* ProvisionerView.swift */; };
+		20D92CE125E89D5D00F6760C /* OtpLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832E24095F9A000AC84D /* OtpLogic.swift */; };
+		20D92CE225E89D5D00F6760C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4829324041D27000AC84D /* SetupViewController.swift */; };
+		20D92CE325E89D5D00F6760C /* OtpValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833024095FE4000AC84D /* OtpValue.swift */; };
+		20D92CE525E89D5D00F6760C /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A82404234A000AC84D /* EzioMobile.framework */; };
+		20D92CE625E89D5D00F6760C /* EzioMobileFastTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */; };
+		20D92CE825E89D5D00F6760C /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482FA24081783000AC84D /* ProvisionerView.xib */; };
+		20D92CE925E89D5D00F6760C /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4833724096465000AC84D /* ResultView.xib */; };
+		20D92CEA25E89D5D00F6760C /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4832A24094DB8000AC84D /* OTP.storyboard */; };
+		20D92CEB25E89D5D00F6760C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C482C324054C40000AC84D /* Localizable.strings */; };
+		20D92CEC25E89D5D00F6760C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */; };
+		20D92CEE25E89D5D00F6760C /* Provisioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C482D224069C44000AC84D /* Provisioning.storyboard */; };
+		20D92CF025E89D5D00F6760C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482BC240531D1000AC84D /* LoadingView.xib */; };
+		20D92CF825E89D5F00F6760C /* OtpConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832C24095D54000AC84D /* OtpConfig.swift */; };
+		20D92CF925E89D5F00F6760C /* ProvisioningConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */; };
+		20D92CFA25E89D5F00F6760C /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48335240963E3000AC84D /* ResultView.swift */; };
+		20D92CFB25E89D5F00F6760C /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48339240972FD000AC84D /* OtpViewController.swift */; };
+		20D92CFC25E89D5F00F6760C /* SetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482A524041F67000AC84D /* SetupConfig.swift */; };
+		20D92CFD25E89D5F00F6760C /* SetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482AF240423AD000AC84D /* SetupLogic.swift */; };
+		20D92CFE25E89D5F00F6760C /* ProvisioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F52406C904000AC84D /* ProvisioningViewController.swift */; };
+		20D92CFF25E89D5F00F6760C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482B724050F2D000AC84D /* LoadingView.swift */; };
+		20D92D0025E89D5F00F6760C /* Lifespan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833224096080000AC84D /* Lifespan.swift */; };
+		20D92D0125E89D5F00F6760C /* ProvisioningLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */; };
+		20D92D0225E89D5F00F6760C /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482BA240528DC000AC84D /* MainViewProtocol.swift */; };
+		20D92D0325E89D5F00F6760C /* ProvisionerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F7240809CC000AC84D /* ProvisionerView.swift */; };
+		20D92D0425E89D5F00F6760C /* OtpLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832E24095F9A000AC84D /* OtpLogic.swift */; };
+		20D92D0525E89D5F00F6760C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4829324041D27000AC84D /* SetupViewController.swift */; };
+		20D92D0625E89D5F00F6760C /* OtpValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833024095FE4000AC84D /* OtpValue.swift */; };
+		20D92D0825E89D5F00F6760C /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A82404234A000AC84D /* EzioMobile.framework */; };
+		20D92D0925E89D5F00F6760C /* EzioMobileFastTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */; };
+		20D92D0B25E89D5F00F6760C /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482FA24081783000AC84D /* ProvisionerView.xib */; };
+		20D92D0C25E89D5F00F6760C /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4833724096465000AC84D /* ResultView.xib */; };
+		20D92D0D25E89D5F00F6760C /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4832A24094DB8000AC84D /* OTP.storyboard */; };
+		20D92D0E25E89D5F00F6760C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C482C324054C40000AC84D /* Localizable.strings */; };
+		20D92D0F25E89D5F00F6760C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */; };
+		20D92D1125E89D5F00F6760C /* Provisioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C482D224069C44000AC84D /* Provisioning.storyboard */; };
+		20D92D1325E89D5F00F6760C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482BC240531D1000AC84D /* LoadingView.xib */; };
+		20D92D6025E8C79300F6760C /* AdvancedSetup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D5F25E8C79300F6760C /* AdvancedSetup.storyboard */; };
+		20D92D7225E8C9C300F6760C /* OOBTutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D7125E8C9C200F6760C /* OOBTutorials.xcassets */; };
+		20D92D7325E8C9C300F6760C /* OOBTutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D7125E8C9C200F6760C /* OOBTutorials.xcassets */; };
+		20D92D7425E8C9C300F6760C /* OOBTutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D7125E8C9C200F6760C /* OOBTutorials.xcassets */; };
+		20D92D7A25E8CA0500F6760C /* Tutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D7925E8CA0500F6760C /* Tutorials.xcassets */; };
+		20D92D7B25E8CA0500F6760C /* Tutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D7925E8CA0500F6760C /* Tutorials.xcassets */; };
+		20D92D7C25E8CA0500F6760C /* Tutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D7925E8CA0500F6760C /* Tutorials.xcassets */; };
+		20D92D7E25E8CA1000F6760C /* Tutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D7925E8CA0500F6760C /* Tutorials.xcassets */; };
+		20D92D7F25E8CA1000F6760C /* Tutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D7925E8CA0500F6760C /* Tutorials.xcassets */; };
+		20D92D8025E8CA1100F6760C /* Tutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D7925E8CA0500F6760C /* Tutorials.xcassets */; };
+		20D92D8225E8CA4100F6760C /* GettingStarted.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D8125E8CA4100F6760C /* GettingStarted.xcassets */; };
+		20D92D8325E8CA4100F6760C /* GettingStarted.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D8125E8CA4100F6760C /* GettingStarted.xcassets */; };
+		20D92D8425E8CA4100F6760C /* GettingStarted.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D8125E8CA4100F6760C /* GettingStarted.xcassets */; };
+		20D92D9025E8CB3900F6760C /* BiometricId.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D8F25E8CB3900F6760C /* BiometricId.storyboard */; };
+		20D92D9225E8CB4900F6760C /* InBandVerification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D9125E8CB4900F6760C /* InBandVerification.storyboard */; };
+		20D92D9625E8CB6000F6760C /* ChangePin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D9525E8CB6000F6760C /* ChangePin.storyboard */; };
+		20D92D9A25E8CB7600F6760C /* SecureKeypad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D9925E8CB7600F6760C /* SecureKeypad.storyboard */; };
+		20D92DA025E8CBA100F6760C /* TransactionSign.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D9F25E8CBA100F6760C /* TransactionSign.storyboard */; };
+		20D92DA225E8CBB400F6760C /* OOBSetup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92DA125E8CBB400F6760C /* OOBSetup.storyboard */; };
+		20D92DA425E8CBBB00F6760C /* OOBSetup.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20D92DA325E8CBBB00F6760C /* OOBSetup.plist */; };
+		20D92DA625E8CBCD00F6760C /* OobRegistration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20D92DA525E8CBCD00F6760C /* OobRegistration.plist */; };
+		20D92DA825E8CBD400F6760C /* OobRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92DA725E8CBD400F6760C /* OobRegistration.storyboard */; };
+		20D92DAA25E8CBE100F6760C /* OobMessaging.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92DA925E8CBE100F6760C /* OobMessaging.storyboard */; };
+		20D92DAC25E8CBEA00F6760C /* OobMessaging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20D92DAB25E8CBEA00F6760C /* OobMessaging.plist */; };
+		20FA4E6B25F5ADF3002799BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E225ECDBC700D7C26F /* AppDelegate.swift */; };
+		20FA4E6C25F5ADF3002799BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E225ECDBC700D7C26F /* AppDelegate.swift */; };
+		E4000F4825EF7EDA007FDCEA /* OOBRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000EFE25EF7EB0007FDCEA /* OOBRegistrationViewController.swift */; };
+		E4000F4A25EF7EDA007FDCEA /* OOBRegistrationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000EEF25EF7E7F007FDCEA /* OOBRegistrationLogic.swift */; };
+		E4000F5825EF7EDB007FDCEA /* OOBRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000EFE25EF7EB0007FDCEA /* OOBRegistrationViewController.swift */; };
+		E4000F5A25EF7EDB007FDCEA /* OOBRegistrationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000EEF25EF7E7F007FDCEA /* OOBRegistrationLogic.swift */; };
+		E4000F7525EF7EE2007FDCEA /* OOBSetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000ED125EF7E35007FDCEA /* OOBSetupLogic.swift */; };
+		E4000F8325EF7EE2007FDCEA /* OOBSetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000ED125EF7E35007FDCEA /* OOBSetupLogic.swift */; };
+		E4000F9125EF7EE3007FDCEA /* OOBSetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000ED125EF7E35007FDCEA /* OOBSetupLogic.swift */; };
+		E4000F9F25EF7EEB007FDCEA /* OOBMessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000F1C25EF7ED4007FDCEA /* OOBMessagingViewController.swift */; };
+		E4000FA025EF7EEB007FDCEA /* OOBMessagingLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000F0D25EF7EC6007FDCEA /* OOBMessagingLogic.swift */; };
+		E4000FC925EF86BE007FDCEA /* OOBSetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000FC825EF86BE007FDCEA /* OOBSetupConfig.swift */; };
+		E4000FCA25EF86BE007FDCEA /* OOBSetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000FC825EF86BE007FDCEA /* OOBSetupConfig.swift */; };
+		E4000FCB25EF86BE007FDCEA /* OOBSetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000FC825EF86BE007FDCEA /* OOBSetupConfig.swift */; };
+		E4493FD825ED0FF700211BF1 /* InBandVerificationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FD725ED0FF700211BF1 /* InBandVerificationConfig.swift */; };
+		E4493FF425ED101100211BF1 /* InBandVerificationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FF325ED101100211BF1 /* InBandVerificationLogic.swift */; };
+		E449400325ED102100211BF1 /* InBandVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449400225ED102100211BF1 /* InBandVerificationViewController.swift */; };
+		E449405C25ED110200211BF1 /* AdvancedSetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D025ECCBBB00D7C26F /* AdvancedSetupConfig.swift */; };
+		E449406A25ED110300211BF1 /* AdvancedSetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D025ECCBBB00D7C26F /* AdvancedSetupConfig.swift */; };
+		E449407825ED110300211BF1 /* AdvancedSetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D025ECCBBB00D7C26F /* AdvancedSetupConfig.swift */; };
+		E449408625ED110800211BF1 /* AdvancedSetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D425ECCC0900D7C26F /* AdvancedSetupLogic.swift */; };
+		E449409425ED110900211BF1 /* AdvancedSetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D425ECCC0900D7C26F /* AdvancedSetupLogic.swift */; };
+		E44940A225ED110A00211BF1 /* AdvancedSetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457D425ECCC0900D7C26F /* AdvancedSetupLogic.swift */; };
+		E44940B025ED110D00211BF1 /* AdvancedSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E025ECD88600D7C26F /* AdvancedSetupViewController.swift */; };
+		E44940BE25ED110E00211BF1 /* AdvancedSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E025ECD88600D7C26F /* AdvancedSetupViewController.swift */; };
+		E44940CC25ED110F00211BF1 /* AdvancedSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E025ECD88600D7C26F /* AdvancedSetupViewController.swift */; };
+		E44940DA25ED111000211BF1 /* AdvancedSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E025ECD88600D7C26F /* AdvancedSetupViewController.swift */; };
+		E44940E825ED111100211BF1 /* AdvancedSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E025ECD88600D7C26F /* AdvancedSetupViewController.swift */; };
+		E44940F625ED111100211BF1 /* AdvancedSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E025ECD88600D7C26F /* AdvancedSetupViewController.swift */; };
+		E449410425ED111200211BF1 /* AdvancedSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E025ECD88600D7C26F /* AdvancedSetupViewController.swift */; };
+		E449411225ED111300211BF1 /* AdvancedSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E025ECD88600D7C26F /* AdvancedSetupViewController.swift */; };
+		E449412025ED111800211BF1 /* BiometricIdLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E925ECE01300D7C26F /* BiometricIdLogic.swift */; };
+		E449412E25ED111900211BF1 /* BiometricIdLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E925ECE01300D7C26F /* BiometricIdLogic.swift */; };
+		E449413C25ED111A00211BF1 /* BiometricIdLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E925ECE01300D7C26F /* BiometricIdLogic.swift */; };
+		E449414A25ED111D00211BF1 /* BiometricIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457F025ECE02700D7C26F /* BiometricIdViewController.swift */; };
+		E449415825ED111E00211BF1 /* BiometricIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457F025ECE02700D7C26F /* BiometricIdViewController.swift */; };
+		E449416625ED111E00211BF1 /* BiometricIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457F025ECE02700D7C26F /* BiometricIdViewController.swift */; };
+		E44941AA25ED112800211BF1 /* InBandVerificationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FD725ED0FF700211BF1 /* InBandVerificationConfig.swift */; };
+		E44941B825ED112A00211BF1 /* InBandVerificationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FD725ED0FF700211BF1 /* InBandVerificationConfig.swift */; };
+		E44941C625ED112B00211BF1 /* InBandVerificationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FD725ED0FF700211BF1 /* InBandVerificationConfig.swift */; };
+		E44941D425ED112C00211BF1 /* InBandVerificationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FD725ED0FF700211BF1 /* InBandVerificationConfig.swift */; };
+		E44941E225ED112D00211BF1 /* InBandVerificationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FD725ED0FF700211BF1 /* InBandVerificationConfig.swift */; };
+		E44941F025ED112E00211BF1 /* InBandVerificationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FD725ED0FF700211BF1 /* InBandVerificationConfig.swift */; };
+		E44941FE25ED113400211BF1 /* InBandVerificationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FF325ED101100211BF1 /* InBandVerificationLogic.swift */; };
+		E449420C25ED113400211BF1 /* InBandVerificationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FF325ED101100211BF1 /* InBandVerificationLogic.swift */; };
+		E449421A25ED113500211BF1 /* InBandVerificationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FF325ED101100211BF1 /* InBandVerificationLogic.swift */; };
+		E449422825ED113700211BF1 /* InBandVerificationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FF325ED101100211BF1 /* InBandVerificationLogic.swift */; };
+		E449423625ED113800211BF1 /* InBandVerificationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FF325ED101100211BF1 /* InBandVerificationLogic.swift */; };
+		E449424425ED113900211BF1 /* InBandVerificationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4493FF325ED101100211BF1 /* InBandVerificationLogic.swift */; };
+		E449425225ED113D00211BF1 /* InBandVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449400225ED102100211BF1 /* InBandVerificationViewController.swift */; };
+		E449426025ED113D00211BF1 /* InBandVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449400225ED102100211BF1 /* InBandVerificationViewController.swift */; };
+		E449426E25ED113E00211BF1 /* InBandVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449400225ED102100211BF1 /* InBandVerificationViewController.swift */; };
+		E449427C25ED113F00211BF1 /* InBandVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449400225ED102100211BF1 /* InBandVerificationViewController.swift */; };
+		E449428A25ED114000211BF1 /* InBandVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449400225ED102100211BF1 /* InBandVerificationViewController.swift */; };
+		E449429825ED114100211BF1 /* InBandVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449400225ED102100211BF1 /* InBandVerificationViewController.swift */; };
+		E44942A625ED114600211BF1 /* ChangePinLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449401125ED104800211BF1 /* ChangePinLogic.swift */; };
+		E44942B425ED114700211BF1 /* ChangePinLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449401125ED104800211BF1 /* ChangePinLogic.swift */; };
+		E44942C225ED114800211BF1 /* ChangePinLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449401125ED104800211BF1 /* ChangePinLogic.swift */; };
+		E44942D025ED114800211BF1 /* ChangePinLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449401125ED104800211BF1 /* ChangePinLogic.swift */; };
+		E44942DE25ED114900211BF1 /* ChangePinLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449401125ED104800211BF1 /* ChangePinLogic.swift */; };
+		E44942EC25ED114A00211BF1 /* ChangePinLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449401125ED104800211BF1 /* ChangePinLogic.swift */; };
+		E449430725ED115100211BF1 /* ChangePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449402025ED105500211BF1 /* ChangePinViewController.swift */; };
+		E449431525ED115200211BF1 /* ChangePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449402025ED105500211BF1 /* ChangePinViewController.swift */; };
+		E449432325ED115200211BF1 /* ChangePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449402025ED105500211BF1 /* ChangePinViewController.swift */; };
+		E449433125ED115300211BF1 /* ChangePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449402025ED105500211BF1 /* ChangePinViewController.swift */; };
+		E449433F25ED115400211BF1 /* ChangePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449402025ED105500211BF1 /* ChangePinViewController.swift */; };
+		E449434D25ED115400211BF1 /* ChangePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449402025ED105500211BF1 /* ChangePinViewController.swift */; };
+		E449437525ED116700211BF1 /* SecureKeypadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449402F25ED10C600211BF1 /* SecureKeypadViewController.swift */; };
+		E44943AB25ED117300211BF1 /* TransactionSignLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449403E25ED10E600211BF1 /* TransactionSignLogic.swift */; };
+		E44943D425ED118500211BF1 /* TransactionSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449404D25ED10F400211BF1 /* TransactionSignViewController.swift */; };
+		E44943E225ED118600211BF1 /* TransactionSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449404D25ED10F400211BF1 /* TransactionSignViewController.swift */; };
+		E44943F025ED118600211BF1 /* TransactionSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449404D25ED10F400211BF1 /* TransactionSignViewController.swift */; };
+		E44943FE25ED118A00211BF1 /* TransactionSignLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449403E25ED10E600211BF1 /* TransactionSignLogic.swift */; };
+		E449440C25ED118B00211BF1 /* TransactionSignLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449403E25ED10E600211BF1 /* TransactionSignLogic.swift */; };
+		E449441A25ED118C00211BF1 /* TransactionSignLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449403E25ED10E600211BF1 /* TransactionSignLogic.swift */; };
+		E449442825ED119100211BF1 /* SecureKeypadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449402F25ED10C600211BF1 /* SecureKeypadViewController.swift */; };
+		E449443625ED119300211BF1 /* SecureKeypadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449402F25ED10C600211BF1 /* SecureKeypadViewController.swift */; };
+		E449444425ED119300211BF1 /* SecureKeypadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449402F25ED10C600211BF1 /* SecureKeypadViewController.swift */; };
+		E449445225ED119500211BF1 /* SecureKeypadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449402F25ED10C600211BF1 /* SecureKeypadViewController.swift */; };
+		F4C4829024041D27000AC84D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4828F24041D27000AC84D /* AppDelegate.swift */; };
+		F4C4829424041D27000AC84D /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4829324041D27000AC84D /* SetupViewController.swift */; };
+		F4C4829724041D27000AC84D /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829524041D27000AC84D /* Setup.storyboard */; };
+		F4C4829C24041D28000AC84D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */; };
+		F4C482A624041F67000AC84D /* SetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482A524041F67000AC84D /* SetupConfig.swift */; };
+		F4C482AA2404234A000AC84D /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A82404234A000AC84D /* EzioMobile.framework */; };
+		F4C482AC2404234A000AC84D /* EzioMobileFastTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */; };
+		F4C482B0240423AD000AC84D /* SetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482AF240423AD000AC84D /* SetupLogic.swift */; };
+		F4C482B824050F2D000AC84D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482B724050F2D000AC84D /* LoadingView.swift */; };
+		F4C482BD240531D1000AC84D /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482BC240531D1000AC84D /* LoadingView.xib */; };
+		F4C482C424054C40000AC84D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C482C324054C40000AC84D /* Localizable.strings */; };
+		F4C482D824069C4F000AC84D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4828F24041D27000AC84D /* AppDelegate.swift */; };
+		F4C482D924069C4F000AC84D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482B724050F2D000AC84D /* LoadingView.swift */; };
+		F4C482DA24069C4F000AC84D /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482BA240528DC000AC84D /* MainViewProtocol.swift */; };
+		F4C482DE24069C4F000AC84D /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A82404234A000AC84D /* EzioMobile.framework */; };
+		F4C482DF24069C4F000AC84D /* EzioMobileFastTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */; };
+		F4C482E124069C4F000AC84D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C482C324054C40000AC84D /* Localizable.strings */; };
+		F4C482E224069C4F000AC84D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */; };
+		F4C482E524069C4F000AC84D /* Provisioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C482D224069C44000AC84D /* Provisioning.storyboard */; };
+		F4C482E624069C4F000AC84D /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482BC240531D1000AC84D /* LoadingView.xib */; };
+		F4C482EE24069CC4000AC84D /* SetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482AF240423AD000AC84D /* SetupLogic.swift */; };
+		F4C482EF24069CC7000AC84D /* SetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482A524041F67000AC84D /* SetupConfig.swift */; };
+		F4C482F024069CDA000AC84D /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4829324041D27000AC84D /* SetupViewController.swift */; };
+		F4C482F224069D4F000AC84D /* ProvisioningConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */; };
+		F4C482F42406A4AD000AC84D /* ProvisioningLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */; };
+		F4C482F62406C904000AC84D /* ProvisioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F52406C904000AC84D /* ProvisioningViewController.swift */; };
+		F4C482FB24081783000AC84D /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482FA24081783000AC84D /* ProvisionerView.xib */; };
+		F4C482FC24081A9A000AC84D /* ProvisionerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F7240809CC000AC84D /* ProvisionerView.swift */; };
+		F4C482FD240825A9000AC84D /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482BA240528DC000AC84D /* MainViewProtocol.swift */; };
+		F4C4830D24094CB0000AC84D /* ProvisioningConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */; };
+		F4C4830E24094CB0000AC84D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4828F24041D27000AC84D /* AppDelegate.swift */; };
+		F4C4830F24094CB0000AC84D /* SetupConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482A524041F67000AC84D /* SetupConfig.swift */; };
+		F4C4831024094CB0000AC84D /* SetupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482AF240423AD000AC84D /* SetupLogic.swift */; };
+		F4C4831124094CB0000AC84D /* ProvisioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F52406C904000AC84D /* ProvisioningViewController.swift */; };
+		F4C4831224094CB0000AC84D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482B724050F2D000AC84D /* LoadingView.swift */; };
+		F4C4831324094CB0000AC84D /* ProvisioningLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */; };
+		F4C4831424094CB0000AC84D /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482BA240528DC000AC84D /* MainViewProtocol.swift */; };
+		F4C4831524094CB0000AC84D /* ProvisionerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C482F7240809CC000AC84D /* ProvisionerView.swift */; };
+		F4C4831624094CB0000AC84D /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4829324041D27000AC84D /* SetupViewController.swift */; };
+		F4C4831824094CB0000AC84D /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A82404234A000AC84D /* EzioMobile.framework */; };
+		F4C4831924094CB0000AC84D /* EzioMobileFastTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */; };
+		F4C4831B24094CB0000AC84D /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482FA24081783000AC84D /* ProvisionerView.xib */; };
+		F4C4831C24094CB0000AC84D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C482C324054C40000AC84D /* Localizable.strings */; };
+		F4C4831D24094CB0000AC84D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */; };
+		F4C4831F24094CB0000AC84D /* Provisioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C482D224069C44000AC84D /* Provisioning.storyboard */; };
+		F4C4832024094CB0000AC84D /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C482BC240531D1000AC84D /* LoadingView.xib */; };
+		F4C4832B24094DB8000AC84D /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C4832A24094DB8000AC84D /* OTP.storyboard */; };
+		F4C4832D24095D54000AC84D /* OtpConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832C24095D54000AC84D /* OtpConfig.swift */; };
+		F4C4832F24095F9A000AC84D /* OtpLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4832E24095F9A000AC84D /* OtpLogic.swift */; };
+		F4C4833124095FE4000AC84D /* OtpValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833024095FE4000AC84D /* OtpValue.swift */; };
+		F4C4833324096080000AC84D /* Lifespan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4833224096080000AC84D /* Lifespan.swift */; };
+		F4C48336240963E3000AC84D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48335240963E3000AC84D /* ResultView.swift */; };
+		F4C4833824096465000AC84D /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4833724096465000AC84D /* ResultView.xib */; };
+		F4C4833A240972FD000AC84D /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48339240972FD000AC84D /* OtpViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		206CDB1A25FB5AB000F81971 /* OOBSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBSetupViewController.swift; sourceTree = "<group>"; };
+		208457C525ECC8C700D7C26F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		208457D025ECCBBB00D7C26F /* AdvancedSetupConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedSetupConfig.swift; sourceTree = "<group>"; };
+		208457D425ECCC0900D7C26F /* AdvancedSetupLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedSetupLogic.swift; sourceTree = "<group>"; };
+		208457E025ECD88600D7C26F /* AdvancedSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedSetupViewController.swift; sourceTree = "<group>"; };
+		208457E225ECDBC700D7C26F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		208457E925ECE01300D7C26F /* BiometricIdLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricIdLogic.swift; sourceTree = "<group>"; };
+		208457F025ECE02700D7C26F /* BiometricIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricIdViewController.swift; sourceTree = "<group>"; };
+		20CFAC5525ED55FC0033EBDD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		20D92BFE25E890B000F6760C /* 02 - 01 - Advanced Setup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02 - 01 - Advanced Setup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D92C2225E890B900F6760C /* 02 - 02 - Biometric Id.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02 - 02 - Biometric Id.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D92C4525E89D5200F6760C /* 02 - 03 - In Band Verification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02 - 03 - In Band Verification.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D92C6825E89D5400F6760C /* 02 - 04 - Change Pin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02 - 04 - Change Pin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D92C8B25E89D5700F6760C /* 02 - 05 - Secure Keypad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02 - 05 - Secure Keypad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D92CAE25E89D5900F6760C /* 02 - 06 - Transaction Sign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02 - 06 - Transaction Sign.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D92CD125E89D5B00F6760C /* 03 - 01 - OOB Setup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03 - 01 - OOB Setup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D92CF425E89D5D00F6760C /* 03 - 02 - OOB Registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03 - 02 - OOB Registration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D92D1725E89D5F00F6760C /* 03 - 03 - OOB Messaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03 - 03 - OOB Messaging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D92D5F25E8C79300F6760C /* AdvancedSetup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdvancedSetup.storyboard; sourceTree = "<group>"; };
+		20D92D6125E8C7C300F6760C /* AdvancedSetup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AdvancedSetup.plist; sourceTree = "<group>"; };
+		20D92D7125E8C9C200F6760C /* OOBTutorials.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = OOBTutorials.xcassets; sourceTree = "<group>"; };
+		20D92D7925E8CA0500F6760C /* Tutorials.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tutorials.xcassets; sourceTree = "<group>"; };
+		20D92D8125E8CA4100F6760C /* GettingStarted.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GettingStarted.xcassets; sourceTree = "<group>"; };
+		20D92D8D25E8CB2E00F6760C /* BiometricId.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BiometricId.plist; sourceTree = "<group>"; };
+		20D92D8F25E8CB3900F6760C /* BiometricId.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BiometricId.storyboard; sourceTree = "<group>"; };
+		20D92D9125E8CB4900F6760C /* InBandVerification.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InBandVerification.storyboard; sourceTree = "<group>"; };
+		20D92D9325E8CB5100F6760C /* InBandVerification.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InBandVerification.plist; sourceTree = "<group>"; };
+		20D92D9525E8CB6000F6760C /* ChangePin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChangePin.storyboard; sourceTree = "<group>"; };
+		20D92D9725E8CB6700F6760C /* ChangePin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ChangePin.plist; sourceTree = "<group>"; };
+		20D92D9925E8CB7600F6760C /* SecureKeypad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SecureKeypad.storyboard; sourceTree = "<group>"; };
+		20D92D9B25E8CB7D00F6760C /* SecureKeypad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SecureKeypad.plist; sourceTree = "<group>"; };
+		20D92D9D25E8CB9700F6760C /* TransactionSign.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TransactionSign.plist; sourceTree = "<group>"; };
+		20D92D9F25E8CBA100F6760C /* TransactionSign.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TransactionSign.storyboard; sourceTree = "<group>"; };
+		20D92DA125E8CBB400F6760C /* OOBSetup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OOBSetup.storyboard; sourceTree = "<group>"; };
+		20D92DA325E8CBBB00F6760C /* OOBSetup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OOBSetup.plist; sourceTree = "<group>"; };
+		20D92DA525E8CBCD00F6760C /* OobRegistration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OobRegistration.plist; sourceTree = "<group>"; };
+		20D92DA725E8CBD400F6760C /* OobRegistration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OobRegistration.storyboard; sourceTree = "<group>"; };
+		20D92DA925E8CBE100F6760C /* OobMessaging.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OobMessaging.storyboard; sourceTree = "<group>"; };
+		20D92DAB25E8CBEA00F6760C /* OobMessaging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OobMessaging.plist; sourceTree = "<group>"; };
+		E4000ED125EF7E35007FDCEA /* OOBSetupLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBSetupLogic.swift; sourceTree = "<group>"; };
+		E4000EEF25EF7E7F007FDCEA /* OOBRegistrationLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBRegistrationLogic.swift; sourceTree = "<group>"; };
+		E4000EFE25EF7EB0007FDCEA /* OOBRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBRegistrationViewController.swift; sourceTree = "<group>"; };
+		E4000F0D25EF7EC6007FDCEA /* OOBMessagingLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBMessagingLogic.swift; sourceTree = "<group>"; };
+		E4000F1C25EF7ED4007FDCEA /* OOBMessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBMessagingViewController.swift; sourceTree = "<group>"; };
+		E4000FC825EF86BE007FDCEA /* OOBSetupConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBSetupConfig.swift; sourceTree = "<group>"; };
+		E4493FD725ED0FF700211BF1 /* InBandVerificationConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InBandVerificationConfig.swift; sourceTree = "<group>"; };
+		E4493FF325ED101100211BF1 /* InBandVerificationLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InBandVerificationLogic.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		E449400225ED102100211BF1 /* InBandVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InBandVerificationViewController.swift; sourceTree = "<group>"; };
+		E449401125ED104800211BF1 /* ChangePinLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePinLogic.swift; sourceTree = "<group>"; };
+		E449402025ED105500211BF1 /* ChangePinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePinViewController.swift; sourceTree = "<group>"; };
+		E449402F25ED10C600211BF1 /* SecureKeypadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureKeypadViewController.swift; sourceTree = "<group>"; };
+		E449403E25ED10E600211BF1 /* TransactionSignLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSignLogic.swift; sourceTree = "<group>"; };
+		E449404D25ED10F400211BF1 /* TransactionSignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSignViewController.swift; sourceTree = "<group>"; };
+		F4C4828C24041D27000AC84D /* 01-01-Setup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-01-Setup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C4828F24041D27000AC84D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4C4829324041D27000AC84D /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		F4C4829624041D27000AC84D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setup.storyboard; sourceTree = "<group>"; };
+		F4C4829B24041D28000AC84D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4C482A524041F67000AC84D /* SetupConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupConfig.swift; sourceTree = "<group>"; };
+		F4C482A82404234A000AC84D /* EzioMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EzioMobile.framework; path = Frameworks/Debug/EzioMobile.framework; sourceTree = "<group>"; };
+		F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EzioMobileFastTrack.framework; path = Frameworks/Debug/EzioMobileFastTrack.framework; sourceTree = "<group>"; };
+		F4C482AF240423AD000AC84D /* SetupLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupLogic.swift; sourceTree = "<group>"; };
+		F4C482B2240426AE000AC84D /* iOSFastTrack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSFastTrack-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4C482B724050F2D000AC84D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F4C482BA240528DC000AC84D /* MainViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocol.swift; sourceTree = "<group>"; };
+		F4C482BC240531D1000AC84D /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		F4C482C324054C40000AC84D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F4C482CA24069B02000AC84D /* Provisioning.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Provisioning.plist; sourceTree = "<group>"; };
+		F4C482D224069C44000AC84D /* Provisioning.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Provisioning.storyboard; sourceTree = "<group>"; };
+		F4C482EB24069C4F000AC84D /* 01-02-Provisioning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-02-Provisioning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisioningConfig.swift; sourceTree = "<group>"; };
+		F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisioningLogic.swift; sourceTree = "<group>"; };
+		F4C482F52406C904000AC84D /* ProvisioningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisioningViewController.swift; sourceTree = "<group>"; };
+		F4C482F7240809CC000AC84D /* ProvisionerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisionerView.swift; sourceTree = "<group>"; };
+		F4C482FA24081783000AC84D /* ProvisionerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProvisionerView.xib; sourceTree = "<group>"; };
+		F4C4832424094CB0000AC84D /* 01-03-OTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-03-OTP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C4832824094D6E000AC84D /* Setup.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Setup.plist; sourceTree = "<group>"; };
+		F4C4832924094D9B000AC84D /* OTP.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OTP.plist; sourceTree = "<group>"; };
+		F4C4832A24094DB8000AC84D /* OTP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OTP.storyboard; sourceTree = "<group>"; };
+		F4C4832C24095D54000AC84D /* OtpConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpConfig.swift; sourceTree = "<group>"; };
+		F4C4832E24095F9A000AC84D /* OtpLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpLogic.swift; sourceTree = "<group>"; };
+		F4C4833024095FE4000AC84D /* OtpValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpValue.swift; sourceTree = "<group>"; };
+		F4C4833224096080000AC84D /* Lifespan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifespan.swift; sourceTree = "<group>"; };
+		F4C48335240963E3000AC84D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		F4C4833724096465000AC84D /* ResultView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultView.xib; sourceTree = "<group>"; };
+		F4C48339240972FD000AC84D /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20D92BEE25E890B000F6760C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92BEF25E890B000F6760C /* EzioMobile.framework in Frameworks */,
+				20D92BF025E890B000F6760C /* EzioMobileFastTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C1225E890B900F6760C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C1325E890B900F6760C /* EzioMobile.framework in Frameworks */,
+				20D92C1425E890B900F6760C /* EzioMobileFastTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C3525E89D5200F6760C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C3625E89D5200F6760C /* EzioMobile.framework in Frameworks */,
+				20D92C3725E89D5200F6760C /* EzioMobileFastTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C5825E89D5400F6760C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C5925E89D5400F6760C /* EzioMobile.framework in Frameworks */,
+				20D92C5A25E89D5400F6760C /* EzioMobileFastTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C7B25E89D5700F6760C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C7C25E89D5700F6760C /* EzioMobile.framework in Frameworks */,
+				20D92C7D25E89D5700F6760C /* EzioMobileFastTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C9E25E89D5900F6760C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C9F25E89D5900F6760C /* EzioMobile.framework in Frameworks */,
+				20D92CA025E89D5900F6760C /* EzioMobileFastTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92CC125E89D5B00F6760C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92CC225E89D5B00F6760C /* EzioMobile.framework in Frameworks */,
+				20D92CC325E89D5B00F6760C /* EzioMobileFastTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92CE425E89D5D00F6760C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92CE525E89D5D00F6760C /* EzioMobile.framework in Frameworks */,
+				20D92CE625E89D5D00F6760C /* EzioMobileFastTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92D0725E89D5F00F6760C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92D0825E89D5F00F6760C /* EzioMobile.framework in Frameworks */,
+				20D92D0925E89D5F00F6760C /* EzioMobileFastTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C4828924041D27000AC84D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C482AA2404234A000AC84D /* EzioMobile.framework in Frameworks */,
+				F4C482AC2404234A000AC84D /* EzioMobileFastTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C482DD24069C4F000AC84D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C482DE24069C4F000AC84D /* EzioMobile.framework in Frameworks */,
+				F4C482DF24069C4F000AC84D /* EzioMobileFastTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C4831724094CB0000AC84D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C4831824094CB0000AC84D /* EzioMobile.framework in Frameworks */,
+				F4C4831924094CB0000AC84D /* EzioMobileFastTrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20D92BD525E7A18F00F6760C /* 02 - Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D7925E8CA0500F6760C /* Tutorials.xcassets */,
+				208457E225ECDBC700D7C26F /* AppDelegate.swift */,
+				20D92BD625E7A1B000F6760C /* 01 - Advanced Setup */,
+				20D92D6425E8C8A800F6760C /* 02 - Biometric Id */,
+				20D92D6325E8C8A500F6760C /* 03 - In Band Verification */,
+				20D92D6825E8C8D600F6760C /* 04 - Change Pin */,
+				20D92D6725E8C8D200F6760C /* 05 - Secure Keypad */,
+				20D92D6625E8C8CD00F6760C /* 06 - Transaction Sign */,
+			);
+			path = "02 - Tutorials";
+			sourceTree = "<group>";
+		};
+		20D92BD625E7A1B000F6760C /* 01 - Advanced Setup */ = {
+			isa = PBXGroup;
+			children = (
+				20D92BD725E7A1CD00F6760C /* Support Files */,
+				208457D025ECCBBB00D7C26F /* AdvancedSetupConfig.swift */,
+				208457D425ECCC0900D7C26F /* AdvancedSetupLogic.swift */,
+				208457E025ECD88600D7C26F /* AdvancedSetupViewController.swift */,
+			);
+			path = "01 - Advanced Setup";
+			sourceTree = "<group>";
+		};
+		20D92BD725E7A1CD00F6760C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D6125E8C7C300F6760C /* AdvancedSetup.plist */,
+				20D92D5F25E8C79300F6760C /* AdvancedSetup.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		20D92D6325E8C8A500F6760C /* 03 - In Band Verification */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D8625E8CA9B00F6760C /* Support Files */,
+				E4493FD725ED0FF700211BF1 /* InBandVerificationConfig.swift */,
+				E4493FF325ED101100211BF1 /* InBandVerificationLogic.swift */,
+				E449400225ED102100211BF1 /* InBandVerificationViewController.swift */,
+			);
+			path = "03 - In Band Verification";
+			sourceTree = "<group>";
+		};
+		20D92D6425E8C8A800F6760C /* 02 - Biometric Id */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D8525E8CA9000F6760C /* Support Files */,
+				208457E925ECE01300D7C26F /* BiometricIdLogic.swift */,
+				208457F025ECE02700D7C26F /* BiometricIdViewController.swift */,
+			);
+			path = "02 - Biometric Id";
+			sourceTree = "<group>";
+		};
+		20D92D6625E8C8CD00F6760C /* 06 - Transaction Sign */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D8925E8CAAD00F6760C /* Support Files */,
+				E449403E25ED10E600211BF1 /* TransactionSignLogic.swift */,
+				E449404D25ED10F400211BF1 /* TransactionSignViewController.swift */,
+			);
+			path = "06 - Transaction Sign";
+			sourceTree = "<group>";
+		};
+		20D92D6725E8C8D200F6760C /* 05 - Secure Keypad */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D8825E8CAA500F6760C /* Support Files */,
+				E449402F25ED10C600211BF1 /* SecureKeypadViewController.swift */,
+			);
+			path = "05 - Secure Keypad";
+			sourceTree = "<group>";
+		};
+		20D92D6825E8C8D600F6760C /* 04 - Change Pin */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D8725E8CAA000F6760C /* Support Files */,
+				E449401125ED104800211BF1 /* ChangePinLogic.swift */,
+				E449402025ED105500211BF1 /* ChangePinViewController.swift */,
+			);
+			path = "04 - Change Pin";
+			sourceTree = "<group>";
+		};
+		20D92D6925E8C95C00F6760C /* 03 - OOB Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D7125E8C9C200F6760C /* OOBTutorials.xcassets */,
+				20D92D6C25E8C97300F6760C /* 01 - OOB Setup */,
+				20D92D6B25E8C97100F6760C /* 02 - OOB Registration */,
+				20D92D6A25E8C96D00F6760C /* 03 - OOB Messaging */,
+			);
+			path = "03 - OOB Tutorials";
+			sourceTree = "<group>";
+		};
+		20D92D6A25E8C96D00F6760C /* 03 - OOB Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D8C25E8CAC300F6760C /* Support Files */,
+				E4000F0D25EF7EC6007FDCEA /* OOBMessagingLogic.swift */,
+				E4000F1C25EF7ED4007FDCEA /* OOBMessagingViewController.swift */,
+			);
+			path = "03 - OOB Messaging";
+			sourceTree = "<group>";
+		};
+		20D92D6B25E8C97100F6760C /* 02 - OOB Registration */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D8B25E8CABE00F6760C /* Support Files */,
+				E4000EEF25EF7E7F007FDCEA /* OOBRegistrationLogic.swift */,
+				E4000EFE25EF7EB0007FDCEA /* OOBRegistrationViewController.swift */,
+			);
+			path = "02 - OOB Registration";
+			sourceTree = "<group>";
+		};
+		20D92D6C25E8C97300F6760C /* 01 - OOB Setup */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D8A25E8CABA00F6760C /* Support Files */,
+				E4000ED125EF7E35007FDCEA /* OOBSetupLogic.swift */,
+				E4000FC825EF86BE007FDCEA /* OOBSetupConfig.swift */,
+				206CDB1A25FB5AB000F81971 /* OOBSetupViewController.swift */,
+			);
+			path = "01 - OOB Setup";
+			sourceTree = "<group>";
+		};
+		20D92D8525E8CA9000F6760C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D8F25E8CB3900F6760C /* BiometricId.storyboard */,
+				20D92D8D25E8CB2E00F6760C /* BiometricId.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		20D92D8625E8CA9B00F6760C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D9325E8CB5100F6760C /* InBandVerification.plist */,
+				20D92D9125E8CB4900F6760C /* InBandVerification.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		20D92D8725E8CAA000F6760C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D9525E8CB6000F6760C /* ChangePin.storyboard */,
+				20D92D9725E8CB6700F6760C /* ChangePin.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		20D92D8825E8CAA500F6760C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D9925E8CB7600F6760C /* SecureKeypad.storyboard */,
+				20D92D9B25E8CB7D00F6760C /* SecureKeypad.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		20D92D8925E8CAAD00F6760C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D9F25E8CBA100F6760C /* TransactionSign.storyboard */,
+				20D92D9D25E8CB9700F6760C /* TransactionSign.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		20D92D8A25E8CABA00F6760C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20D92DA325E8CBBB00F6760C /* OOBSetup.plist */,
+				20D92DA125E8CBB400F6760C /* OOBSetup.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		20D92D8B25E8CABE00F6760C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20D92DA525E8CBCD00F6760C /* OobRegistration.plist */,
+				20D92DA725E8CBD400F6760C /* OobRegistration.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		20D92D8C25E8CAC300F6760C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20D92DA925E8CBE100F6760C /* OobMessaging.storyboard */,
+				20D92DAB25E8CBEA00F6760C /* OobMessaging.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		F4C4828324041D27000AC84D = {
+			isa = PBXGroup;
+			children = (
+				208457C525ECC8C700D7C26F /* Default-568h@2x.png */,
+				F4C4828E24041D27000AC84D /* 01-GettingStarted */,
+				20D92BD525E7A18F00F6760C /* 02 - Tutorials */,
+				20D92D6925E8C95C00F6760C /* 03 - OOB Tutorials */,
+				F4C482B324050E6F000AC84D /* UiComponents */,
+				F4C482C224054C2F000AC84D /* Assets */,
+				F4C482B2240426AE000AC84D /* iOSFastTrack-Bridging-Header.h */,
+				F4C482C324054C40000AC84D /* Localizable.strings */,
+				F4C4828D24041D27000AC84D /* Products */,
+				F4C482A72404234A000AC84D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4C4828D24041D27000AC84D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4C4828C24041D27000AC84D /* 01-01-Setup.app */,
+				F4C482EB24069C4F000AC84D /* 01-02-Provisioning.app */,
+				F4C4832424094CB0000AC84D /* 01-03-OTP.app */,
+				20D92BFE25E890B000F6760C /* 02 - 01 - Advanced Setup.app */,
+				20D92C2225E890B900F6760C /* 02 - 02 - Biometric Id.app */,
+				20D92C4525E89D5200F6760C /* 02 - 03 - In Band Verification.app */,
+				20D92C6825E89D5400F6760C /* 02 - 04 - Change Pin.app */,
+				20D92C8B25E89D5700F6760C /* 02 - 05 - Secure Keypad.app */,
+				20D92CAE25E89D5900F6760C /* 02 - 06 - Transaction Sign.app */,
+				20D92CD125E89D5B00F6760C /* 03 - 01 - OOB Setup.app */,
+				20D92CF425E89D5D00F6760C /* 03 - 02 - OOB Registration.app */,
+				20D92D1725E89D5F00F6760C /* 03 - 03 - OOB Messaging.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4C4828E24041D27000AC84D /* 01-GettingStarted */ = {
+			isa = PBXGroup;
+			children = (
+				20D92D8125E8CA4100F6760C /* GettingStarted.xcassets */,
+				F4C4828F24041D27000AC84D /* AppDelegate.swift */,
+				F4C482A324041D5B000AC84D /* 01-Setup */,
+				F4C482C624069A7C000AC84D /* 02-Provisioning */,
+				F4C4830A24094C9C000AC84D /* 03-OTP */,
+				F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */,
+			);
+			path = "01-GettingStarted";
+			sourceTree = "<group>";
+		};
+		F4C482A324041D5B000AC84D /* 01-Setup */ = {
+			isa = PBXGroup;
+			children = (
+				F4C482A424041D78000AC84D /* Support Files */,
+				F4C4829324041D27000AC84D /* SetupViewController.swift */,
+				F4C482A524041F67000AC84D /* SetupConfig.swift */,
+				F4C482AF240423AD000AC84D /* SetupLogic.swift */,
+			);
+			path = "01-Setup";
+			sourceTree = "<group>";
+		};
+		F4C482A424041D78000AC84D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4C4832824094D6E000AC84D /* Setup.plist */,
+				F4C4829524041D27000AC84D /* Setup.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		F4C482A72404234A000AC84D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4C482A82404234A000AC84D /* EzioMobile.framework */,
+				F4C482A92404234A000AC84D /* EzioMobileFastTrack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4C482B324050E6F000AC84D /* UiComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F4C48334240963C4000AC84D /* ResultView */,
+				F4C482F92408166E000AC84D /* ProvisionerView */,
+				F4C482B924052899000AC84D /* Protocols */,
+				F4C482B424050E8C000AC84D /* LoadingIndicatorView */,
+			);
+			path = UiComponents;
+			sourceTree = "<group>";
+		};
+		F4C482B424050E8C000AC84D /* LoadingIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				F4C482B724050F2D000AC84D /* LoadingView.swift */,
+				F4C482BC240531D1000AC84D /* LoadingView.xib */,
+			);
+			path = LoadingIndicatorView;
+			sourceTree = "<group>";
+		};
+		F4C482B924052899000AC84D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F4C482BA240528DC000AC84D /* MainViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F4C482C224054C2F000AC84D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				20CFAC5525ED55FC0033EBDD /* Media.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F4C482C624069A7C000AC84D /* 02-Provisioning */ = {
+			isa = PBXGroup;
+			children = (
+				F4C482C724069A91000AC84D /* Support Files */,
+				F4C482F124069D4F000AC84D /* ProvisioningConfig.swift */,
+				F4C482F32406A4AD000AC84D /* ProvisioningLogic.swift */,
+				F4C482F52406C904000AC84D /* ProvisioningViewController.swift */,
+			);
+			path = "02-Provisioning";
+			sourceTree = "<group>";
+		};
+		F4C482C724069A91000AC84D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4C482CA24069B02000AC84D /* Provisioning.plist */,
+				F4C482D224069C44000AC84D /* Provisioning.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		F4C482F92408166E000AC84D /* ProvisionerView */ = {
+			isa = PBXGroup;
+			children = (
+				F4C482F7240809CC000AC84D /* ProvisionerView.swift */,
+				F4C482FA24081783000AC84D /* ProvisionerView.xib */,
+			);
+			path = ProvisionerView;
+			sourceTree = "<group>";
+		};
+		F4C4830A24094C9C000AC84D /* 03-OTP */ = {
+			isa = PBXGroup;
+			children = (
+				F4C4832624094D1C000AC84D /* Support Files */,
+				F4C4832C24095D54000AC84D /* OtpConfig.swift */,
+				F4C4832E24095F9A000AC84D /* OtpLogic.swift */,
+				F4C4833024095FE4000AC84D /* OtpValue.swift */,
+				F4C4833224096080000AC84D /* Lifespan.swift */,
+				F4C48339240972FD000AC84D /* OtpViewController.swift */,
+			);
+			path = "03-OTP";
+			sourceTree = "<group>";
+		};
+		F4C4832624094D1C000AC84D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4C4832924094D9B000AC84D /* OTP.plist */,
+				F4C4832A24094DB8000AC84D /* OTP.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		F4C48334240963C4000AC84D /* ResultView */ = {
+			isa = PBXGroup;
+			children = (
+				F4C48335240963E3000AC84D /* ResultView.swift */,
+				F4C4833724096465000AC84D /* ResultView.xib */,
+			);
+			path = ResultView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20D92BDC25E890B000F6760C /* 02 - 01 - Advanced Setup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D92BFB25E890B000F6760C /* Build configuration list for PBXNativeTarget "02 - 01 - Advanced Setup" */;
+			buildPhases = (
+				20D92BDD25E890B000F6760C /* Sources */,
+				20D92BEE25E890B000F6760C /* Frameworks */,
+				20D92BF125E890B000F6760C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02 - 01 - Advanced Setup";
+			productName = iOSFastTrack;
+			productReference = 20D92BFE25E890B000F6760C /* 02 - 01 - Advanced Setup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20D92C0025E890B900F6760C /* 02 - 02 - Biometric Id */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D92C1F25E890B900F6760C /* Build configuration list for PBXNativeTarget "02 - 02 - Biometric Id" */;
+			buildPhases = (
+				20D92C0125E890B900F6760C /* Sources */,
+				20D92C1225E890B900F6760C /* Frameworks */,
+				20D92C1525E890B900F6760C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02 - 02 - Biometric Id";
+			productName = iOSFastTrack;
+			productReference = 20D92C2225E890B900F6760C /* 02 - 02 - Biometric Id.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20D92C2425E89D5200F6760C /* 02 - 03 - In Band Verification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D92C4225E89D5200F6760C /* Build configuration list for PBXNativeTarget "02 - 03 - In Band Verification" */;
+			buildPhases = (
+				20D92C2525E89D5200F6760C /* Sources */,
+				20D92C3525E89D5200F6760C /* Frameworks */,
+				20D92C3825E89D5200F6760C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02 - 03 - In Band Verification";
+			productName = iOSFastTrack;
+			productReference = 20D92C4525E89D5200F6760C /* 02 - 03 - In Band Verification.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20D92C4725E89D5400F6760C /* 02 - 04 - Change Pin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D92C6525E89D5400F6760C /* Build configuration list for PBXNativeTarget "02 - 04 - Change Pin" */;
+			buildPhases = (
+				20D92C4825E89D5400F6760C /* Sources */,
+				20D92C5825E89D5400F6760C /* Frameworks */,
+				20D92C5B25E89D5400F6760C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02 - 04 - Change Pin";
+			productName = iOSFastTrack;
+			productReference = 20D92C6825E89D5400F6760C /* 02 - 04 - Change Pin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20D92C6A25E89D5700F6760C /* 02 - 05 - Secure Keypad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D92C8825E89D5700F6760C /* Build configuration list for PBXNativeTarget "02 - 05 - Secure Keypad" */;
+			buildPhases = (
+				20D92C6B25E89D5700F6760C /* Sources */,
+				20D92C7B25E89D5700F6760C /* Frameworks */,
+				20D92C7E25E89D5700F6760C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02 - 05 - Secure Keypad";
+			productName = iOSFastTrack;
+			productReference = 20D92C8B25E89D5700F6760C /* 02 - 05 - Secure Keypad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20D92C8D25E89D5900F6760C /* 02 - 06 - Transaction Sign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D92CAB25E89D5900F6760C /* Build configuration list for PBXNativeTarget "02 - 06 - Transaction Sign" */;
+			buildPhases = (
+				20D92C8E25E89D5900F6760C /* Sources */,
+				20D92C9E25E89D5900F6760C /* Frameworks */,
+				20D92CA125E89D5900F6760C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02 - 06 - Transaction Sign";
+			productName = iOSFastTrack;
+			productReference = 20D92CAE25E89D5900F6760C /* 02 - 06 - Transaction Sign.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20D92CB025E89D5B00F6760C /* 03 - 01 - OOB Setup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D92CCE25E89D5B00F6760C /* Build configuration list for PBXNativeTarget "03 - 01 - OOB Setup" */;
+			buildPhases = (
+				20D92CB125E89D5B00F6760C /* Sources */,
+				20D92CC125E89D5B00F6760C /* Frameworks */,
+				20D92CC425E89D5B00F6760C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03 - 01 - OOB Setup";
+			productName = iOSFastTrack;
+			productReference = 20D92CD125E89D5B00F6760C /* 03 - 01 - OOB Setup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20D92CD325E89D5D00F6760C /* 03 - 02 - OOB Registration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D92CF125E89D5D00F6760C /* Build configuration list for PBXNativeTarget "03 - 02 - OOB Registration" */;
+			buildPhases = (
+				20D92CD425E89D5D00F6760C /* Sources */,
+				20D92CE425E89D5D00F6760C /* Frameworks */,
+				20D92CE725E89D5D00F6760C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03 - 02 - OOB Registration";
+			productName = iOSFastTrack;
+			productReference = 20D92CF425E89D5D00F6760C /* 03 - 02 - OOB Registration.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20D92CF625E89D5F00F6760C /* 03 - 03 - OOB Messaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D92D1425E89D5F00F6760C /* Build configuration list for PBXNativeTarget "03 - 03 - OOB Messaging" */;
+			buildPhases = (
+				20D92CF725E89D5F00F6760C /* Sources */,
+				20D92D0725E89D5F00F6760C /* Frameworks */,
+				20D92D0A25E89D5F00F6760C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03 - 03 - OOB Messaging";
+			productName = iOSFastTrack;
+			productReference = 20D92D1725E89D5F00F6760C /* 03 - 03 - OOB Messaging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4C4828B24041D27000AC84D /* 01-01-Setup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C482A024041D28000AC84D /* Build configuration list for PBXNativeTarget "01-01-Setup" */;
+			buildPhases = (
+				F4C4828824041D27000AC84D /* Sources */,
+				F4C4828924041D27000AC84D /* Frameworks */,
+				F4C4828A24041D27000AC84D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01-01-Setup";
+			productName = iOSFastTrack;
+			productReference = F4C4828C24041D27000AC84D /* 01-01-Setup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4C482D424069C4F000AC84D /* 01-02-Provisioning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C482E824069C4F000AC84D /* Build configuration list for PBXNativeTarget "01-02-Provisioning" */;
+			buildPhases = (
+				F4C482D524069C4F000AC84D /* Sources */,
+				F4C482DD24069C4F000AC84D /* Frameworks */,
+				F4C482E024069C4F000AC84D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01-02-Provisioning";
+			productName = iOSFastTrack;
+			productReference = F4C482EB24069C4F000AC84D /* 01-02-Provisioning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4C4830B24094CB0000AC84D /* 01-03-OTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C4832124094CB0000AC84D /* Build configuration list for PBXNativeTarget "01-03-OTP" */;
+			buildPhases = (
+				F4C4830C24094CB0000AC84D /* Sources */,
+				F4C4831724094CB0000AC84D /* Frameworks */,
+				F4C4831A24094CB0000AC84D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01-03-OTP";
+			productName = iOSFastTrack;
+			productReference = F4C4832424094CB0000AC84D /* 01-03-OTP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4C4828424041D27000AC84D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Thales DIS";
+				TargetAttributes = {
+					F4C4828B24041D27000AC84D = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = F4C4828724041D27000AC84D /* Build configuration list for PBXProject "iOSFastTrack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4C4828324041D27000AC84D;
+			productRefGroup = F4C4828D24041D27000AC84D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4C4828B24041D27000AC84D /* 01-01-Setup */,
+				F4C482D424069C4F000AC84D /* 01-02-Provisioning */,
+				F4C4830B24094CB0000AC84D /* 01-03-OTP */,
+				20D92BDC25E890B000F6760C /* 02 - 01 - Advanced Setup */,
+				20D92C0025E890B900F6760C /* 02 - 02 - Biometric Id */,
+				20D92C2425E89D5200F6760C /* 02 - 03 - In Band Verification */,
+				20D92C4725E89D5400F6760C /* 02 - 04 - Change Pin */,
+				20D92C6A25E89D5700F6760C /* 02 - 05 - Secure Keypad */,
+				20D92C8D25E89D5900F6760C /* 02 - 06 - Transaction Sign */,
+				20D92CB025E89D5B00F6760C /* 03 - 01 - OOB Setup */,
+				20D92CD325E89D5D00F6760C /* 03 - 02 - OOB Registration */,
+				20D92CF625E89D5F00F6760C /* 03 - 03 - OOB Messaging */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20D92BF125E890B000F6760C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92BF225E890B000F6760C /* ProvisionerView.xib in Resources */,
+				20CFAC5925ED55FC0033EBDD /* Media.xcassets in Resources */,
+				20D92BF325E890B000F6760C /* ResultView.xib in Resources */,
+				20D92D6025E8C79300F6760C /* AdvancedSetup.storyboard in Resources */,
+				20D92BF425E890B000F6760C /* OTP.storyboard in Resources */,
+				20D92BF525E890B000F6760C /* Localizable.strings in Resources */,
+				208457C925ECC95E00D7C26F /* Default-568h@2x.png in Resources */,
+				20D92BF625E890B000F6760C /* LaunchScreen.storyboard in Resources */,
+				20D92BF825E890B000F6760C /* Provisioning.storyboard in Resources */,
+				20D92D7F25E8CA1000F6760C /* Tutorials.xcassets in Resources */,
+				20D92BFA25E890B000F6760C /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C1525E890B900F6760C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C1625E890B900F6760C /* ProvisionerView.xib in Resources */,
+				20CFAC5A25ED55FC0033EBDD /* Media.xcassets in Resources */,
+				20D92D9025E8CB3900F6760C /* BiometricId.storyboard in Resources */,
+				20D92D7E25E8CA1000F6760C /* Tutorials.xcassets in Resources */,
+				20D92C1725E890B900F6760C /* ResultView.xib in Resources */,
+				20D92C1825E890B900F6760C /* OTP.storyboard in Resources */,
+				208457C625ECC8C700D7C26F /* Default-568h@2x.png in Resources */,
+				20D92C1925E890B900F6760C /* Localizable.strings in Resources */,
+				20D92C1A25E890B900F6760C /* LaunchScreen.storyboard in Resources */,
+				20D92C1C25E890B900F6760C /* Provisioning.storyboard in Resources */,
+				20D92C1E25E890B900F6760C /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C3825E89D5200F6760C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C3925E89D5200F6760C /* ProvisionerView.xib in Resources */,
+				20CFAC5B25ED55FC0033EBDD /* Media.xcassets in Resources */,
+				20D92D8025E8CA1100F6760C /* Tutorials.xcassets in Resources */,
+				20D92C3A25E89D5200F6760C /* ResultView.xib in Resources */,
+				20D92C3B25E89D5200F6760C /* OTP.storyboard in Resources */,
+				208457CA25ECC95F00D7C26F /* Default-568h@2x.png in Resources */,
+				20D92C3C25E89D5200F6760C /* Localizable.strings in Resources */,
+				20D92C3D25E89D5200F6760C /* LaunchScreen.storyboard in Resources */,
+				20D92C3F25E89D5200F6760C /* Provisioning.storyboard in Resources */,
+				20D92D9225E8CB4900F6760C /* InBandVerification.storyboard in Resources */,
+				20D92C4125E89D5200F6760C /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C5B25E89D5400F6760C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C5C25E89D5400F6760C /* ProvisionerView.xib in Resources */,
+				20CFAC5C25ED55FC0033EBDD /* Media.xcassets in Resources */,
+				20D92D7A25E8CA0500F6760C /* Tutorials.xcassets in Resources */,
+				20D92D9625E8CB6000F6760C /* ChangePin.storyboard in Resources */,
+				20D92C5D25E89D5400F6760C /* ResultView.xib in Resources */,
+				208457CB25ECC95F00D7C26F /* Default-568h@2x.png in Resources */,
+				20D92C5E25E89D5400F6760C /* OTP.storyboard in Resources */,
+				20D92C5F25E89D5400F6760C /* Localizable.strings in Resources */,
+				20D92C6025E89D5400F6760C /* LaunchScreen.storyboard in Resources */,
+				20D92C6225E89D5400F6760C /* Provisioning.storyboard in Resources */,
+				20D92C6425E89D5400F6760C /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C7E25E89D5700F6760C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C7F25E89D5700F6760C /* ProvisionerView.xib in Resources */,
+				20CFAC5D25ED55FC0033EBDD /* Media.xcassets in Resources */,
+				20D92D7B25E8CA0500F6760C /* Tutorials.xcassets in Resources */,
+				20D92C8025E89D5700F6760C /* ResultView.xib in Resources */,
+				20D92C8125E89D5700F6760C /* OTP.storyboard in Resources */,
+				208457CC25ECC96000D7C26F /* Default-568h@2x.png in Resources */,
+				20D92C8225E89D5700F6760C /* Localizable.strings in Resources */,
+				20D92D9A25E8CB7600F6760C /* SecureKeypad.storyboard in Resources */,
+				20D92C8325E89D5700F6760C /* LaunchScreen.storyboard in Resources */,
+				20D92C8525E89D5700F6760C /* Provisioning.storyboard in Resources */,
+				20D92C8725E89D5700F6760C /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92CA125E89D5900F6760C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CFAC5E25ED55FC0033EBDD /* Media.xcassets in Resources */,
+				20D92CA225E89D5900F6760C /* ProvisionerView.xib in Resources */,
+				20D92D7C25E8CA0500F6760C /* Tutorials.xcassets in Resources */,
+				20D92CA325E89D5900F6760C /* ResultView.xib in Resources */,
+				20D92CA425E89D5900F6760C /* OTP.storyboard in Resources */,
+				208457CD25ECC96100D7C26F /* Default-568h@2x.png in Resources */,
+				20D92CA525E89D5900F6760C /* Localizable.strings in Resources */,
+				20D92CA625E89D5900F6760C /* LaunchScreen.storyboard in Resources */,
+				20D92CA825E89D5900F6760C /* Provisioning.storyboard in Resources */,
+				20D92DA025E8CBA100F6760C /* TransactionSign.storyboard in Resources */,
+				20D92CAA25E89D5900F6760C /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92CC425E89D5B00F6760C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92CC525E89D5B00F6760C /* ProvisionerView.xib in Resources */,
+				20CFAC5F25ED55FC0033EBDD /* Media.xcassets in Resources */,
+				20D92CC625E89D5B00F6760C /* ResultView.xib in Resources */,
+				20D92CC725E89D5B00F6760C /* OTP.storyboard in Resources */,
+				20D92DA225E8CBB400F6760C /* OOBSetup.storyboard in Resources */,
+				20D92CC825E89D5B00F6760C /* Localizable.strings in Resources */,
+				208457CE25ECC96200D7C26F /* Default-568h@2x.png in Resources */,
+				20D92CC925E89D5B00F6760C /* LaunchScreen.storyboard in Resources */,
+				20D92D7225E8C9C300F6760C /* OOBTutorials.xcassets in Resources */,
+				20D92DA425E8CBBB00F6760C /* OOBSetup.plist in Resources */,
+				20D92CCB25E89D5B00F6760C /* Provisioning.storyboard in Resources */,
+				20D92CCD25E89D5B00F6760C /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92CE725E89D5D00F6760C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92DA625E8CBCD00F6760C /* OobRegistration.plist in Resources */,
+				20CFAC6025ED55FC0033EBDD /* Media.xcassets in Resources */,
+				20D92CE825E89D5D00F6760C /* ProvisionerView.xib in Resources */,
+				20D92CE925E89D5D00F6760C /* ResultView.xib in Resources */,
+				20D92CEA25E89D5D00F6760C /* OTP.storyboard in Resources */,
+				20D92CEB25E89D5D00F6760C /* Localizable.strings in Resources */,
+				208457C825ECC8D700D7C26F /* Default-568h@2x.png in Resources */,
+				20D92CEC25E89D5D00F6760C /* LaunchScreen.storyboard in Resources */,
+				20D92DA825E8CBD400F6760C /* OobRegistration.storyboard in Resources */,
+				20D92D7325E8C9C300F6760C /* OOBTutorials.xcassets in Resources */,
+				20D92CEE25E89D5D00F6760C /* Provisioning.storyboard in Resources */,
+				20D92CF025E89D5D00F6760C /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92D0A25E89D5F00F6760C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92D0B25E89D5F00F6760C /* ProvisionerView.xib in Resources */,
+				20CFAC6125ED55FC0033EBDD /* Media.xcassets in Resources */,
+				20D92D0C25E89D5F00F6760C /* ResultView.xib in Resources */,
+				20D92D0D25E89D5F00F6760C /* OTP.storyboard in Resources */,
+				20D92DAC25E8CBEA00F6760C /* OobMessaging.plist in Resources */,
+				20D92D0E25E89D5F00F6760C /* Localizable.strings in Resources */,
+				208457CF25ECC96300D7C26F /* Default-568h@2x.png in Resources */,
+				20D92D0F25E89D5F00F6760C /* LaunchScreen.storyboard in Resources */,
+				20D92D7425E8C9C300F6760C /* OOBTutorials.xcassets in Resources */,
+				20D92DAA25E8CBE100F6760C /* OobMessaging.storyboard in Resources */,
+				20D92D1125E89D5F00F6760C /* Provisioning.storyboard in Resources */,
+				20D92D1325E89D5F00F6760C /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C4828A24041D27000AC84D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C482C424054C40000AC84D /* Localizable.strings in Resources */,
+				20CFAC5625ED55FC0033EBDD /* Media.xcassets in Resources */,
+				F4C4829C24041D28000AC84D /* LaunchScreen.storyboard in Resources */,
+				F4C4829724041D27000AC84D /* Setup.storyboard in Resources */,
+				F4C482BD240531D1000AC84D /* LoadingView.xib in Resources */,
+				20D92D8225E8CA4100F6760C /* GettingStarted.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C482E024069C4F000AC84D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92D8325E8CA4100F6760C /* GettingStarted.xcassets in Resources */,
+				20CFAC5725ED55FC0033EBDD /* Media.xcassets in Resources */,
+				F4C482FB24081783000AC84D /* ProvisionerView.xib in Resources */,
+				F4C482E124069C4F000AC84D /* Localizable.strings in Resources */,
+				F4C482E224069C4F000AC84D /* LaunchScreen.storyboard in Resources */,
+				F4C482E524069C4F000AC84D /* Provisioning.storyboard in Resources */,
+				F4C482E624069C4F000AC84D /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C4831A24094CB0000AC84D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C4831B24094CB0000AC84D /* ProvisionerView.xib in Resources */,
+				F4C4833824096465000AC84D /* ResultView.xib in Resources */,
+				F4C4832B24094DB8000AC84D /* OTP.storyboard in Resources */,
+				20D92D8425E8CA4100F6760C /* GettingStarted.xcassets in Resources */,
+				20CFAC5825ED55FC0033EBDD /* Media.xcassets in Resources */,
+				F4C4831C24094CB0000AC84D /* Localizable.strings in Resources */,
+				F4C4831D24094CB0000AC84D /* LaunchScreen.storyboard in Resources */,
+				F4C4831F24094CB0000AC84D /* Provisioning.storyboard in Resources */,
+				F4C4832024094CB0000AC84D /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20D92BDD25E890B000F6760C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92BDE25E890B000F6760C /* OtpConfig.swift in Sources */,
+				208457D125ECCBBB00D7C26F /* AdvancedSetupConfig.swift in Sources */,
+				208457E325ECDBC700D7C26F /* AppDelegate.swift in Sources */,
+				20D92BDF25E890B000F6760C /* ProvisioningConfig.swift in Sources */,
+				20D92BE025E890B000F6760C /* ResultView.swift in Sources */,
+				208457D525ECCC0900D7C26F /* AdvancedSetupLogic.swift in Sources */,
+				20D92BE225E890B000F6760C /* OtpViewController.swift in Sources */,
+				20D92BE325E890B000F6760C /* SetupConfig.swift in Sources */,
+				20D92BE425E890B000F6760C /* SetupLogic.swift in Sources */,
+				20D92BE525E890B000F6760C /* ProvisioningViewController.swift in Sources */,
+				20D92BE625E890B000F6760C /* LoadingView.swift in Sources */,
+				208457E125ECD88600D7C26F /* AdvancedSetupViewController.swift in Sources */,
+				20D92BE725E890B000F6760C /* Lifespan.swift in Sources */,
+				20D92BE825E890B000F6760C /* ProvisioningLogic.swift in Sources */,
+				20D92BE925E890B000F6760C /* MainViewProtocol.swift in Sources */,
+				20D92BEA25E890B000F6760C /* ProvisionerView.swift in Sources */,
+				20D92BEB25E890B000F6760C /* OtpLogic.swift in Sources */,
+				20D92BEC25E890B000F6760C /* SetupViewController.swift in Sources */,
+				20D92BED25E890B000F6760C /* OtpValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C0125E890B900F6760C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C0225E890B900F6760C /* OtpConfig.swift in Sources */,
+				20D92C0325E890B900F6760C /* ProvisioningConfig.swift in Sources */,
+				20D92C0425E890B900F6760C /* ResultView.swift in Sources */,
+				20D92C0625E890B900F6760C /* OtpViewController.swift in Sources */,
+				20D92C0725E890B900F6760C /* SetupConfig.swift in Sources */,
+				208457EB25ECE01300D7C26F /* BiometricIdLogic.swift in Sources */,
+				20D92C0825E890B900F6760C /* SetupLogic.swift in Sources */,
+				20D92C0925E890B900F6760C /* ProvisioningViewController.swift in Sources */,
+				20D92C0A25E890B900F6760C /* LoadingView.swift in Sources */,
+				208457D625ECCC0D00D7C26F /* AdvancedSetupLogic.swift in Sources */,
+				E44940B025ED110D00211BF1 /* AdvancedSetupViewController.swift in Sources */,
+				20D92C0B25E890B900F6760C /* Lifespan.swift in Sources */,
+				20D92C0C25E890B900F6760C /* ProvisioningLogic.swift in Sources */,
+				208457F225ECE02700D7C26F /* BiometricIdViewController.swift in Sources */,
+				20D92C0D25E890B900F6760C /* MainViewProtocol.swift in Sources */,
+				208457E425ECDBC700D7C26F /* AppDelegate.swift in Sources */,
+				20D92C0E25E890B900F6760C /* ProvisionerView.swift in Sources */,
+				20D92C0F25E890B900F6760C /* OtpLogic.swift in Sources */,
+				20D92C1025E890B900F6760C /* SetupViewController.swift in Sources */,
+				20D92C1125E890B900F6760C /* OtpValue.swift in Sources */,
+				208457DB25ECCC1400D7C26F /* AdvancedSetupConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C2525E89D5200F6760C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4493FD825ED0FF700211BF1 /* InBandVerificationConfig.swift in Sources */,
+				20D92C2625E89D5200F6760C /* OtpConfig.swift in Sources */,
+				20D92C2725E89D5200F6760C /* ProvisioningConfig.swift in Sources */,
+				20D92C2825E89D5200F6760C /* ResultView.swift in Sources */,
+				20D92C2925E89D5200F6760C /* OtpViewController.swift in Sources */,
+				20D92C2A25E89D5200F6760C /* SetupConfig.swift in Sources */,
+				208457EC25ECE01300D7C26F /* BiometricIdLogic.swift in Sources */,
+				20D92C2B25E89D5200F6760C /* SetupLogic.swift in Sources */,
+				20D92C2C25E89D5200F6760C /* ProvisioningViewController.swift in Sources */,
+				20D92C2D25E89D5200F6760C /* LoadingView.swift in Sources */,
+				208457D725ECCC0E00D7C26F /* AdvancedSetupLogic.swift in Sources */,
+				20D92C2E25E89D5200F6760C /* Lifespan.swift in Sources */,
+				20D92C2F25E89D5200F6760C /* ProvisioningLogic.swift in Sources */,
+				208457F325ECE02700D7C26F /* BiometricIdViewController.swift in Sources */,
+				E44940BE25ED110E00211BF1 /* AdvancedSetupViewController.swift in Sources */,
+				20D92C3025E89D5200F6760C /* MainViewProtocol.swift in Sources */,
+				208457E525ECDBC700D7C26F /* AppDelegate.swift in Sources */,
+				20D92C3125E89D5200F6760C /* ProvisionerView.swift in Sources */,
+				20D92C3225E89D5200F6760C /* OtpLogic.swift in Sources */,
+				20D92C3325E89D5200F6760C /* SetupViewController.swift in Sources */,
+				E449400325ED102100211BF1 /* InBandVerificationViewController.swift in Sources */,
+				E4493FF425ED101100211BF1 /* InBandVerificationLogic.swift in Sources */,
+				20D92C3425E89D5200F6760C /* OtpValue.swift in Sources */,
+				208457DC25ECCC1600D7C26F /* AdvancedSetupConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C4825E89D5400F6760C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C4925E89D5400F6760C /* OtpConfig.swift in Sources */,
+				20D92C4A25E89D5400F6760C /* ProvisioningConfig.swift in Sources */,
+				20D92C4B25E89D5400F6760C /* ResultView.swift in Sources */,
+				E44941FE25ED113400211BF1 /* InBandVerificationLogic.swift in Sources */,
+				20D92C4C25E89D5400F6760C /* OtpViewController.swift in Sources */,
+				20D92C4D25E89D5400F6760C /* SetupConfig.swift in Sources */,
+				208457ED25ECE01300D7C26F /* BiometricIdLogic.swift in Sources */,
+				20D92C4E25E89D5400F6760C /* SetupLogic.swift in Sources */,
+				20D92C4F25E89D5400F6760C /* ProvisioningViewController.swift in Sources */,
+				20D92C5025E89D5400F6760C /* LoadingView.swift in Sources */,
+				E449430725ED115100211BF1 /* ChangePinViewController.swift in Sources */,
+				208457D825ECCC0F00D7C26F /* AdvancedSetupLogic.swift in Sources */,
+				E44940CC25ED110F00211BF1 /* AdvancedSetupViewController.swift in Sources */,
+				20D92C5125E89D5400F6760C /* Lifespan.swift in Sources */,
+				20D92C5225E89D5400F6760C /* ProvisioningLogic.swift in Sources */,
+				208457F425ECE02700D7C26F /* BiometricIdViewController.swift in Sources */,
+				20D92C5325E89D5400F6760C /* MainViewProtocol.swift in Sources */,
+				208457E625ECDBC700D7C26F /* AppDelegate.swift in Sources */,
+				E44941AA25ED112800211BF1 /* InBandVerificationConfig.swift in Sources */,
+				20D92C5425E89D5400F6760C /* ProvisionerView.swift in Sources */,
+				E44942A625ED114600211BF1 /* ChangePinLogic.swift in Sources */,
+				20D92C5525E89D5400F6760C /* OtpLogic.swift in Sources */,
+				20D92C5625E89D5400F6760C /* SetupViewController.swift in Sources */,
+				20D92C5725E89D5400F6760C /* OtpValue.swift in Sources */,
+				208457DD25ECCC1700D7C26F /* AdvancedSetupConfig.swift in Sources */,
+				E449425225ED113D00211BF1 /* InBandVerificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C6B25E89D5700F6760C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C6C25E89D5700F6760C /* OtpConfig.swift in Sources */,
+				20D92C6D25E89D5700F6760C /* ProvisioningConfig.swift in Sources */,
+				20D92C6E25E89D5700F6760C /* ResultView.swift in Sources */,
+				E449437525ED116700211BF1 /* SecureKeypadViewController.swift in Sources */,
+				E449420C25ED113400211BF1 /* InBandVerificationLogic.swift in Sources */,
+				20D92C6F25E89D5700F6760C /* OtpViewController.swift in Sources */,
+				20D92C7025E89D5700F6760C /* SetupConfig.swift in Sources */,
+				208457EE25ECE01300D7C26F /* BiometricIdLogic.swift in Sources */,
+				20D92C7125E89D5700F6760C /* SetupLogic.swift in Sources */,
+				20D92C7225E89D5700F6760C /* ProvisioningViewController.swift in Sources */,
+				20D92C7325E89D5700F6760C /* LoadingView.swift in Sources */,
+				E449431525ED115200211BF1 /* ChangePinViewController.swift in Sources */,
+				208457D925ECCC1000D7C26F /* AdvancedSetupLogic.swift in Sources */,
+				E44940DA25ED111000211BF1 /* AdvancedSetupViewController.swift in Sources */,
+				20D92C7425E89D5700F6760C /* Lifespan.swift in Sources */,
+				20D92C7525E89D5700F6760C /* ProvisioningLogic.swift in Sources */,
+				208457F525ECE02700D7C26F /* BiometricIdViewController.swift in Sources */,
+				20D92C7625E89D5700F6760C /* MainViewProtocol.swift in Sources */,
+				208457E725ECDBC700D7C26F /* AppDelegate.swift in Sources */,
+				E44941C625ED112B00211BF1 /* InBandVerificationConfig.swift in Sources */,
+				20D92C7725E89D5700F6760C /* ProvisionerView.swift in Sources */,
+				E44942B425ED114700211BF1 /* ChangePinLogic.swift in Sources */,
+				20D92C7825E89D5700F6760C /* OtpLogic.swift in Sources */,
+				20D92C7925E89D5700F6760C /* SetupViewController.swift in Sources */,
+				20D92C7A25E89D5700F6760C /* OtpValue.swift in Sources */,
+				208457DE25ECCC1700D7C26F /* AdvancedSetupConfig.swift in Sources */,
+				E449426025ED113D00211BF1 /* InBandVerificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92C8E25E89D5900F6760C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92C8F25E89D5900F6760C /* OtpConfig.swift in Sources */,
+				20D92C9025E89D5900F6760C /* ProvisioningConfig.swift in Sources */,
+				20D92C9125E89D5900F6760C /* ResultView.swift in Sources */,
+				E449421A25ED113500211BF1 /* InBandVerificationLogic.swift in Sources */,
+				20D92C9225E89D5900F6760C /* OtpViewController.swift in Sources */,
+				20D92C9325E89D5900F6760C /* SetupConfig.swift in Sources */,
+				206CDB1E25FB748300F81971 /* TransactionSignViewController.swift in Sources */,
+				208457EF25ECE01300D7C26F /* BiometricIdLogic.swift in Sources */,
+				20D92C9425E89D5900F6760C /* SetupLogic.swift in Sources */,
+				20D92C9525E89D5900F6760C /* ProvisioningViewController.swift in Sources */,
+				20D92C9625E89D5900F6760C /* LoadingView.swift in Sources */,
+				E449432325ED115200211BF1 /* ChangePinViewController.swift in Sources */,
+				208457DA25ECCC1100D7C26F /* AdvancedSetupLogic.swift in Sources */,
+				E44940E825ED111100211BF1 /* AdvancedSetupViewController.swift in Sources */,
+				20D92C9725E89D5900F6760C /* Lifespan.swift in Sources */,
+				E449445225ED119500211BF1 /* SecureKeypadViewController.swift in Sources */,
+				20D92C9825E89D5900F6760C /* ProvisioningLogic.swift in Sources */,
+				208457F625ECE02700D7C26F /* BiometricIdViewController.swift in Sources */,
+				20D92C9925E89D5900F6760C /* MainViewProtocol.swift in Sources */,
+				208457E825ECDBC700D7C26F /* AppDelegate.swift in Sources */,
+				E44943AB25ED117300211BF1 /* TransactionSignLogic.swift in Sources */,
+				E44941B825ED112A00211BF1 /* InBandVerificationConfig.swift in Sources */,
+				20D92C9A25E89D5900F6760C /* ProvisionerView.swift in Sources */,
+				E44942C225ED114800211BF1 /* ChangePinLogic.swift in Sources */,
+				20D92C9B25E89D5900F6760C /* OtpLogic.swift in Sources */,
+				20D92C9C25E89D5900F6760C /* SetupViewController.swift in Sources */,
+				20D92C9D25E89D5900F6760C /* OtpValue.swift in Sources */,
+				208457DF25ECCC1900D7C26F /* AdvancedSetupConfig.swift in Sources */,
+				E449426E25ED113E00211BF1 /* InBandVerificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92CB125E89D5B00F6760C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92CB225E89D5B00F6760C /* OtpConfig.swift in Sources */,
+				E449405C25ED110200211BF1 /* AdvancedSetupConfig.swift in Sources */,
+				20D92CB325E89D5B00F6760C /* ProvisioningConfig.swift in Sources */,
+				20D92CB425E89D5B00F6760C /* ResultView.swift in Sources */,
+				20CFAC6425EDCE570033EBDD /* AppDelegate.swift in Sources */,
+				E449408625ED110800211BF1 /* AdvancedSetupLogic.swift in Sources */,
+				E449412025ED111800211BF1 /* BiometricIdLogic.swift in Sources */,
+				206CDB1B25FB5AB000F81971 /* OOBSetupViewController.swift in Sources */,
+				20D92CB525E89D5B00F6760C /* OtpViewController.swift in Sources */,
+				20D92CB625E89D5B00F6760C /* SetupConfig.swift in Sources */,
+				20D92CB725E89D5B00F6760C /* SetupLogic.swift in Sources */,
+				20D92CB825E89D5B00F6760C /* ProvisioningViewController.swift in Sources */,
+				E44942D025ED114800211BF1 /* ChangePinLogic.swift in Sources */,
+				20D92CB925E89D5B00F6760C /* LoadingView.swift in Sources */,
+				E44941D425ED112C00211BF1 /* InBandVerificationConfig.swift in Sources */,
+				E44940F625ED111100211BF1 /* AdvancedSetupViewController.swift in Sources */,
+				E449414A25ED111D00211BF1 /* BiometricIdViewController.swift in Sources */,
+				E449433125ED115300211BF1 /* ChangePinViewController.swift in Sources */,
+				20D92CBA25E89D5B00F6760C /* Lifespan.swift in Sources */,
+				20D92CBB25E89D5B00F6760C /* ProvisioningLogic.swift in Sources */,
+				E449442825ED119100211BF1 /* SecureKeypadViewController.swift in Sources */,
+				E44943FE25ED118A00211BF1 /* TransactionSignLogic.swift in Sources */,
+				20D92CBC25E89D5B00F6760C /* MainViewProtocol.swift in Sources */,
+				E4000F7525EF7EE2007FDCEA /* OOBSetupLogic.swift in Sources */,
+				20D92CBD25E89D5B00F6760C /* ProvisionerView.swift in Sources */,
+				E44943F025ED118600211BF1 /* TransactionSignViewController.swift in Sources */,
+				20D92CBE25E89D5B00F6760C /* OtpLogic.swift in Sources */,
+				E4000FC925EF86BE007FDCEA /* OOBSetupConfig.swift in Sources */,
+				E449427C25ED113F00211BF1 /* InBandVerificationViewController.swift in Sources */,
+				E449423625ED113800211BF1 /* InBandVerificationLogic.swift in Sources */,
+				20D92CBF25E89D5B00F6760C /* SetupViewController.swift in Sources */,
+				20D92CC025E89D5B00F6760C /* OtpValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92CD425E89D5D00F6760C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FA4E6B25F5ADF3002799BA /* AppDelegate.swift in Sources */,
+				20D92CD525E89D5D00F6760C /* OtpConfig.swift in Sources */,
+				E449406A25ED110300211BF1 /* AdvancedSetupConfig.swift in Sources */,
+				206CDB1C25FB5B2100F81971 /* OOBSetupViewController.swift in Sources */,
+				E4000F4A25EF7EDA007FDCEA /* OOBRegistrationLogic.swift in Sources */,
+				20D92CD625E89D5D00F6760C /* ProvisioningConfig.swift in Sources */,
+				20D92CD725E89D5D00F6760C /* ResultView.swift in Sources */,
+				E449409425ED110900211BF1 /* AdvancedSetupLogic.swift in Sources */,
+				E449412E25ED111900211BF1 /* BiometricIdLogic.swift in Sources */,
+				20D92CD825E89D5D00F6760C /* OtpViewController.swift in Sources */,
+				20D92CD925E89D5D00F6760C /* SetupConfig.swift in Sources */,
+				20D92CDA25E89D5D00F6760C /* SetupLogic.swift in Sources */,
+				20D92CDB25E89D5D00F6760C /* ProvisioningViewController.swift in Sources */,
+				E44942DE25ED114900211BF1 /* ChangePinLogic.swift in Sources */,
+				20D92CDC25E89D5D00F6760C /* LoadingView.swift in Sources */,
+				E4000F8325EF7EE2007FDCEA /* OOBSetupLogic.swift in Sources */,
+				E44941E225ED112D00211BF1 /* InBandVerificationConfig.swift in Sources */,
+				E449410425ED111200211BF1 /* AdvancedSetupViewController.swift in Sources */,
+				E449415825ED111E00211BF1 /* BiometricIdViewController.swift in Sources */,
+				E449433F25ED115400211BF1 /* ChangePinViewController.swift in Sources */,
+				20D92CDD25E89D5D00F6760C /* Lifespan.swift in Sources */,
+				20D92CDE25E89D5D00F6760C /* ProvisioningLogic.swift in Sources */,
+				E4000F4825EF7EDA007FDCEA /* OOBRegistrationViewController.swift in Sources */,
+				E4000FCA25EF86BE007FDCEA /* OOBSetupConfig.swift in Sources */,
+				E449443625ED119300211BF1 /* SecureKeypadViewController.swift in Sources */,
+				E449440C25ED118B00211BF1 /* TransactionSignLogic.swift in Sources */,
+				20D92CDF25E89D5D00F6760C /* MainViewProtocol.swift in Sources */,
+				20D92CE025E89D5D00F6760C /* ProvisionerView.swift in Sources */,
+				E44943D425ED118500211BF1 /* TransactionSignViewController.swift in Sources */,
+				20D92CE125E89D5D00F6760C /* OtpLogic.swift in Sources */,
+				E449428A25ED114000211BF1 /* InBandVerificationViewController.swift in Sources */,
+				E449422825ED113700211BF1 /* InBandVerificationLogic.swift in Sources */,
+				20D92CE225E89D5D00F6760C /* SetupViewController.swift in Sources */,
+				20D92CE325E89D5D00F6760C /* OtpValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D92CF725E89D5F00F6760C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D92CF825E89D5F00F6760C /* OtpConfig.swift in Sources */,
+				E449407825ED110300211BF1 /* AdvancedSetupConfig.swift in Sources */,
+				E4000F5A25EF7EDB007FDCEA /* OOBRegistrationLogic.swift in Sources */,
+				206CDB1D25FB5B2200F81971 /* OOBSetupViewController.swift in Sources */,
+				20D92CF925E89D5F00F6760C /* ProvisioningConfig.swift in Sources */,
+				20D92CFA25E89D5F00F6760C /* ResultView.swift in Sources */,
+				E44940A225ED110A00211BF1 /* AdvancedSetupLogic.swift in Sources */,
+				E449413C25ED111A00211BF1 /* BiometricIdLogic.swift in Sources */,
+				20D92CFB25E89D5F00F6760C /* OtpViewController.swift in Sources */,
+				20D92CFC25E89D5F00F6760C /* SetupConfig.swift in Sources */,
+				20D92CFD25E89D5F00F6760C /* SetupLogic.swift in Sources */,
+				20D92CFE25E89D5F00F6760C /* ProvisioningViewController.swift in Sources */,
+				E44942EC25ED114A00211BF1 /* ChangePinLogic.swift in Sources */,
+				E4000FA025EF7EEB007FDCEA /* OOBMessagingLogic.swift in Sources */,
+				20D92CFF25E89D5F00F6760C /* LoadingView.swift in Sources */,
+				E4000FCB25EF86BE007FDCEA /* OOBSetupConfig.swift in Sources */,
+				E4000F9125EF7EE3007FDCEA /* OOBSetupLogic.swift in Sources */,
+				E44941F025ED112E00211BF1 /* InBandVerificationConfig.swift in Sources */,
+				E449411225ED111300211BF1 /* AdvancedSetupViewController.swift in Sources */,
+				20FA4E6C25F5ADF3002799BA /* AppDelegate.swift in Sources */,
+				E449416625ED111E00211BF1 /* BiometricIdViewController.swift in Sources */,
+				E449434D25ED115400211BF1 /* ChangePinViewController.swift in Sources */,
+				20D92D0025E89D5F00F6760C /* Lifespan.swift in Sources */,
+				20D92D0125E89D5F00F6760C /* ProvisioningLogic.swift in Sources */,
+				E4000F5825EF7EDB007FDCEA /* OOBRegistrationViewController.swift in Sources */,
+				E449444425ED119300211BF1 /* SecureKeypadViewController.swift in Sources */,
+				E449441A25ED118C00211BF1 /* TransactionSignLogic.swift in Sources */,
+				E4000F9F25EF7EEB007FDCEA /* OOBMessagingViewController.swift in Sources */,
+				20D92D0225E89D5F00F6760C /* MainViewProtocol.swift in Sources */,
+				20D92D0325E89D5F00F6760C /* ProvisionerView.swift in Sources */,
+				E44943E225ED118600211BF1 /* TransactionSignViewController.swift in Sources */,
+				20D92D0425E89D5F00F6760C /* OtpLogic.swift in Sources */,
+				E449429825ED114100211BF1 /* InBandVerificationViewController.swift in Sources */,
+				E449424425ED113900211BF1 /* InBandVerificationLogic.swift in Sources */,
+				20D92D0525E89D5F00F6760C /* SetupViewController.swift in Sources */,
+				20D92D0625E89D5F00F6760C /* OtpValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C4828824041D27000AC84D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C4829424041D27000AC84D /* SetupViewController.swift in Sources */,
+				F4C482B0240423AD000AC84D /* SetupLogic.swift in Sources */,
+				F4C4829024041D27000AC84D /* AppDelegate.swift in Sources */,
+				F4C482FD240825A9000AC84D /* MainViewProtocol.swift in Sources */,
+				F4C482B824050F2D000AC84D /* LoadingView.swift in Sources */,
+				F4C482A624041F67000AC84D /* SetupConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C482D524069C4F000AC84D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C482F224069D4F000AC84D /* ProvisioningConfig.swift in Sources */,
+				F4C482D824069C4F000AC84D /* AppDelegate.swift in Sources */,
+				F4C482EF24069CC7000AC84D /* SetupConfig.swift in Sources */,
+				F4C482EE24069CC4000AC84D /* SetupLogic.swift in Sources */,
+				F4C482F62406C904000AC84D /* ProvisioningViewController.swift in Sources */,
+				F4C482D924069C4F000AC84D /* LoadingView.swift in Sources */,
+				F4C482F42406A4AD000AC84D /* ProvisioningLogic.swift in Sources */,
+				F4C482DA24069C4F000AC84D /* MainViewProtocol.swift in Sources */,
+				F4C482FC24081A9A000AC84D /* ProvisionerView.swift in Sources */,
+				F4C482F024069CDA000AC84D /* SetupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C4830C24094CB0000AC84D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C4832D24095D54000AC84D /* OtpConfig.swift in Sources */,
+				F4C4830D24094CB0000AC84D /* ProvisioningConfig.swift in Sources */,
+				F4C48336240963E3000AC84D /* ResultView.swift in Sources */,
+				F4C4830E24094CB0000AC84D /* AppDelegate.swift in Sources */,
+				F4C4833A240972FD000AC84D /* OtpViewController.swift in Sources */,
+				F4C4830F24094CB0000AC84D /* SetupConfig.swift in Sources */,
+				F4C4831024094CB0000AC84D /* SetupLogic.swift in Sources */,
+				F4C4831124094CB0000AC84D /* ProvisioningViewController.swift in Sources */,
+				F4C4831224094CB0000AC84D /* LoadingView.swift in Sources */,
+				F4C4833324096080000AC84D /* Lifespan.swift in Sources */,
+				F4C4831324094CB0000AC84D /* ProvisioningLogic.swift in Sources */,
+				F4C4831424094CB0000AC84D /* MainViewProtocol.swift in Sources */,
+				F4C4831524094CB0000AC84D /* ProvisionerView.swift in Sources */,
+				F4C4832F24095F9A000AC84D /* OtpLogic.swift in Sources */,
+				F4C4831624094CB0000AC84D /* SetupViewController.swift in Sources */,
+				F4C4833124095FE4000AC84D /* OtpValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4C4829524041D27000AC84D /* Setup.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C4829624041D27000AC84D /* Base */,
+			);
+			name = Setup.storyboard;
+			sourceTree = "<group>";
+		};
+		F4C4829A24041D28000AC84D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C4829B24041D28000AC84D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20D92BFC25E890B000F6760C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/02 - Tutorials/01 - Advanced Setup/Support Files/AdvancedSetup.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20D92BFD25E890B000F6760C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/02 - Tutorials/01 - Advanced Setup/Support Files/AdvancedSetup.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20D92C2025E890B900F6760C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/02 - Tutorials/02 - Biometric Id/Support Files/BiometricId.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20D92C2125E890B900F6760C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/02 - Tutorials/02 - Biometric Id/Support Files/BiometricId.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20D92C4325E89D5200F6760C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/02 - Tutorials/03 - In Band Verification/Support Files/InBandVerification.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20D92C4425E89D5200F6760C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/02 - Tutorials/03 - In Band Verification/Support Files/InBandVerification.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20D92C6625E89D5400F6760C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/02 - Tutorials/04 - Change Pin/Support Files/ChangePin.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20D92C6725E89D5400F6760C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/02 - Tutorials/04 - Change Pin/Support Files/ChangePin.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20D92C8925E89D5700F6760C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/02 - Tutorials/05 - Secure Keypad/Support Files/SecureKeypad.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20D92C8A25E89D5700F6760C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/02 - Tutorials/05 - Secure Keypad/Support Files/SecureKeypad.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20D92CAC25E89D5900F6760C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/02 - Tutorials/06 - Transaction Sign/Support Files/TransactionSign.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20D92CAD25E89D5900F6760C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/02 - Tutorials/06 - Transaction Sign/Support Files/TransactionSign.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20D92CCF25E89D5B00F6760C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/03 - OOB Tutorials/01 - OOB Setup/Support Files/OOBSetup.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20D92CD025E89D5B00F6760C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/03 - OOB Tutorials/01 - OOB Setup/Support Files/OOBSetup.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20D92CF225E89D5D00F6760C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/03 - OOB Tutorials/02 - OOB Registration/Support Files/OobRegistration.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20D92CF325E89D5D00F6760C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/03 - OOB Tutorials/02 - OOB Registration/Support Files/OobRegistration.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20D92D1525E89D5F00F6760C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/03 - OOB Tutorials/03 - OOB Messaging/Support Files/OobMessaging.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20D92D1625E89D5F00F6760C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/03 - OOB Tutorials/03 - OOB Messaging/Support Files/OobMessaging.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4C4829E24041D28000AC84D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/$(CONFIGURATION)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+					"-all_load",
+					"-fprofile-arcs",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSFastTrack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4C4829F24041D28000AC84D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/$(CONFIGURATION)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+					"-all_load",
+					"-fprofile-arcs",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSFastTrack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4C482A124041D28000AC84D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "01-GettingStarted/01-Setup/Support Files/Setup.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4C482A224041D28000AC84D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "01-GettingStarted/01-Setup/Support Files/Setup.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4C482E924069C4F000AC84D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMY4YJ949Q;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "01-GettingStarted/02-Provisioning/Support Files/Provisioning.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4C482EA24069C4F000AC84D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMY4YJ949Q;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "01-GettingStarted/02-Provisioning/Support Files/Provisioning.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4C4832224094CB0000AC84D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "01-GettingStarted/03-OTP/Support Files/OTP.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4C4832324094CB0000AC84D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F83X2SF75;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "01-GettingStarted/03-OTP/Support Files/OTP.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.iOSFastTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20D92BFB25E890B000F6760C /* Build configuration list for PBXNativeTarget "02 - 01 - Advanced Setup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D92BFC25E890B000F6760C /* Debug */,
+				20D92BFD25E890B000F6760C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D92C1F25E890B900F6760C /* Build configuration list for PBXNativeTarget "02 - 02 - Biometric Id" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D92C2025E890B900F6760C /* Debug */,
+				20D92C2125E890B900F6760C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D92C4225E89D5200F6760C /* Build configuration list for PBXNativeTarget "02 - 03 - In Band Verification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D92C4325E89D5200F6760C /* Debug */,
+				20D92C4425E89D5200F6760C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D92C6525E89D5400F6760C /* Build configuration list for PBXNativeTarget "02 - 04 - Change Pin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D92C6625E89D5400F6760C /* Debug */,
+				20D92C6725E89D5400F6760C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D92C8825E89D5700F6760C /* Build configuration list for PBXNativeTarget "02 - 05 - Secure Keypad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D92C8925E89D5700F6760C /* Debug */,
+				20D92C8A25E89D5700F6760C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D92CAB25E89D5900F6760C /* Build configuration list for PBXNativeTarget "02 - 06 - Transaction Sign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D92CAC25E89D5900F6760C /* Debug */,
+				20D92CAD25E89D5900F6760C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D92CCE25E89D5B00F6760C /* Build configuration list for PBXNativeTarget "03 - 01 - OOB Setup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D92CCF25E89D5B00F6760C /* Debug */,
+				20D92CD025E89D5B00F6760C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D92CF125E89D5D00F6760C /* Build configuration list for PBXNativeTarget "03 - 02 - OOB Registration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D92CF225E89D5D00F6760C /* Debug */,
+				20D92CF325E89D5D00F6760C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D92D1425E89D5F00F6760C /* Build configuration list for PBXNativeTarget "03 - 03 - OOB Messaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D92D1525E89D5F00F6760C /* Debug */,
+				20D92D1625E89D5F00F6760C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C4828724041D27000AC84D /* Build configuration list for PBXProject "iOSFastTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C4829E24041D28000AC84D /* Debug */,
+				F4C4829F24041D28000AC84D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C482A024041D28000AC84D /* Build configuration list for PBXNativeTarget "01-01-Setup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C482A124041D28000AC84D /* Debug */,
+				F4C482A224041D28000AC84D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C482E824069C4F000AC84D /* Build configuration list for PBXNativeTarget "01-02-Provisioning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C482E924069C4F000AC84D /* Debug */,
+				F4C482EA24069C4F000AC84D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C4832124094CB0000AC84D /* Build configuration list for PBXNativeTarget "01-03-OTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C4832224094CB0000AC84D /* Debug */,
+				F4C4832324094CB0000AC84D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4C4828424041D27000AC84D /* Project object */;
+}
