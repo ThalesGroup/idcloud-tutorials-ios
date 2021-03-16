@@ -64,8 +64,7 @@ class OtpViewController: ProvisioningViewController {
      Retrieves user PIN and generates OTP.
      */
     private func getPinAndGenerateOtp() {
-        showSecureKeypadPinInput { (pinInput) in
-            let pinAuthInput = EMProtectorAuthInput.init(authInput: pinInput)
+        showSecureKeypadPinInput { (pinAuthInput) in
             if let token: EMProtectorOathTokenDevice = ProvisioningLogic.getToken() {
                 self.generateAndDisplayOtp(token: token, pinAuthInput: pinAuthInput)
             }
@@ -87,30 +86,31 @@ class OtpViewController: ProvisioningViewController {
     @IBAction private func onButtonPressedGenerateOtp(_ sender: Any) {
         getPinAndGenerateOtp()
     }
-
+    
     // MARK: Show Secure Keypad
-    func showSecureKeypadPinInput(completion: @escaping (EMPinAuthInput) -> Void) {
-         /* SDK Limitation: Reference for dismissing modal view on finish, although self.presentedViewController could do the work */
-         var keyPadVC: UIViewController!
-         // 1. Create the builder for the keypad
-         let uiModule: EMUIModule = EMUIModule.init()
-         let secureInputService: EMSecureInputService = EMSecureInputService.init(module: uiModule)
-         let sBuilder: EMSecureInputBuilder = secureInputService.secureInputBuilder()
-         sBuilder.setFirstLabel("Enter PIN")
-         /* 2. Build the EMSecureInputUi which contains the view controller and keypadview */
-         let inputUI: EMSecureInputUi = sBuilder.build(withScrambling: true, isDoubleInputField: false, displayMode: EMSecureInputUiDisplayMode.fullScreen) { [weak self](firstPin, _) in
-             if self != nil {
-                 /* 4.1 Dismiss the view */
-                 keyPadVC.dismiss(animated: true, completion: nil)
-                 /* 4.2 Always wipe the builder after use */
-                 sBuilder.wipe()
-                 keyPadVC = nil
-                 completion(firstPin!)
-             }
-         }
-         /* 3.1 Get the view controller from the EMSecureInputUi object and present accordingly */
-         keyPadVC = inputUI.viewController
-         /* 3.2 Present according presentation style */
-         self.present(keyPadVC, animated: true, completion: nil)
-     }
+    func showSecureKeypadPinInput(completion: @escaping (EMProtectorAuthInput) -> Void) {
+        /* SDK Limitation: Reference for dismissing modal view on finish, although self.presentedViewController could do the work */
+        var keyPadVC: UIViewController!
+        // 1. Create the builder for the keypad
+        let uiModule: EMUIModule = EMUIModule.init()
+        let secureInputService: EMSecureInputService = EMSecureInputService.init(module: uiModule)
+        let sBuilder: EMSecureInputBuilder = secureInputService.secureInputBuilder()
+        sBuilder.setFirstLabel("Enter PIN")
+        /* 2. Build the EMSecureInputUi which contains the view controller and keypadview */
+        let inputUI: EMSecureInputUi = sBuilder.build(withScrambling: true, isDoubleInputField: false, displayMode: EMSecureInputUiDisplayMode.fullScreen) { [weak self](firstPin, _) in
+            if self != nil {
+                /* 4.1 Dismiss the view */
+                keyPadVC.dismiss(animated: true, completion: nil)
+                /* 4.2 Always wipe the builder after use */
+                sBuilder.wipe()
+                keyPadVC = nil
+                let pinInput = EMProtectorAuthInput.init(authInput: firstPin!)
+                completion(pinInput)
+            }
+        }
+        /* 3.1 Get the view controller from the EMSecureInputUi object and present accordingly */
+        keyPadVC = inputUI.viewController
+        /* 3.2 Present according presentation style */
+        self.present(keyPadVC, animated: true, completion: nil)
+    }
 }

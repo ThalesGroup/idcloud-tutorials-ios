@@ -34,21 +34,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUA-Ru-Xc5" customClass="ProvisionerView" customModule="_2___02___Biometric_Id" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="268"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="zVU-4o-1AJ"/>
+                                    <constraint firstAttribute="height" constant="268" id="zVU-4o-1AJ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTo-wm-5El" customClass="ResultView" customModule="_2___02___Biometric_Id" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="408" width="414" height="268"/>
+                                <rect key="frame" x="0.0" y="424" width="414" height="268"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="268" id="8Sm-Xn-bMq"/>
                                 </constraints>
                             </view>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jj-9S-95g">
-                                <rect key="frame" x="32" y="353" width="96" height="96"/>
+                                <rect key="frame" x="32" y="321" width="48" height="48"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="IconOTPPin"/>
                                 <connections>
@@ -56,7 +56,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQN-9j-gck">
-                                <rect key="frame" x="192" y="353" width="96" height="96"/>
+                                <rect key="frame" x="144" y="321" width="48" height="48"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="IconOTPFingerprint"/>
                                 <connections>
@@ -64,13 +64,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Time Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bc1-T3-RNY">
-                                <rect key="frame" x="16" y="316" width="382" height="21"/>
+                                <rect key="frame" x="16" y="284" width="382" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TQB-bX-WbA">
-                                <rect key="frame" x="215.66666666666666" y="465" width="50.999999999999972" height="31"/>
+                                <rect key="frame" x="143.66666666666666" y="385" width="51" height="31"/>
                                 <connections>
                                     <action selector="buttonSystemBiometricToggled:" destination="WVs-li-cLu" eventType="valueChanged" id="qa8-zd-ldO"/>
                                 </connections>
@@ -92,7 +92,7 @@
                             <constraint firstItem="PQN-9j-gck" firstAttribute="leading" secondItem="1jj-9S-95g" secondAttribute="trailing" constant="64" id="L6G-Ww-pWw"/>
                             <constraint firstItem="TQB-bX-WbA" firstAttribute="centerX" secondItem="PQN-9j-gck" secondAttribute="centerX" id="OA9-rw-UNp"/>
                             <constraint firstItem="1jj-9S-95g" firstAttribute="top" secondItem="Bc1-T3-RNY" secondAttribute="bottom" constant="16" id="OlF-sD-jor"/>
-                            <constraint firstItem="Cjj-lj-rOw" firstAttribute="bottom" secondItem="MTo-wm-5El" secondAttribute="bottom" constant="16" id="Or8-hB-FO8"/>
+                            <constraint firstItem="Cjj-lj-rOw" firstAttribute="bottom" secondItem="MTo-wm-5El" secondAttribute="bottom" id="Or8-hB-FO8"/>
                             <constraint firstItem="1jj-9S-95g" firstAttribute="centerY" secondItem="PQN-9j-gck" secondAttribute="centerY" id="PFo-4Y-JIK"/>
                             <constraint firstItem="TQB-bX-WbA" firstAttribute="top" secondItem="1jj-9S-95g" secondAttribute="bottom" constant="16" id="XPW-zD-IUz"/>
                             <constraint firstItem="1jj-9S-95g" firstAttribute="leading" secondItem="Cjj-lj-rOw" secondAttribute="leading" constant="32" id="Xaj-GS-Hza"/>

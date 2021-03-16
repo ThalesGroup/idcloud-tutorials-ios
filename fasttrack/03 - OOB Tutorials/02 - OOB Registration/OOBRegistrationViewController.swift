@@ -23,7 +23,7 @@
 // IMPORTANT: This source code is intended to serve training information purposes only.
 //            Please make sure to review our IdCloud documentation, including security guidelines.
 
-class OOBRegistrationViewController: OOBSetupViewController {
+class OOBRegistrationViewController: TransactionSignViewController {
     var oobRegistration = OOBRegistrationLogic()
     
     override func viewDidLoad() {
@@ -31,6 +31,9 @@ class OOBRegistrationViewController: OOBSetupViewController {
         oobRegistration.initializeMobileMessenger { (error) in
             self.displayMessageDialogError(error: error)
         }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+    
     }
     
     override func updateGui() {

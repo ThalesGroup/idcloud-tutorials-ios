@@ -24,7 +24,7 @@
 //            Please make sure to review our IdCloud documentation, including security guidelines.
 
 
-class BiometricIdViewController: AdvancedSetupViewController {
+class BiometricIdViewController: OtpViewController {
     @IBOutlet weak private var systemBiometricSwitch: UISwitch!
     @IBOutlet weak private var otpWithSystemBiometricButton: UIButton!
     var biometricIdLogic = BiometricIdLogic()
@@ -48,7 +48,7 @@ class BiometricIdViewController: AdvancedSetupViewController {
             if let otpError = error {
                 self.displayMessageDialogError(error: otpError)
             } else {
-                self.displayOTP(value: otp!, lifespan: Lifespan.init(current: 10, max: 10))
+                self.displayOTP(value: otp!, lifespan: Lifespan.init(current: self.biometricIdLogic.oathTokenDevice!.lastOtpLifeSpan(), max: 30))
             }
         }
     }
@@ -57,10 +57,9 @@ class BiometricIdViewController: AdvancedSetupViewController {
         let shouldEnabled = sender.isOn
         if shouldEnabled {
             if biometricIdLogic.isSystemBiometricActivated() {
-                displayMessageDialog(result: "System biometric is already activated")
+                displayMessageDialog(result: "system biometric is already activated")
             } else {
-                showSecureKeypadPinInput { (pinInput) in
-                    let pinAuthInput = EMProtectorAuthInput.init(authInput: pinInput)
+                showSecureKeypadPinInput { (pinAuthInput) in
                     self.biometricIdLogic.activateSystemBiometric(pinAuthInput: pinAuthInput) { (isSucceed, error) in
                         self.otpWithSystemBiometricButton.isEnabled = isSucceed
                         sender.isOn = isSucceed

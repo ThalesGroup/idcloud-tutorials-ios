@@ -27,7 +27,8 @@ class OOBMessagingViewController: OOBRegistrationViewController {
     @IBOutlet weak var fetchButton:UIButton!
     var oOBMessagingLogic = OOBMessagingLogic()
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func updateGui() {
+        super.updateGui()
         let token = ProvisioningLogic.getToken()
         fetchButton.isEnabled = (token != nil)
     }
@@ -83,34 +84,33 @@ class OOBMessagingViewController: OOBRegistrationViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    private func responseToAction(_ response: EMFetchMessageResponse!, value: Bool) {
+    private func responseToAction(_ response: EMFetchMessageResponse, value: Bool) {
         switch response.messageType {
         case .unsupported, .generic, .transactionVerifyRequest:
             return
         case .transactionSigningRequest:
             // If the message is asking to sign a transaction the user could decide to accept or reject it
             if (value) {
-                let title : String = "Please enter the pin"
-                
-                let alertController : UIAlertController = UIAlertController.init(title: title, message: nil, preferredStyle: .alert)
-                let ok : UIAlertAction = UIAlertAction.init(title: "Ok", style: .default) { (_) in
-                    // Sign the transaction with ACCEPTED response
-                    self.oOBMessagingLogic.signTransactionMessage(response, value: .accepted, pin: alertController.textFields![0].text!)                 }
-                let cancel : UIAlertAction = UIAlertAction.init(title: "Cancel", style: .cancel) { (_) in
-                    // If the cancel button is hit then cancel the operation
+                self.showSecureKeypadPinInput { (pinAuthInput) in
+                    self.signTransactionMessage(response, value: .accepted, pinAuthInput: pinAuthInput)
                 }
-                alertController.addAction(ok)
-                alertController.addAction(cancel)
-                alertController.addTextField { (textField) in
-                    textField.keyboardType = .numberPad
-                }
-                self.present(alertController, animated: true, completion: nil)
             } else {
                 // Reject the transaction
-                self.oOBMessagingLogic.signTransactionMessage(response, value: .rejected, pin: "")
+                self.signTransactionMessage(response, value: .rejected, pinAuthInput: nil)
             }
         @unknown default:
             return
         }
     }
+    
+    private func signTransactionMessage(_ response: EMFetchMessageResponse, value: EMTransactionSigningResponseValue, pinAuthInput: EMProtectorAuthInput?) {
+        self.oOBMessagingLogic.signTransactionMessage(response, value: value, pinAuthInput: pinAuthInput, completion: { (error) in
+            if let error = error {
+                self.displayMessageDialogError(error: error)
+            } else {
+                self.displayMessageDialog(result: "This message is \(value == .accepted ? "ACCEPTED" : "REJECTED") successfully\n")
+            }
+        })
+    }
+    
 }

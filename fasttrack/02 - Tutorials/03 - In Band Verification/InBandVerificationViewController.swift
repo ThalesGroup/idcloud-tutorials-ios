@@ -37,9 +37,8 @@ class InBandVerificationViewController: BiometricIdViewController {
     }
     
     @IBAction private func buttonAuthenticatePressed(_ sender: Any) {
-        showSecureKeypadPinInput { (pinInput) in
-            let pinAuthInput = EMProtectorAuthInput.init(authInput: pinInput)
-            InBandVerificationLogic().verifyToken(withToken: ProvisioningLogic.getToken()!, pinAuthInput: pinAuthInput) { (message, error) in
+        showSecureKeypadPinInput { (pinAuthInput) in
+            InBandVerificationLogic().verifyToken(withToken: ProvisioningLogic.getToken()!, pinAuthInput: pinAuthInput) { (_, message, error) in
                 if let error = error {
                     self.displayMessageDialogError(error: error)
                 } else {

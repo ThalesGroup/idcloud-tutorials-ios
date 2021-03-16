@@ -53,7 +53,7 @@ class BiometricIdLogic {
     
     func otpWithSystemBiometric(completion: @escaping (_ otp: String?,_ error: Error?) -> Void) {
         do {
-            oathTokenDevice?.authenticateWithMessage(localizedMessage: "Authenticate to get TOTP", fallbackTitle: "Enter Pin", completionHandler: { (authInput, data, error) in
+            oathTokenDevice?.authenticateWithMessage(localizedMessage: "Authenticate to get totp", fallbackTitle: "Enter Pin", completionHandler: { (authInput, data, error) in
                 if error == nil {
                     do {
                         let otp = try self.oathTokenDevice?.otp(authInput: authInput!)

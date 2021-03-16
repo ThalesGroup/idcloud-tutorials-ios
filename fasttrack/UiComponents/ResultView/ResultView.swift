@@ -77,7 +77,7 @@ class ResultView: UIView {
         progressOtp.progress = Float(lifespan.current) / Float(lifespan.max)
         progressOtp.layoutIfNeeded()
         // Animate time.
-        UIView.animate(withDuration: TimeInterval(CGFloat(lifespan.current)), animations: {
+        UIView.animate(withDuration: Double(lifespan.current), animations: {
             self.progressOtp.progress = 0.000001 // .0f does not work on iOS 13.x
             self.progressOtp.layoutIfNeeded()
         }) { (finished: Bool) in

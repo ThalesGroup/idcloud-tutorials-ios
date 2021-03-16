@@ -24,10 +24,24 @@
 //            Please make sure to review our IdCloud documentation, including security guidelines.
 
 
-class AdvancedSetupViewController: OtpViewController {
+class AdvancedSetupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = (Bundle.main.infoDictionary!["CFBundleName"] as! String)
         AdvancedSetupLogic.setup()
+        title = caption()
+        displayMessageDialog(result: "Setup Ok")
     }
+    
+    func caption() -> String {
+        return Bundle.main.infoDictionary!["CFBundleName"] as! String
+    }
+    
+    func displayMessageDialog(result: String) {
+         // Main alert builder.
+         let alert = UIAlertController(title: caption(), message: result, preferredStyle: .alert)
+         // Add basic OK button without any handlers.
+         alert.addAction(UIAlertAction(title: NSLocalizedString("STRING_OK", comment: ""), style: .default, handler: nil))
+         // Present dialog.
+         present(alert, animated: true)
+     }
 }

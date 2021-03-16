@@ -11,40 +11,14 @@
         <!--Advanced Setup View Controller-->
         <scene sceneID="C2p-je-mtG">
             <objects>
-                <viewController id="10Q-M0-uou" customClass="AdvancedSetup_ViewController" sceneMemberID="viewController">
+                <viewController id="10Q-M0-uou" customClass="AdvancedSetupViewController" customModule="_3___01___OOB_Setup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1wa-gN-AZe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hdt-QC-7x9" customClass="SDKStateView">
-                                <rect key="frame" x="0.0" y="473" width="375" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="ehm-FU-dyh"/>
-                                </constraints>
-                            </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ca0-or-DBw" customClass="LoadingView" customModule="_3___01___OOB_Setup" customModuleProvider="target">
-                                <rect key="frame" x="112.5" y="236.5" width="150" height="150"/>
-                                <color key="backgroundColor" red="0.43921568630000002" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="5ut-u6-HUt"/>
-                                    <constraint firstAttribute="width" constant="150" id="EDk-aF-Ann"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Ca0-or-DBw" firstAttribute="centerY" secondItem="Hpt-rj-ESp" secondAttribute="centerY" id="12h-qU-wZo"/>
-                            <constraint firstItem="Hdt-QC-7x9" firstAttribute="leading" secondItem="Hpt-rj-ESp" secondAttribute="leading" id="CID-Gj-242"/>
-                            <constraint firstItem="Hpt-rj-ESp" firstAttribute="bottom" secondItem="Hdt-QC-7x9" secondAttribute="bottom" id="gT7-SC-g1v"/>
-                            <constraint firstItem="Hpt-rj-ESp" firstAttribute="trailing" secondItem="Hdt-QC-7x9" secondAttribute="trailing" id="pUR-fK-LRn"/>
-                            <constraint firstItem="Ca0-or-DBw" firstAttribute="centerX" secondItem="Hpt-rj-ESp" secondAttribute="centerX" id="sdM-vk-dlL"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hpt-rj-ESp"/>
                     </view>
                     <navigationItem key="navigationItem" id="wBs-Z7-f9L"/>
-                    <connections>
-                        <outlet property="loadingIndicator" destination="Ca0-or-DBw" id="QI6-zT-vfS"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Hs-5D-rWU" sceneMemberID="firstResponder"/>
             </objects>

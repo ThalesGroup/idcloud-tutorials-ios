@@ -28,8 +28,8 @@ import CommonCrypto
 class TransactionSignLogic {
     class func generateOtp(_ token: EMProtectorOathTokenDevice, pinAuthInput: EMProtectorAuthInput, amount: String, beneficiary: String) throws -> OtpValue? {
         let ocraOtp: String = try token.ocra(authInput: pinAuthInput,
-                                             serverChallengeQuestion: serverChallenge(amount: amount, beneficiary: beneficiary),
-                                             clientChallengeQuestion: nil,
+                                             serverChallengeQuestion:serverChallenge(amount: amount, beneficiary: beneficiary),
+                                             clientChallengeQuestion:nil,
                                              passwordHash: nil,
                                              session: nil)
         return OtpValue(otp: ocraOtp, lifespan: Lifespan(current: token.lastOtpLifeSpan(), max: ProvisioningConfig.getTimeStep()))

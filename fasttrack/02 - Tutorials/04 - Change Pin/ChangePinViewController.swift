@@ -27,20 +27,23 @@
 class ChangePinViewController: InBandVerificationViewController {
     
     @IBAction private func changePinButtonPressed(_ sender: Any) {
-        showSecureKeypadPinInput { (pinInput) in
-            let pinAuthInput = EMProtectorAuthInput.init(authInput: pinInput)
-            InBandVerificationLogic().verifyToken(withToken: ProvisioningLogic.getToken()!, pinAuthInput: pinAuthInput) { (message,error) in
+        showSecureKeypadPinInput { (pinAuthInput) in
+            InBandVerificationLogic().verifyToken(withToken: ProvisioningLogic.getToken()!, pinAuthInput: pinAuthInput) { (isSucceed,message,error) in
                 if error == nil {
-                    self.showSecureKeypadConfirmPin { (newPin, newPinConfirmation) in
-                        //check the pin confirmation here
-                        let newPinAuthInput = EMProtectorAuthInput.init(authInput: newPin)
-                        ChangePinLogic().changePinWithAuthInput(pinAuthInput, newPinAuthInput) { (isSucceed, error) in
-                            if let error = error {
-                                self.displayMessageDialogError(error: error)
-                            } else {
-                                self.displayMessageDialog(result: "Pin changed successfully!")
+                    if isSucceed {
+                        self.showSecureKeypadConfirmPin { (newPin, newPinConfirmation) in
+                            //check the pin confirmation here
+                            let newPinAuthInput = EMProtectorAuthInput.init(authInput: newPin)
+                            ChangePinLogic().changePinWithAuthInput(pinAuthInput, newPinAuthInput) { (isSucceed, error) in
+                                if let error = error {
+                                    self.displayMessageDialogError(error: error)
+                                } else {
+                                    self.displayMessageDialog(result: "Pin changed successfully!")
+                                }
                             }
                         }
+                    } else {
+                        self.displayMessageDialog(result: message!)
                     }
                 } else {
                     self.displayMessageDialogError(error: error)

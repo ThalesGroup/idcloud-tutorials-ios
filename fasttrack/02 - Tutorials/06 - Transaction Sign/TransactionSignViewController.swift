@@ -49,9 +49,18 @@ class TransactionSignViewController: ChangePinViewController, UITextFieldDelegat
     }
     
     @IBAction func buttonGenerateSignatureOTPPressed(_ sender: Any) {
-        showSecureKeypadPinInput { [self] (pinInput) in
-            let pinAuthInput = EMProtectorAuthInput.init(authInput: pinInput)
-            self.generateOtp(ProvisioningLogic.getToken()!, pinAuthInput: pinAuthInput, amount: self.textAmountTextField.text!, beneficiary: self.textBeneficiaryTextField.text!)
+        let oathProtector = ProvisioningLogic.getOathProtector()
+        let ocraSettings = EMProtectorOcraSettings.init()
+        ocraSettings.ocraSuite = OtpConfig.getOcraSuite()
+        var token:EMProtectorOathTokenDevice?
+        do {
+            if let tokenNames: Set<String> = try? oathProtector?.tokenDeviceNames(), !tokenNames.isEmpty {
+                token = try? oathProtector?.tokenDevice(name: tokenNames.first!, fingerprintCustomData: ProvisioningConfig.getCustomFingerprintData(), ocraSettings: ocraSettings)
+            }
+        }
+        
+        showSecureKeypadPinInput { [self] (pinAuthInput) in
+            self.generateOtp(token!, pinAuthInput: pinAuthInput, amount: self.textAmountTextField.text!, beneficiary: self.textBeneficiaryTextField.text!)
         }
     }
     

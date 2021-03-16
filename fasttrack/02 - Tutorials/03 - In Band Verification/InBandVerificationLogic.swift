@@ -23,7 +23,7 @@
 // IMPORTANT: This source code is intended to serve training information purposes only.
 //            Please make sure to review our IdCloud documentation, including security guidelines.
 
-typealias GenericOTPHandler = (String?, Error?) -> Void
+typealias GenericOTPHandler = (Bool, String?, Error?) -> Void
 typealias HTTPResponse   = (Data?, URLResponse?, Error?) -> Void
 
 class InBandVerificationLogic {
@@ -34,7 +34,7 @@ class InBandVerificationLogic {
             otpValue = try OtpLogic.generateOtp(token: tokenDevice, pinAuthInput: pinAuthInput)
             verifyToken(withTokenName: ProvisioningLogic.getTokenName(), otpValue: otpValue, completion: completion)
         } catch let error as NSError {
-            completion(nil, error)
+            completion(false, nil, error)
         }
     }
     
@@ -42,32 +42,33 @@ class InBandVerificationLogic {
         var headers = [String:String]()
         headers["Authorization"] = InBandVerificationConfig.CFG_BASIC_AUTH_JWT
         headers["X-API-KEY"] = InBandVerificationConfig.CFG_BASIC_AUTH_API_KEY
-
+        
         let input = [
             "userId": tokenName,
             "otp":otpValue.otp
-            ]
+        ]
         
         let body:[String:Any] = [
             "name": "Auth_OTP",
             "input": input
         ]
-
-        requestPOST(InBandVerificationConfig.CFG_URL_AUTH, headers: headers, payload: body) { (data, response, error) in
+        
+        requestPOST(InBandVerificationConfig.CFG_URL_AUTH, headers: headers, payload: body) { (data, urlResponse, error) in
             if error == nil && data != nil {
                 do {
                     let responseDict = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions(rawValue: 0)) as? [String:Any]
-                    if let message = responseDict?.stringValue(path: "state.result.message") {
-                        completion(message, nil)
+                    if let code = responseDict?.stringValue(path: "state.result.code") {
+                        let message = responseDict?.stringValue(path: "state.result.message")!
+                        completion(code == "0", message, nil)
                     } else {
-                        completion("Error parsing response", nil)
+                        completion(false, "Error parsing response from server", nil)
                     }
                 }
                 catch let error as NSError{
-                    completion(nil, error)
+                    completion(false, nil, error)
                 }
             } else {
-                completion(nil, error)
+                completion(false, nil, error)
             }
         }
     }
@@ -90,7 +91,7 @@ class InBandVerificationLogic {
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("\(jsonData.count)", forHTTPHeaderField: "Content-Length")
         for (headerKey, headerValue) in headers {
-            request.addValue(headerKey, forHTTPHeaderField: headerValue)
+            request.addValue(headerValue, forHTTPHeaderField:headerKey )
         }
         request.httpBody = jsonData
         request.httpMethod = "POST"
@@ -112,4 +113,5 @@ extension Dictionary {
             return nil
         }
     }
+    
 }
