@@ -32,14 +32,18 @@ class ChangePinViewController: InBandVerificationViewController {
                 if error == nil {
                     if isSucceed {
                         self.showSecureKeypadConfirmPin { (newPin, newPinConfirmation) in
-                            //check the pin confirmation here
-                            let newPinAuthInput = EMProtectorAuthInput.init(authInput: newPin)
-                            ChangePinLogic().changePinWithAuthInput(pinAuthInput, newPinAuthInput) { (isSucceed, error) in
-                                if let error = error {
-                                    self.displayMessageDialogError(error: error)
-                                } else {
-                                    self.displayMessageDialog(result: "Pin changed successfully!")
+                            if newPin.isEqual(newPinConfirmation) {
+                                //check the pin confirmation here
+                                let newPinAuthInput = EMProtectorAuthInput.init(authInput: newPin)
+                                ChangePinLogic().changePinWithAuthInput(pinAuthInput, newPinAuthInput) { (isSucceed, error) in
+                                    if let error = error {
+                                        self.displayMessageDialogError(error: error)
+                                    } else {
+                                        self.displayMessageDialog(result: "Pin changed successfully!")
+                                    }
                                 }
+                            } else {
+                                self.displayMessageDialog(result: "The pins must be equal")
                             }
                         }
                     } else {
