@@ -28,12 +28,6 @@
 
 typedef void (^HTTPResponse)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error);
 
-#define kXMLTemplateAuth @"<?xml version=\"1.0\" encoding=\"UTF-8\"?> \
-<AuthenticationRequest> \
-<UserID>%@</UserID> \
-<OTP>%@</OTP> \
-</AuthenticationRequest>"
-
 // Review: SNE document private methods
 @implementation InBandVerification_Logic
 
@@ -64,37 +58,61 @@ typedef void (^HTTPResponse)(NSData * _Nullable data, NSURLResponse * _Nullable 
                withOTPValue:(OTP_Value *)otpValue
           completionHandler:(GenericOtpHandler)completionHandler
 {
-    NSString        *toHash     = [NSString stringWithFormat:@"%@:%@", CFG_BASICAUTH_USERNAME(), CFG_BASICAUTH_PASSWORD()];
-    NSString        *hash       = [[toHash dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
-    NSString        *body       = [NSString stringWithFormat:kXMLTemplateAuth, tokenName, otpValue.otp.stringValue];
-    NSDictionary    *headers    = @{@"Authorization" : [NSString stringWithFormat:@"Basic %@", hash]};
+    NSDictionary    *headers    = @{
+        @"Authorization" : CFG_BASIC_AUTH_JWT(),
+        @"X-API-KEY" : CFG_BASIC_AUTH_API_KEY()
+    };
+    
+    NSDictionary    *input = @{
+        @"userId": tokenName,
+        @"otp":otpValue.otp.stringValue
+    };
+    NSDictionary    *body = @{
+        @"name": @"Auth_OTP",
+        @"input":input
+    };
     
     // Post message and wait for results.
     [InBandVerification_Logic doPostMessage:CFG_URL_AUTH()
-                                contentType:@"text/xml"
+                                contentType:@"application/json"
                                     headers:headers
                                        body:body
                            returnInUIThread:YES
                           completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error)
      {
-         if (!error) {
-             NSString *value = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-             completionHandler([value isEqualToString:@"Authentication succeeded"], value, otpValue.lifespan);
-         } else {
-             completionHandler(NO, error.localizedDescription, otpValue.lifespan);
-         }
-     }];
+        if (!error) {
+            NSDictionary *dict =
+            [NSJSONSerialization JSONObjectWithData:data
+                                            options:0
+                                              error:nil];
+            NSString *value = (NSString*)[dict valueForKeyPath:@"state.result.code"];
+            NSString *message = (NSString*)[dict valueForKeyPath:@"state.result.message"];
+            completionHandler([value isEqualToString:@"0"], message, otpValue.lifespan);
+        } else {
+            completionHandler(NO, error.localizedDescription, otpValue.lifespan);
+        }
+    }];
 }
 
 + (void)doPostMessage:(NSString *)url
           contentType:(NSString *)contentType
               headers:(NSDictionary<NSString *, NSString *> *)headers
-                 body:(NSString *)body
+                 body:(NSDictionary *)body
      returnInUIThread:(BOOL)returnInUIThread
     completionHandler:(HTTPResponse)completionHandler
 {
     // Prepare HTTP post request.
-    NSData                  *postData   = [body dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    NSData *data = [NSJSONSerialization dataWithJSONObject:body
+                                                   options:0
+                                                     error:nil];
+    NSString *dataString = [[NSString alloc] initWithData:data
+                                                 encoding:NSUTF8StringEncoding];
+    dataString =  [dataString stringByTrimmingCharactersInSet:
+                   [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    dataString =   [dataString stringByTrimmingCharactersInSet:
+                    [NSCharacterSet newlineCharacterSet]];
+    NSData *postData = [dataString dataUsingEncoding:NSUTF8StringEncoding];
+    
     NSMutableURLRequest     *request    = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
     [request setHTTPMethod:@"POST"];
     [request setValue:[NSString stringWithFormat:@"%lu", (unsigned long)[postData length]] forHTTPHeaderField:@"Content-Length"];
