@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QrCodeReader" customModule="_2___02___QRCode_Basic">
+            <connections>
+                <outlet property="cameraLayer" destination="BC8-XE-EEb" id="3gN-Qb-med"/>
+                <outlet property="view" destination="qKp-bg-oth" id="WYi-8a-6CU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="qKp-bg-oth">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BC8-XE-EEb" userLabel="QR Code Camera Layer">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BC8-XE-EEb" firstAttribute="centerX" secondItem="qKp-bg-oth" secondAttribute="centerX" id="FB0-G3-TgT"/>
+                <constraint firstItem="BC8-XE-EEb" firstAttribute="width" secondItem="qKp-bg-oth" secondAttribute="width" id="oak-Ru-6bF"/>
+                <constraint firstItem="BC8-XE-EEb" firstAttribute="centerY" secondItem="qKp-bg-oth" secondAttribute="centerY" id="s2q-eM-haA"/>
+                <constraint firstItem="BC8-XE-EEb" firstAttribute="height" secondItem="qKp-bg-oth" secondAttribute="height" id="xTy-3q-ZjK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="qpH-FB-foN"/>
+            <point key="canvasLocation" x="131" y="154"/>
+        </view>
+    </objects>
+</document>

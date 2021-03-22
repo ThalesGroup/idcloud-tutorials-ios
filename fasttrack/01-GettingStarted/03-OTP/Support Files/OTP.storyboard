@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ekJ-qs-nFG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DX8-Em-Y0z">
+            <objects>
+                <navigationController id="ekJ-qs-nFG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7F0-0Z-pac">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.8784313725490196" green="0.058823529411764705" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="glF-nq-hdg" kind="relationship" relationship="rootViewController" id="UTv-u4-e9T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f7S-7r-ysF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-741" y="129"/>
+        </scene>
+        <!--Otp View Controller-->
+        <scene sceneID="X3y-ha-cEB">
+            <objects>
+                <viewController id="glF-nq-hdg" customClass="OtpViewController" customModule="_1_03_OTP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ab-cv-IL6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhF-9U-ta8" customClass="ProvisionerView" customModule="_1_03_OTP" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="268"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="wH0-cN-bZj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Time Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QT-Qo-wXL">
+                                <rect key="frame" x="131" y="396" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMo-QX-l9n">
+                                <rect key="frame" x="159" y="447" width="96" height="96"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="IconOTPPin"/>
+                                <connections>
+                                    <action selector="onButtonPressedGenerateOtp:" destination="glF-nq-hdg" eventType="touchUpInside" id="aLK-X4-k08"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pit-kU-jXf" customClass="ResultView" customModule="_1_03_OTP" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="551" width="414" height="301"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQK-fL-fol" customClass="LoadingView" customModule="_1_03_OTP" customModuleProvider="target">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ZTD-6L-pvh"/>
+                                    <constraint firstAttribute="width" constant="150" id="alI-8L-OSm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YhF-9U-ta8" firstAttribute="leading" secondItem="Npl-Cf-LLl" secondAttribute="leading" id="08f-xs-xZ9"/>
+                            <constraint firstItem="UQK-fL-fol" firstAttribute="centerX" secondItem="6Ab-cv-IL6" secondAttribute="centerX" id="0Y3-Eq-54g"/>
+                            <constraint firstItem="UQK-fL-fol" firstAttribute="centerY" secondItem="6Ab-cv-IL6" secondAttribute="centerY" id="FLU-y1-Fu2"/>
+                            <constraint firstItem="YhF-9U-ta8" firstAttribute="trailing" secondItem="Npl-Cf-LLl" secondAttribute="trailing" id="Ffr-VQ-0dV"/>
+                            <constraint firstItem="Npl-Cf-LLl" firstAttribute="bottom" secondItem="Pit-kU-jXf" secondAttribute="bottom" constant="10" id="MuS-gf-tjn"/>
+                            <constraint firstItem="Npl-Cf-LLl" firstAttribute="trailing" secondItem="Pit-kU-jXf" secondAttribute="trailing" id="PkH-rf-dQR"/>
+                            <constraint firstItem="Pit-kU-jXf" firstAttribute="top" secondItem="JMo-QX-l9n" secondAttribute="bottom" constant="8" id="PsP-2T-Ae7"/>
+                            <constraint firstItem="JMo-QX-l9n" firstAttribute="top" secondItem="6QT-Qo-wXL" secondAttribute="bottom" constant="30" id="QMW-14-f85"/>
+                            <constraint firstItem="6QT-Qo-wXL" firstAttribute="top" secondItem="YhF-9U-ta8" secondAttribute="bottom" constant="40" id="Sdp-RK-0f7"/>
+                            <constraint firstItem="JMo-QX-l9n" firstAttribute="centerX" secondItem="6Ab-cv-IL6" secondAttribute="centerX" id="bmT-U8-Fhd"/>
+                            <constraint firstItem="6QT-Qo-wXL" firstAttribute="centerX" secondItem="6Ab-cv-IL6" secondAttribute="centerX" id="o0s-Le-jbd"/>
+                            <constraint firstItem="Pit-kU-jXf" firstAttribute="leading" secondItem="Npl-Cf-LLl" secondAttribute="leading" id="v4f-Q4-xmD"/>
+                            <constraint firstItem="Pit-kU-jXf" firstAttribute="centerX" secondItem="6Ab-cv-IL6" secondAttribute="centerX" id="xVb-7p-kf6"/>
+                            <constraint firstItem="YhF-9U-ta8" firstAttribute="top" secondItem="Npl-Cf-LLl" secondAttribute="top" id="xf9-qT-TbN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Npl-Cf-LLl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BZS-k7-omM"/>
+                    <connections>
+                        <outlet property="buttonOtp" destination="JMo-QX-l9n" id="A3l-2y-qIp"/>
+                        <outlet property="loadingIndicator" destination="UQK-fL-fol" id="Kxv-OQ-yZK"/>
+                        <outlet property="provisionView" destination="YhF-9U-ta8" id="Yyz-UI-oIJ"/>
+                        <outlet property="resultView" destination="Pit-kU-jXf" id="SPv-2e-sRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="riO-P5-Roi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386.95652173913044" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IconOTPPin" width="48" height="48"/>
+    </resources>
+</document>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9xA-Hh-7uA">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="bs9-Qv-E68">
+            <objects>
+                <navigationController id="9xA-Hh-7uA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3CH-2h-NsB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.87843137250000003" green="0.058823529409999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WVs-li-cLu" kind="relationship" relationship="rootViewController" id="GfH-8a-gPH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDe-L3-w7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-862" y="121"/>
+        </scene>
+        <!--Biometric Id View Controller-->
+        <scene sceneID="18B-qa-Cjf">
+            <objects>
+                <viewController id="WVs-li-cLu" customClass="BiometricIdViewController" customModule="_2___02___Biometric_Id" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U2j-Pw-biN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUA-Ru-Xc5" customClass="ProvisionerView" customModule="_2___02___Biometric_Id" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="268"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="zVU-4o-1AJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTo-wm-5El" customClass="ResultView" customModule="_2___02___Biometric_Id" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="424" width="414" height="268"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="8Sm-Xn-bMq"/>
+                                </constraints>
+                            </view>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jj-9S-95g">
+                                <rect key="frame" x="32" y="321" width="48" height="48"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="IconOTPPin"/>
+                                <connections>
+                                    <action selector="onButtonPressedGenerateOtp:" destination="WVs-li-cLu" eventType="touchUpInside" id="Xsp-t7-W6k"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQN-9j-gck">
+                                <rect key="frame" x="144" y="321" width="48" height="48"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="IconOTPFingerprint"/>
+                                <connections>
+                                    <action selector="buttonGenerateOTPWithSystemBiometricPressed:" destination="WVs-li-cLu" eventType="touchUpInside" id="KQj-mk-6Bx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Time Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bc1-T3-RNY">
+                                <rect key="frame" x="16" y="284" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TQB-bX-WbA">
+                                <rect key="frame" x="143.66666666666666" y="385" width="51" height="31"/>
+                                <connections>
+                                    <action selector="buttonSystemBiometricToggled:" destination="WVs-li-cLu" eventType="valueChanged" id="qa8-zd-ldO"/>
+                                </connections>
+                            </switch>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-K1-AiD" customClass="LoadingView" customModule="_2___02___Biometric_Id" customModuleProvider="target">
+                                <rect key="frame" x="132" y="271" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Tn3-IG-iMC"/>
+                                    <constraint firstAttribute="height" constant="150" id="ejr-74-aLx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bc1-T3-RNY" firstAttribute="top" secondItem="HUA-Ru-Xc5" secondAttribute="bottom" constant="16" id="18R-Zm-Epo"/>
+                            <constraint firstItem="Cjj-lj-rOw" firstAttribute="trailing" secondItem="MTo-wm-5El" secondAttribute="trailing" id="8x6-Ow-Bpe"/>
+                            <constraint firstItem="HUA-Ru-Xc5" firstAttribute="leading" secondItem="Cjj-lj-rOw" secondAttribute="leading" id="B2G-xK-tip"/>
+                            <constraint firstItem="PQN-9j-gck" firstAttribute="leading" secondItem="1jj-9S-95g" secondAttribute="trailing" constant="64" id="L6G-Ww-pWw"/>
+                            <constraint firstItem="TQB-bX-WbA" firstAttribute="centerX" secondItem="PQN-9j-gck" secondAttribute="centerX" id="OA9-rw-UNp"/>
+                            <constraint firstItem="1jj-9S-95g" firstAttribute="top" secondItem="Bc1-T3-RNY" secondAttribute="bottom" constant="16" id="OlF-sD-jor"/>
+                            <constraint firstItem="Cjj-lj-rOw" firstAttribute="bottom" secondItem="MTo-wm-5El" secondAttribute="bottom" id="Or8-hB-FO8"/>
+                            <constraint firstItem="1jj-9S-95g" firstAttribute="centerY" secondItem="PQN-9j-gck" secondAttribute="centerY" id="PFo-4Y-JIK"/>
+                            <constraint firstItem="TQB-bX-WbA" firstAttribute="top" secondItem="1jj-9S-95g" secondAttribute="bottom" constant="16" id="XPW-zD-IUz"/>
+                            <constraint firstItem="1jj-9S-95g" firstAttribute="leading" secondItem="Cjj-lj-rOw" secondAttribute="leading" constant="32" id="Xaj-GS-Hza"/>
+                            <constraint firstItem="Cjj-lj-rOw" firstAttribute="trailing" secondItem="Bc1-T3-RNY" secondAttribute="trailing" constant="16" id="c05-3K-P9A"/>
+                            <constraint firstItem="Cjj-lj-rOw" firstAttribute="trailing" secondItem="HUA-Ru-Xc5" secondAttribute="trailing" id="fSc-Qz-Ehg"/>
+                            <constraint firstItem="HUA-Ru-Xc5" firstAttribute="top" secondItem="Cjj-lj-rOw" secondAttribute="top" id="l6s-7T-85h"/>
+                            <constraint firstItem="MTo-wm-5El" firstAttribute="leading" secondItem="Cjj-lj-rOw" secondAttribute="leading" id="m4P-6Y-d2G"/>
+                            <constraint firstItem="oBy-K1-AiD" firstAttribute="centerX" secondItem="Cjj-lj-rOw" secondAttribute="centerX" id="mad-WR-zoX"/>
+                            <constraint firstItem="Bc1-T3-RNY" firstAttribute="leading" secondItem="Cjj-lj-rOw" secondAttribute="leading" constant="16" id="ntE-cL-LC1"/>
+                            <constraint firstItem="1jj-9S-95g" firstAttribute="width" secondItem="PQN-9j-gck" secondAttribute="width" id="qHQ-Mz-Roc"/>
+                            <constraint firstItem="oBy-K1-AiD" firstAttribute="centerY" secondItem="Cjj-lj-rOw" secondAttribute="centerY" id="yoZ-Qx-Y6c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cjj-lj-rOw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a3v-O4-eam"/>
+                    <connections>
+                        <outlet property="buttonOtp" destination="1jj-9S-95g" id="XtE-MK-ubC"/>
+                        <outlet property="loadingIndicator" destination="oBy-K1-AiD" id="DyY-tK-C4r"/>
+                        <outlet property="otpWithSystemBiometricButton" destination="PQN-9j-gck" id="Gta-sJ-1EZ"/>
+                        <outlet property="provisionView" destination="HUA-Ru-Xc5" id="HsB-dy-BDf"/>
+                        <outlet property="resultView" destination="MTo-wm-5El" id="d3y-bp-eSs"/>
+                        <outlet property="systemBiometricSwitch" destination="TQB-bX-WbA" id="SdY-NT-n89"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fas-dN-J9E" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.375" y="120.4225352112676"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IconOTPFingerprint" width="48" height="48"/>
+        <image name="IconOTPPin" width="48" height="48"/>
+    </resources>
+</document>
