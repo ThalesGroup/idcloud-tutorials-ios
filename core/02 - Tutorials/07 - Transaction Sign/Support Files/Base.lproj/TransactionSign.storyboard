@@ -1,60 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3po-A4-gKv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Dj-W2-RsB">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="I2t-bR-eug">
+        <scene sceneID="bYD-c7-nL0">
             <objects>
-                <navigationController id="3po-A4-gKv" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="zVW-f4-ISx">
+                <navigationController id="0Dj-W2-RsB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uYy-6j-nNT">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.87843137250000003" green="0.058823529409999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="rPB-af-AtB" kind="relationship" relationship="rootViewController" id="CFn-zP-bek"/>
+                        <segue destination="rPB-af-AtB" kind="relationship" relationship="rootViewController" id="tAB-JB-p9n"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3tp-DI-uc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iN6-ie-cd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1739" y="-137"/>
+            <point key="canvasLocation" x="-1708" y="-138"/>
         </scene>
         <!--Transaction Sign View Controller-->
         <scene sceneID="KAc-K1-VIE">
             <objects>
                 <viewController id="rPB-af-AtB" customClass="TransactionSign_ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UUB-xc-qHu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MsE-5y-URo" customClass="ProvisionerView">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MsE-5y-URo" customClass="ProvisionerView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="206.33333333333334"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Time Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pq1-Py-OHI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="One Time Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pq1-Py-OHI">
                                 <rect key="frame" x="16" y="222.33333333333331" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Beneficiary" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LbT-c8-GeC" userLabel="RegistrationCode_Text">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Beneficiary" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LbT-c8-GeC" userLabel="RegistrationCode_Text">
                                 <rect key="frame" x="16" y="301" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mVX-XI-UYH" userLabel="UserId_Text">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mVX-XI-UYH" userLabel="UserId_Text">
                                 <rect key="frame" x="16" y="259" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCC-37-FeC" userLabel="buttonOTPPin">
+                            <button contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCC-37-FeC" userLabel="buttonOTPPin">
                                 <rect key="frame" x="163.66666666666666" y="351" width="48" height="48"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="IconOTPPin"/>
@@ -62,12 +60,12 @@
                                     <action selector="onButtonPressedGenerateSignatureOtp:" destination="rPB-af-AtB" eventType="touchUpInside" id="5DU-iy-hpq"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYr-1K-Zt2" customClass="ResultView">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYr-1K-Zt2" customClass="ResultView">
                                 <rect key="frame" x="0.0" y="399" width="375" height="291"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MI8-qW-NEl" customClass="LoadingIndicatorView">
-                                <rect key="frame" x="112.66666666666669" y="270" width="150" height="150"/>
+                                <rect key="frame" x="112.66666666666669" y="358" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="1Ik-PE-aui"/>
@@ -75,6 +73,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="UhT-Z5-OUq"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pq1-Py-OHI" firstAttribute="leading" secondItem="UhT-Z5-OUq" secondAttribute="leading" constant="16" id="0iE-H4-eDy"/>
@@ -98,7 +97,6 @@
                             <constraint firstItem="MI8-qW-NEl" firstAttribute="centerY" secondItem="UhT-Z5-OUq" secondAttribute="centerY" id="vfY-py-2Dj"/>
                             <constraint firstItem="MsE-5y-URo" firstAttribute="top" secondItem="UhT-Z5-OUq" secondAttribute="top" id="zb0-Nj-l21"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="UhT-Z5-OUq"/>
                     </view>
                     <navigationItem key="navigationItem" id="igg-6h-wfQ"/>
                     <connections>

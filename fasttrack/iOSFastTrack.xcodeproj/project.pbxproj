@@ -336,11 +336,8 @@
 		20D92D9A25E8CB7600F6760C /* SecureKeypad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D9925E8CB7600F6760C /* SecureKeypad.storyboard */; };
 		20D92DA025E8CBA100F6760C /* TransactionSign.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92D9F25E8CBA100F6760C /* TransactionSign.storyboard */; };
 		20D92DA225E8CBB400F6760C /* OOBSetup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92DA125E8CBB400F6760C /* OOBSetup.storyboard */; };
-		20D92DA425E8CBBB00F6760C /* OOBSetup.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20D92DA325E8CBBB00F6760C /* OOBSetup.plist */; };
-		20D92DA625E8CBCD00F6760C /* OobRegistration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20D92DA525E8CBCD00F6760C /* OobRegistration.plist */; };
 		20D92DA825E8CBD400F6760C /* OobRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92DA725E8CBD400F6760C /* OobRegistration.storyboard */; };
 		20D92DAA25E8CBE100F6760C /* OobMessaging.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D92DA925E8CBE100F6760C /* OobMessaging.storyboard */; };
-		20D92DAC25E8CBEA00F6760C /* OobMessaging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20D92DAB25E8CBEA00F6760C /* OobMessaging.plist */; };
 		20EB08F226077EB200CF558E /* QrCodeReader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EB08F026077EB200CF558E /* QrCodeReader.xib */; };
 		20EB08F326077EB200CF558E /* QrCodeReader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EB08F026077EB200CF558E /* QrCodeReader.xib */; };
 		20EB08F426077EB200CF558E /* QrCodeReader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EB08F026077EB200CF558E /* QrCodeReader.xib */; };
@@ -1359,7 +1356,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "Thales DIS";
 				TargetAttributes = {
 					F4C4828B24041D27000AC84D = {
@@ -1545,7 +1542,6 @@
 				20D92CC925E89D5B00F6760C /* LaunchScreen.storyboard in Resources */,
 				20EB08F726077EB200CF558E /* QrCodeReader.xib in Resources */,
 				20D92D7225E8C9C300F6760C /* OOBTutorials.xcassets in Resources */,
-				20D92DA425E8CBBB00F6760C /* OOBSetup.plist in Resources */,
 				20D92CCB25E89D5B00F6760C /* Provisioning.storyboard in Resources */,
 				20D92CCD25E89D5B00F6760C /* LoadingView.xib in Resources */,
 			);
@@ -1555,7 +1551,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20D92DA625E8CBCD00F6760C /* OobRegistration.plist in Resources */,
 				20CFAC6025ED55FC0033EBDD /* Media.xcassets in Resources */,
 				20D92CE825E89D5D00F6760C /* ProvisionerView.xib in Resources */,
 				20D92CE925E89D5D00F6760C /* ResultView.xib in Resources */,
@@ -1579,7 +1574,6 @@
 				20CFAC6125ED55FC0033EBDD /* Media.xcassets in Resources */,
 				20D92D0C25E89D5F00F6760C /* ResultView.xib in Resources */,
 				20D92D0D25E89D5F00F6760C /* OTP.storyboard in Resources */,
-				20D92DAC25E8CBEA00F6760C /* OobMessaging.plist in Resources */,
 				20D92D0E25E89D5F00F6760C /* Localizable.strings in Resources */,
 				208457CF25ECC96300D7C26F /* Default-568h@2x.png in Resources */,
 				20D92D0F25E89D5F00F6760C /* LaunchScreen.storyboard in Resources */,

@@ -34,7 +34,6 @@ class SetupViewController: UIViewController, MainViewProtocol {
         super.viewDidLoad()
         title = caption()
         SetupLogic.setup()
-        displayMessageDialog(result: "Setup ok")
     }
 
     // MARK: MainViewProtocol methods.

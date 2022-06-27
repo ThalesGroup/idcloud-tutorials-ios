@@ -1,64 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3po-A4-gKv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wdF-Sh-7Om">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="I2t-bR-eug">
+        <scene sceneID="DPw-cA-Qi4">
             <objects>
-                <navigationController id="3po-A4-gKv" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="zVW-f4-ISx">
+                <navigationController id="wdF-Sh-7Om" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M7F-UD-pmT">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.87843137250000003" green="0.058823529409999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="rPB-af-AtB" kind="relationship" relationship="rootViewController" id="CFn-zP-bek"/>
+                        <segue destination="rPB-af-AtB" kind="relationship" relationship="rootViewController" id="Zk7-1a-RrX"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3tp-DI-uc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aac-uH-mC0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1739" y="-137"/>
+            <point key="canvasLocation" x="-1609" y="-138"/>
         </scene>
         <!--Transaction Sign View Controller-->
         <scene sceneID="KAc-K1-VIE">
             <objects>
                 <viewController id="rPB-af-AtB" customClass="TransactionSignViewController" customModule="_2___07___Transaction_Sign" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UUB-xc-qHu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MsE-5y-URo" customClass="ProvisionerView" customModule="_2___07___Transaction_Sign" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="244"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="229"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="244" id="YXD-hl-Lnh"/>
+                                    <constraint firstAttribute="height" constant="229" id="YXD-hl-Lnh"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Time Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pq1-Py-OHI">
-                                <rect key="frame" x="16" y="260" width="343" height="21"/>
+                                <rect key="frame" x="16" y="333" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Beneficiary" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LbT-c8-GeC" userLabel="RegistrationCode_Text">
-                                <rect key="frame" x="16" y="348" width="343" height="34"/>
+                                <rect key="frame" x="16" y="436" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mVX-XI-UYH" userLabel="UserId_Text">
-                                <rect key="frame" x="16" y="296.66666666666669" width="343" height="43.333333333333314"/>
+                                <rect key="frame" x="16" y="369.66666666666669" width="343" height="58.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <button contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCC-37-FeC" userLabel="buttonOTPPin">
-                                <rect key="frame" x="163.66666666666666" y="398" width="48" height="48"/>
+                                <rect key="frame" x="163.66666666666666" y="486" width="48" height="48"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="IconOTPPin"/>
                                 <connections>
@@ -66,14 +64,14 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYr-1K-Zt2" customClass="ResultView" customModule="_2___07___Transaction_Sign" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="446" width="375" height="244"/>
+                                <rect key="frame" x="0.0" y="534" width="375" height="244"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="244" id="pNg-tT-iau"/>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MI8-qW-NEl" customClass="LoadingView" customModule="_2___07___Transaction_Sign" customModuleProvider="target">
-                                <rect key="frame" x="112.66666666666669" y="270" width="150" height="150"/>
+                                <rect key="frame" x="112.66666666666669" y="358" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="1Ik-PE-aui"/>

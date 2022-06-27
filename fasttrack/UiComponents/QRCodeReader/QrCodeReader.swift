@@ -83,6 +83,10 @@ class QrCodeReader:UIViewController {
     
     // MARK: - Helpers
     
+    func caption() -> String {
+        return Bundle.main.infoDictionary!["CFBundleName"] as! String
+    }
+    
     private func captureStart() {
         // We want to notify handler just once.
         wasProcessed = false

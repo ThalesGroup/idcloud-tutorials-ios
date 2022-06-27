@@ -1,69 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kcX-aI-vFE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N7R-6Y-Omg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="4ob-mY-yUO">
+        <scene sceneID="Kxa-lv-vZp">
             <objects>
-                <navigationController id="kcX-aI-vFE" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="T6b-LI-w3I">
+                <navigationController id="N7R-6Y-Omg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dEV-NG-gQm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.87843137250000003" green="0.058823529409999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="2fd-Wc-4nS" kind="relationship" relationship="rootViewController" id="fzW-m7-rQy"/>
+                        <segue destination="2fd-Wc-4nS" kind="relationship" relationship="rootViewController" id="ZCx-GU-Hjv"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1tv-wz-6sy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gtr-cp-Vky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1739" y="-137"/>
+            <point key="canvasLocation" x="-1732" y="-139"/>
         </scene>
         <!--Code Basic View Controller-->
         <scene sceneID="pLw-e0-5GU">
             <objects>
                 <viewController id="2fd-Wc-4nS" customClass="QRCodeBasicViewController" customModule="_2___02___QRCode_Basic" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uwe-rX-oQi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBG-ta-nlV" customClass="ProvisionerView" customModule="_2___02___Biometric_Id" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="268"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBG-ta-nlV" customClass="ProvisionerView" customModule="_2___02___QRCode_Basic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="229"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="268" id="LKj-uQ-dNb"/>
+                                    <constraint firstAttribute="height" constant="229" id="LKj-uQ-dNb"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Time Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJD-lJ-sW6">
-                                <rect key="frame" x="16" y="284" width="382" height="21"/>
+                                <rect key="frame" x="16" y="333" width="382" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMJ-D8-BGx" userLabel="buttonOTPPin">
-                                <rect key="frame" x="183" y="321" width="48" height="125"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMJ-D8-BGx" userLabel="buttonOTPPin">
+                                <rect key="frame" x="183" y="370" width="48" height="48"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="IconOTPPin"/>
                                 <connections>
                                     <action selector="onButtonPressedGenerateOtp:" destination="2fd-Wc-4nS" eventType="touchUpInside" id="yI4-Y9-pOM"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABY-u8-SkM" customClass="ResultView" customModule="_2___02___Biometric_Id" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="446" width="414" height="328"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABY-u8-SkM" customClass="ResultView" customModule="_2___02___QRCode_Basic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="534" width="414" height="328"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="328" id="c1X-g2-Ewt"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWM-9x-jVo" customClass="LoadingView" customModule="_2___02___Biometric_Id" customModuleProvider="target">
-                                <rect key="frame" x="132" y="312" width="150" height="150"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWM-9x-jVo" customClass="LoadingView" customModule="_2___02___QRCode_Basic" customModuleProvider="target">
+                                <rect key="frame" x="132" y="400" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="VRO-sG-jij"/>
@@ -71,6 +69,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gcy-YN-mD2"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ABY-u8-SkM" firstAttribute="leading" secondItem="Gcy-YN-mD2" secondAttribute="leading" id="2Hp-3s-qdE"/>
@@ -87,7 +86,6 @@
                             <constraint firstItem="Gcy-YN-mD2" firstAttribute="bottom" secondItem="ABY-u8-SkM" secondAttribute="bottom" id="yE5-zk-giz"/>
                             <constraint firstItem="Gcy-YN-mD2" firstAttribute="trailing" secondItem="LBG-ta-nlV" secondAttribute="trailing" id="yzR-kK-p7x"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Gcy-YN-mD2"/>
                     </view>
                     <navigationItem key="navigationItem" id="hnp-GW-HXi"/>
                     <connections>

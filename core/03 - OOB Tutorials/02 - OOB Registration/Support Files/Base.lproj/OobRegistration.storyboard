@@ -1,51 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="61e-IZ-Rll">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7aW-n5-ux1">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="uOi-QI-MeM">
+        <scene sceneID="bfq-hX-49K">
             <objects>
-                <navigationController id="61e-IZ-Rll" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="lXZ-OO-5AU">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                <navigationController id="7aW-n5-ux1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RPa-u3-JfM">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.87843137250000003" green="0.058823529409999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FPq-gp-GHT"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Cwe-U9-wK5"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AQ0-Jh-NO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EPI-Fz-S4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1739" y="-137"/>
+            <point key="canvasLocation" x="-1634" y="-138"/>
         </scene>
         <!--Oob Registration View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="OobRegistration_ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kf6-J1-Y8J" customClass="ProvisionerView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="228.5"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kf6-J1-Y8J" customClass="ProvisionerView">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="228.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPc-1X-G0U" customClass="ResultView">
-                                <rect key="frame" x="0.0" y="228.5" width="375" height="374.5"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TPc-1X-G0U" customClass="ResultView">
+                                <rect key="frame" x="0.0" y="228.5" width="390" height="374.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cz2-Ac-JpZ" customClass="LoadingIndicatorView">
-                                <rect key="frame" x="112.5" y="226.5" width="150" height="150"/>
+                                <rect key="frame" x="120" y="374" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="QKG-AR-BGf"/>
@@ -53,6 +49,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Cz2-Ac-JpZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="3mM-NT-j6U"/>
@@ -66,7 +63,6 @@
                             <constraint firstItem="Cz2-Ac-JpZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rHF-Y4-a8w"/>
                             <constraint firstItem="Kf6-J1-Y8J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sv8-np-TYs"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="XRm-zs-4SO"/>
                     <connections>

@@ -1,62 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9xA-Hh-7uA">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BNk-9b-non">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="bs9-Qv-E68">
+        <scene sceneID="TeY-RB-Ba5">
             <objects>
-                <navigationController id="9xA-Hh-7uA" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3CH-2h-NsB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <navigationController id="BNk-9b-non" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CjU-fc-tWj">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.87843137250000003" green="0.058823529409999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="WVs-li-cLu" kind="relationship" relationship="rootViewController" id="GfH-8a-gPH"/>
+                        <segue destination="WVs-li-cLu" kind="relationship" relationship="rootViewController" id="wPG-z7-lan"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fDe-L3-w7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nAe-C5-toP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-862" y="121"/>
+            <point key="canvasLocation" x="-940" y="120"/>
         </scene>
         <!--Biometric Id View Controller-->
         <scene sceneID="18B-qa-Cjf">
             <objects>
-                <viewController id="WVs-li-cLu" customClass="BiometricIdViewController" customModule="_2___02___Biometric_Id" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WVs-li-cLu" customClass="BiometricIdViewController" customModule="_2___02___QRCode_Basic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U2j-Pw-biN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUA-Ru-Xc5" customClass="ProvisionerView" customModule="_2___02___Biometric_Id" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="268"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUA-Ru-Xc5" customClass="ProvisionerView" customModule="_2___02___QRCode_Basic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="375" height="229"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="268" id="zVU-4o-1AJ"/>
+                                    <constraint firstAttribute="height" constant="229" id="zVU-4o-1AJ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTo-wm-5El" customClass="ResultView" customModule="_2___02___Biometric_Id" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="424" width="414" height="268"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTo-wm-5El" customClass="ResultView" customModule="_2___02___QRCode_Basic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="510" width="375" height="268"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="268" id="8Sm-Xn-bMq"/>
                                 </constraints>
                             </view>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jj-9S-95g">
-                                <rect key="frame" x="32" y="321" width="48" height="48"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jj-9S-95g">
+                                <rect key="frame" x="32" y="370" width="48" height="48"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="IconOTPPin"/>
                                 <connections>
                                     <action selector="onButtonPressedGenerateOtp:" destination="WVs-li-cLu" eventType="touchUpInside" id="Xsp-t7-W6k"/>
                                 </connections>
                             </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQN-9j-gck">
-                                <rect key="frame" x="144" y="321" width="48" height="48"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQN-9j-gck">
+                                <rect key="frame" x="144" y="370" width="48" height="48"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="IconOTPFingerprint"/>
                                 <connections>
@@ -64,19 +63,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Time Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bc1-T3-RNY">
-                                <rect key="frame" x="16" y="284" width="382" height="21"/>
+                                <rect key="frame" x="16" y="333" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TQB-bX-WbA">
-                                <rect key="frame" x="143.66666666666666" y="385" width="51" height="31"/>
+                                <rect key="frame" x="143.66666666666666" y="434" width="51" height="31"/>
                                 <connections>
                                     <action selector="buttonSystemBiometricToggled:" destination="WVs-li-cLu" eventType="valueChanged" id="qa8-zd-ldO"/>
                                 </connections>
                             </switch>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-K1-AiD" customClass="LoadingView" customModule="_2___02___Biometric_Id" customModuleProvider="target">
-                                <rect key="frame" x="132" y="271" width="150" height="150"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBy-K1-AiD" customClass="LoadingView" customModule="_2___02___QRCode_Basic" customModuleProvider="target">
+                                <rect key="frame" x="112.66666666666669" y="358" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.16862745100000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Tn3-IG-iMC"/>
@@ -84,6 +83,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cjj-lj-rOw"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Bc1-T3-RNY" firstAttribute="top" secondItem="HUA-Ru-Xc5" secondAttribute="bottom" constant="16" id="18R-Zm-Epo"/>
@@ -105,7 +105,6 @@
                             <constraint firstItem="1jj-9S-95g" firstAttribute="width" secondItem="PQN-9j-gck" secondAttribute="width" id="qHQ-Mz-Roc"/>
                             <constraint firstItem="oBy-K1-AiD" firstAttribute="centerY" secondItem="Cjj-lj-rOw" secondAttribute="centerY" id="yoZ-Qx-Y6c"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Cjj-lj-rOw"/>
                     </view>
                     <navigationItem key="navigationItem" id="a3v-O4-eam"/>
                     <connections>

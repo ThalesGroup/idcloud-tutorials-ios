@@ -71,8 +71,13 @@
     
     do {
         // Detect jailbreak status.
-        if (EMJailbreakDetectorGetJailbreakStatus() != EMJailbreakStatusNotJailbroken) {
-            break;
+        // Objective C
+        int result;
+        int status = EMDetectorJailbreakStatus(&result);
+        if (status == EM_DETECTOR_STATUS_SUCCESS) {
+            if (result == EM_DETECTOR_RESULT_POSITIVE) {
+                break;
+            }
         }
         
         // Get oath factory and prepare oath settings.

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ekJ-qs-nFG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ekJ-qs-nFG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,20 +35,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhF-9U-ta8" customClass="ProvisionerView" customModule="_1_03_OTP" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="414" height="268"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="229"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="268" id="wH0-cN-bZj"/>
+                                    <constraint firstAttribute="height" constant="229" id="wH0-cN-bZj"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Time Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QT-Qo-wXL">
-                                <rect key="frame" x="131" y="396" width="152" height="21"/>
+                                <rect key="frame" x="131" y="357" width="152" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMo-QX-l9n">
-                                <rect key="frame" x="159" y="447" width="96" height="96"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMo-QX-l9n">
+                                <rect key="frame" x="183" y="408" width="48" height="48"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="IconOTPPin"/>
                                 <connections>
@@ -55,8 +56,8 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pit-kU-jXf" customClass="ResultView" customModule="_1_03_OTP" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="551" width="414" height="301"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="464" width="414" height="388"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQK-fL-fol" customClass="LoadingView" customModule="_1_03_OTP" customModuleProvider="target">
                                 <rect key="frame" x="132" y="373" width="150" height="150"/>
@@ -67,7 +68,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Npl-Cf-LLl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="YhF-9U-ta8" firstAttribute="leading" secondItem="Npl-Cf-LLl" secondAttribute="leading" id="08f-xs-xZ9"/>
                             <constraint firstItem="UQK-fL-fol" firstAttribute="centerX" secondItem="6Ab-cv-IL6" secondAttribute="centerX" id="0Y3-Eq-54g"/>
@@ -84,7 +86,6 @@
                             <constraint firstItem="Pit-kU-jXf" firstAttribute="centerX" secondItem="6Ab-cv-IL6" secondAttribute="centerX" id="xVb-7p-kf6"/>
                             <constraint firstItem="YhF-9U-ta8" firstAttribute="top" secondItem="Npl-Cf-LLl" secondAttribute="top" id="xf9-qT-TbN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Npl-Cf-LLl"/>
                     </view>
                     <navigationItem key="navigationItem" id="BZS-k7-omM"/>
                     <connections>
@@ -101,5 +102,8 @@
     </scenes>
     <resources>
         <image name="IconOTPPin" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

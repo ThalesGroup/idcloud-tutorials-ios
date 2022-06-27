@@ -29,7 +29,6 @@ class AdvancedSetupViewController: UIViewController {
         super.viewDidLoad()
         AdvancedSetupLogic.setup()
         title = caption()
-        displayMessageDialog(result: "Setup Ok")
     }
     
     func caption() -> String {
@@ -40,7 +39,7 @@ class AdvancedSetupViewController: UIViewController {
          // Main alert builder.
          let alert = UIAlertController(title: caption(), message: result, preferredStyle: .alert)
          // Add basic OK button without any handlers.
-         alert.addAction(UIAlertAction(title: "Ok" style: .default, handler: nil))
+         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
          // Present dialog.
          present(alert, animated: true)
      }
