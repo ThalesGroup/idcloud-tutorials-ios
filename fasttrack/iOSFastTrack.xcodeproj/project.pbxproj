@@ -355,32 +355,56 @@
 		20EB09472608319000CF558E /* QRCodeBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB090A26082B3100CF558E /* QRCodeBasicViewController.swift */; };
 		20FA4E6B25F5ADF3002799BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E225ECDBC700D7C26F /* AppDelegate.swift */; };
 		20FA4E6C25F5ADF3002799BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208457E225ECDBC700D7C26F /* AppDelegate.swift */; };
-		E06169F228EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
-		E06169F328EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
-		E06169F428EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
-		E06169F528EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
-		E06169F628EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
-		E06169F728EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
-		E06169F828EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
-		E06169F928EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
-		E06169FA28EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
-		E06169FB28EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
-		E06169FC28EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
-		E06169FD28EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
 		E06169FE28EFC33F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
-		E0616A0028EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
-		E0616A0128EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
-		E0616A0228EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
-		E0616A0328EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
-		E0616A0428EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
-		E0616A0528EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
-		E0616A0628EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
-		E0616A0728EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
-		E0616A0828EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
-		E0616A0928EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
-		E0616A0A28EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
-		E0616A0B28EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
 		E0616A0C28EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A7858828F3CCAC00C65F80 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
+		E0A7858928F3CCAC00C65F80 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A7858B28F3CCAE00C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A7858C28F3CCAE00C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A7858D28F3CCB200C65F80 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
+		E0A7858E28F3CCB200C65F80 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A7859028F3CCB300C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A7859128F3CCB300C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A7859228F3CCB600C65F80 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
+		E0A7859328F3CCB600C65F80 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A7859528F3CCB900C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A7859628F3CCB900C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A7859728F3CCBD00C65F80 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
+		E0A7859828F3CCBD00C65F80 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A7859A28F3CCBE00C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A7859B28F3CCBE00C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A7859C28F3CCC100C65F80 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
+		E0A7859D28F3CCC100C65F80 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A7859F28F3CCC200C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A785A028F3CCC200C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785A128F3CCC400C65F80 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
+		E0A785A228F3CCC400C65F80 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785A428F3CCC500C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A785A528F3CCC500C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785A628F3CCC800C65F80 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
+		E0A785A728F3CCC800C65F80 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785A928F3CCC900C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A785AA28F3CCC900C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785AB28F3CCCC00C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A785AC28F3CCCC00C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785AE28F3CCCD00C65F80 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
+		E0A785AF28F3CCCD00C65F80 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785B028F3CCD000C65F80 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
+		E0A785B128F3CCD000C65F80 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785B328F3CCD100C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A785B428F3CCD100C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785B528F3CCD300C65F80 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
+		E0A785B628F3CCD300C65F80 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785B828F3CCD400C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A785B928F3CCD400C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785BA28F3CCDA00C65F80 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
+		E0A785BB28F3CCDA00C65F80 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785BD28F3CCDD00C65F80 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; };
+		E0A785BE28F3CCDD00C65F80 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169F128EFC33F00205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785C028F3CCDE00C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A785C128F3CCDE00C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A785C228F3CCE200C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; };
+		E0A785C328F3CCE200C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169FF28EFC34D00205220 /* EzioMobileFastTrack.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4000F4825EF7EDA007FDCEA /* OOBRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000EFE25EF7EB0007FDCEA /* OOBRegistrationViewController.swift */; };
 		E4000F4A25EF7EDA007FDCEA /* OOBRegistrationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000EEF25EF7E7F007FDCEA /* OOBRegistrationLogic.swift */; };
 		E4000F5825EF7EDB007FDCEA /* OOBRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4000EFE25EF7EB0007FDCEA /* OOBRegistrationViewController.swift */; };
@@ -508,6 +532,153 @@
 		F4C4833A240972FD000AC84D /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48339240972FD000AC84D /* OtpViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E0A7858A28F3CCAC00C65F80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0A7858C28F3CCAE00C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */,
+				E0A7858928F3CCAC00C65F80 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A7858F28F3CCB200C65F80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0A7859128F3CCB300C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */,
+				E0A7858E28F3CCB200C65F80 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A7859428F3CCB600C65F80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0A7859628F3CCB900C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */,
+				E0A7859328F3CCB600C65F80 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A7859928F3CCBD00C65F80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0A7859B28F3CCBE00C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */,
+				E0A7859828F3CCBD00C65F80 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A7859E28F3CCC100C65F80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0A785A028F3CCC200C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */,
+				E0A7859D28F3CCC100C65F80 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A785A328F3CCC400C65F80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0A785A528F3CCC500C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */,
+				E0A785A228F3CCC400C65F80 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A785A828F3CCC800C65F80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0A785AA28F3CCC900C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */,
+				E0A785A728F3CCC800C65F80 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A785AD28F3CCCC00C65F80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0A785AF28F3CCCD00C65F80 /* EzioMobile.xcframework in Embed Frameworks */,
+				E0A785AC28F3CCCC00C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A785B228F3CCD000C65F80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0A785B428F3CCD100C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */,
+				E0A785B128F3CCD000C65F80 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A785B728F3CCD300C65F80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0A785B928F3CCD400C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */,
+				E0A785B628F3CCD300C65F80 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A785BC28F3CCDA00C65F80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0A785C328F3CCE200C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */,
+				E0A785BB28F3CCDA00C65F80 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0A785BF28F3CCDD00C65F80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0A785C128F3CCDE00C65F80 /* EzioMobileFastTrack.xcframework in Embed Frameworks */,
+				E0A785BE28F3CCDD00C65F80 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		206CDB1A25FB5AB000F81971 /* OOBSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBSetupViewController.swift; sourceTree = "<group>"; };
 		208457C525ECC8C700D7C26F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -609,8 +780,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0616A0428EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */,
-				E06169F628EFC33F00205220 /* EzioMobile.xcframework in Frameworks */,
+				E0A7859F28F3CCC200C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */,
+				E0A7859C28F3CCC100C65F80 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,8 +789,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0616A0328EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */,
-				E06169F528EFC33F00205220 /* EzioMobile.xcframework in Frameworks */,
+				E0A7859A28F3CCBE00C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */,
+				E0A7859728F3CCBD00C65F80 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,8 +798,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0616A0528EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */,
-				E06169F728EFC33F00205220 /* EzioMobile.xcframework in Frameworks */,
+				E0A785A428F3CCC500C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */,
+				E0A785A128F3CCC400C65F80 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,8 +807,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0616A0628EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */,
-				E06169F828EFC33F00205220 /* EzioMobile.xcframework in Frameworks */,
+				E0A785A928F3CCC900C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */,
+				E0A785A628F3CCC800C65F80 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,8 +816,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0616A0728EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */,
-				E06169F928EFC33F00205220 /* EzioMobile.xcframework in Frameworks */,
+				E0A785AE28F3CCCD00C65F80 /* EzioMobile.xcframework in Frameworks */,
+				E0A785AB28F3CCCC00C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,8 +825,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0616A0828EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */,
-				E06169FA28EFC33F00205220 /* EzioMobile.xcframework in Frameworks */,
+				E0A785B328F3CCD100C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */,
+				E0A785B028F3CCD000C65F80 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,8 +834,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0616A0928EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */,
-				E06169FB28EFC33F00205220 /* EzioMobile.xcframework in Frameworks */,
+				E0A785B828F3CCD400C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */,
+				E0A785B528F3CCD300C65F80 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,8 +843,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0616A0A28EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */,
-				E06169FC28EFC33F00205220 /* EzioMobile.xcframework in Frameworks */,
+				E0A785C228F3CCE200C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */,
+				E0A785BA28F3CCDA00C65F80 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,8 +852,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0616A0B28EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */,
-				E06169FD28EFC33F00205220 /* EzioMobile.xcframework in Frameworks */,
+				E0A785C028F3CCDE00C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */,
+				E0A785BD28F3CCDD00C65F80 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,8 +870,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0616A0028EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */,
-				E06169F228EFC33F00205220 /* EzioMobile.xcframework in Frameworks */,
+				E0A7859028F3CCB300C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */,
+				E0A7858D28F3CCB200C65F80 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,8 +879,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0616A0128EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */,
-				E06169F328EFC33F00205220 /* EzioMobile.xcframework in Frameworks */,
+				E0A7859528F3CCB900C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */,
+				E0A7859228F3CCB600C65F80 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,8 +888,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0616A0228EFC34D00205220 /* EzioMobileFastTrack.xcframework in Frameworks */,
-				E06169F428EFC33F00205220 /* EzioMobile.xcframework in Frameworks */,
+				E0A7858B28F3CCAE00C65F80 /* EzioMobileFastTrack.xcframework in Frameworks */,
+				E0A7858828F3CCAC00C65F80 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1138,6 +1309,7 @@
 				208C8F6026084EBE00CB4CD8 /* Sources */,
 				208C8F7926084EBE00CB4CD8 /* Frameworks */,
 				208C8F7C26084EBE00CB4CD8 /* Resources */,
+				E0A7859E28F3CCC100C65F80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1155,6 +1327,7 @@
 				20D92BDD25E890B000F6760C /* Sources */,
 				20D92BEE25E890B000F6760C /* Frameworks */,
 				20D92BF125E890B000F6760C /* Resources */,
+				E0A7859928F3CCBD00C65F80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1172,6 +1345,7 @@
 				20D92C0125E890B900F6760C /* Sources */,
 				20D92C1225E890B900F6760C /* Frameworks */,
 				20D92C1525E890B900F6760C /* Resources */,
+				E0A785A328F3CCC400C65F80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1189,6 +1363,7 @@
 				20D92C2525E89D5200F6760C /* Sources */,
 				20D92C3525E89D5200F6760C /* Frameworks */,
 				20D92C3825E89D5200F6760C /* Resources */,
+				E0A785A828F3CCC800C65F80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1206,6 +1381,7 @@
 				20D92C4825E89D5400F6760C /* Sources */,
 				20D92C5825E89D5400F6760C /* Frameworks */,
 				20D92C5B25E89D5400F6760C /* Resources */,
+				E0A785AD28F3CCCC00C65F80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1223,6 +1399,7 @@
 				20D92C6B25E89D5700F6760C /* Sources */,
 				20D92C7B25E89D5700F6760C /* Frameworks */,
 				20D92C7E25E89D5700F6760C /* Resources */,
+				E0A785B228F3CCD000C65F80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1240,6 +1417,7 @@
 				20D92C8E25E89D5900F6760C /* Sources */,
 				20D92C9E25E89D5900F6760C /* Frameworks */,
 				20D92CA125E89D5900F6760C /* Resources */,
+				E0A785B728F3CCD300C65F80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1257,6 +1435,7 @@
 				20D92CB125E89D5B00F6760C /* Sources */,
 				20D92CC125E89D5B00F6760C /* Frameworks */,
 				20D92CC425E89D5B00F6760C /* Resources */,
+				E0A785BC28F3CCDA00C65F80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1274,6 +1453,7 @@
 				20D92CD425E89D5D00F6760C /* Sources */,
 				20D92CE425E89D5D00F6760C /* Frameworks */,
 				20D92CE725E89D5D00F6760C /* Resources */,
+				E0A785BF28F3CCDD00C65F80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1308,6 +1488,7 @@
 				F4C4828824041D27000AC84D /* Sources */,
 				F4C4828924041D27000AC84D /* Frameworks */,
 				F4C4828A24041D27000AC84D /* Resources */,
+				E0A7858F28F3CCB200C65F80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1325,6 +1506,7 @@
 				F4C482D524069C4F000AC84D /* Sources */,
 				F4C482DD24069C4F000AC84D /* Frameworks */,
 				F4C482E024069C4F000AC84D /* Resources */,
+				E0A7859428F3CCB600C65F80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1342,6 +1524,7 @@
 				F4C4830C24094CB0000AC84D /* Sources */,
 				F4C4831724094CB0000AC84D /* Frameworks */,
 				F4C4831A24094CB0000AC84D /* Resources */,
+				E0A7858A28F3CCAC00C65F80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
