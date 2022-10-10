@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,11 +23,9 @@
 		6D161B3222A6B168006DB40D /* Provisioning_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D764ACD2251F1F6008AFCCF /* Provisioning_ViewController.m */; };
 		6D161B3322A6B16C006DB40D /* Setup_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A25942251EA0800B62E2B /* Setup_Logic.m */; };
 		6D161B3422A6B16C006DB40D /* Setup_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A257B2251E5E900B62E2B /* Setup_ViewController.m */; };
-		6D161B3822A6B186006DB40D /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6D161B4A22A6B379006DB40D /* OobRegistration_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D161B4922A6B379006DB40D /* OobRegistration_Logic.m */; };
 		6D1D7F9A228D876B0054DB33 /* QRCodeBasic_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D7F99228D876B0054DB33 /* QRCodeBasic_ViewController.m */; };
 		6D1D7F9D228D876B0054DB33 /* QRCodeBasic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1D7F9B228D876B0054DB33 /* QRCodeBasic.storyboard */; };
-		6D1D7FAF228D883C0054DB33 /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6D1D7FB2228D89090054DB33 /* QRCodeBasic_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D7FB1228D89090054DB33 /* QRCodeBasic_Logic.m */; };
 		6D1D7FB4228D893F0054DB33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92E902264D0F80079A061 /* AppDelegate.m */; };
 		6D1D7FB5228D89410054DB33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92E8F2264D0F80079A061 /* main.m */; };
@@ -70,7 +68,6 @@
 		6D32CDF82280534100AC962B /* ChangePin_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D32CDF72280534100AC962B /* ChangePin_Logic.m */; };
 		6D3A257C2251E5E900B62E2B /* Setup_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A257B2251E5E900B62E2B /* Setup_ViewController.m */; };
 		6D3A257F2251E5E900B62E2B /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A257D2251E5E900B62E2B /* Setup.storyboard */; };
-		6D3A258F2251E88E00B62E2B /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6D3A25952251EA0800B62E2B /* Setup_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A25942251EA0800B62E2B /* Setup_Logic.m */; };
 		6D48213122AFFAD600637410 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D48212F22AFF94D00637410 /* AppDelegate.m */; };
 		6D48213222B00DBB00637410 /* LoadingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92F672265C8B40079A061 /* LoadingIndicatorView.m */; };
@@ -150,7 +147,6 @@
 		6D4821EB22B1192700637410 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92E8E2264D0F80079A061 /* Localizable.strings */; };
 		6D4821EC22B1192900637410 /* CommonAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA354C22773B3400C538EF /* CommonAssets.xcassets */; };
 		6D4821ED22B1192900637410 /* CommonAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA354C22773B3400C538EF /* CommonAssets.xcassets */; };
-		6D4821F122B1193E00637410 /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6D48220E22B11B0B00637410 /* QRCodeBasic_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D7F99228D876B0054DB33 /* QRCodeBasic_ViewController.m */; };
 		6D48220F22B11B0B00637410 /* QRCodeBasic_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D7F99228D876B0054DB33 /* QRCodeBasic_ViewController.m */; };
 		6D48221022B11B2400637410 /* QRCodeReaderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D7FEA228D94990054DB33 /* QRCodeReaderVC.m */; };
@@ -166,7 +162,6 @@
 		6D48221F22B1303600637410 /* Tutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D48221B22B1302C00637410 /* Tutorials.xcassets */; };
 		6D48222022B1303600637410 /* Tutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D48221B22B1302C00637410 /* Tutorials.xcassets */; };
 		6D48222122B1303700637410 /* Tutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D48221B22B1302C00637410 /* Tutorials.xcassets */; };
-		6D48222722B1481400637410 /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6D48222F22B2695500637410 /* OOBTutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D48222D22B265F800637410 /* OOBTutorials.xcassets */; };
 		6D48223022B2695500637410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D48222C22B265F800637410 /* main.m */; };
 		6D48223122B2695600637410 /* OOBTutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D48222D22B265F800637410 /* OOBTutorials.xcassets */; };
@@ -182,7 +177,6 @@
 		6D51ABAB22B78D270088F2BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D48222C22B265F800637410 /* main.m */; };
 		6D51ABAC22B78D2B0088F2BA /* OOBTutorials.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D48222D22B265F800637410 /* OOBTutorials.xcassets */; };
 		6D51ABAD22B78D2E0088F2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D48222A22B265F800637410 /* LaunchScreen.storyboard */; };
-		6D51ABB122B78D470088F2BA /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6D51ABB222B78D540088F2BA /* QRCodeBasic_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D7F99228D876B0054DB33 /* QRCodeBasic_ViewController.m */; };
 		6D51ABB322B78D590088F2BA /* QRCodeBasic_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D7FB1228D89090054DB33 /* QRCodeBasic_Logic.m */; };
 		6D51ABB422B78D5C0088F2BA /* SecureKeypad_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D48217D22B10B2700637410 /* SecureKeypad_ViewController.m */; };
@@ -240,7 +234,6 @@
 		6D53D8C623EC5151002D5045 /* InBandVerification_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92F0B2264DE310079A061 /* InBandVerification_Logic.m */; };
 		6D53D8C723EC5151002D5045 /* SecureKeypad_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D48217F22B10B2700637410 /* SecureKeypad_Logic.m */; };
 		6D53D8CC23EC5151002D5045 /* SecureKeypad_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D48217D22B10B2700637410 /* SecureKeypad_ViewController.m */; };
-		6D53D8D123EC5151002D5045 /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6D53D8D323EC5151002D5045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92E8C2264D0F80079A061 /* LaunchScreen.storyboard */; };
 		6D53D8D423EC5151002D5045 /* QRCodeReaderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1D7FED228D95980054DB33 /* QRCodeReaderVC.xib */; };
 		6D53D8D523EC5151002D5045 /* LoadingIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92FCD226750E00079A061 /* LoadingIndicatorView.xib */; };
@@ -264,10 +257,8 @@
 		6D764AD12251F1F6008AFCCF /* Provisioning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D764ACF2251F1F6008AFCCF /* Provisioning.storyboard */; };
 		6D764ADF2251F254008AFCCF /* Provisioning_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D764ADE2251F254008AFCCF /* Provisioning_Logic.m */; };
 		6D764AE02251F267008AFCCF /* Setup_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A25942251EA0800B62E2B /* Setup_Logic.m */; };
-		6D764AE12251F2D2008AFCCF /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6D764AF6225205E5008AFCCF /* OTP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D764AF5225205E5008AFCCF /* OTP_ViewController.m */; };
 		6D764AF9225205E5008AFCCF /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D764AF7225205E5008AFCCF /* OTP.storyboard */; };
-		6D764B08225205F9008AFCCF /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6D764B0922520651008AFCCF /* Setup_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A25942251EA0800B62E2B /* Setup_Logic.m */; };
 		6D764B0A22520654008AFCCF /* Provisioning_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D764ADE2251F254008AFCCF /* Provisioning_Logic.m */; };
 		6D764B0D22520915008AFCCF /* OTP_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D764B0C22520915008AFCCF /* OTP_Logic.m */; };
@@ -292,7 +283,6 @@
 		6D92E0F7228C305600F5D6D2 /* Setup_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A25942251EA0800B62E2B /* Setup_Logic.m */; };
 		6D92E0F8228C30B100F5D6D2 /* OTP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D764AF5225205E5008AFCCF /* OTP_ViewController.m */; };
 		6D92E0F9228C30B300F5D6D2 /* OTP_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D764B0C22520915008AFCCF /* OTP_Logic.m */; };
-		6D92E10B228C30F500F5D6D2 /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6D92E10C228C311D00F5D6D2 /* AdvancedSetup_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92EA12264D2390079A061 /* AdvancedSetup_Logic.m */; };
 		6DCE3D8222CA11E500E52CFB /* QRCodeBasic_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D7FB1228D89090054DB33 /* QRCodeBasic_Logic.m */; };
 		6DCE3D8322CA11E600E52CFB /* QRCodeBasic_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D7FB1228D89090054DB33 /* QRCodeBasic_Logic.m */; };
@@ -317,14 +307,12 @@
 		6DD92EA62264D2390079A061 /* AdvancedSetup_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92EA02264D2390079A061 /* AdvancedSetup_ViewController.m */; };
 		6DD92EA72264D2390079A061 /* AdvancedSetup_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92EA12264D2390079A061 /* AdvancedSetup_Logic.m */; };
 		6DD92EAA2264D65B0079A061 /* Setup_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A257B2251E5E900B62E2B /* Setup_ViewController.m */; };
-		6DD92EAE2264D7500079A061 /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6DD92EBD2264DAE80079A061 /* BiometricId_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92EBC2264DAE80079A061 /* BiometricId_ViewController.m */; };
 		6DD92EC02264DAE80079A061 /* BiometricId.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92EBE2264DAE80079A061 /* BiometricId.storyboard */; };
 		6DD92ECE2264DB140079A061 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92E8F2264D0F80079A061 /* main.m */; };
 		6DD92ED02264DB200079A061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92E8C2264D0F80079A061 /* LaunchScreen.storyboard */; };
 		6DD92ED12264DB230079A061 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92E8E2264D0F80079A061 /* Localizable.strings */; };
 		6DD92ED52264DB530079A061 /* BiometricId_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92ED42264DB530079A061 /* BiometricId_Logic.m */; };
-		6DD92ED92264DB970079A061 /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6DD92EDA2264DBE80079A061 /* AdvancedSetup_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92EA12264D2390079A061 /* AdvancedSetup_Logic.m */; };
 		6DD92EDB2264DBEA0079A061 /* AdvancedSetup_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92EA02264D2390079A061 /* AdvancedSetup_ViewController.m */; };
 		6DD92EDC2264DC130079A061 /* Setup_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A257B2251E5E900B62E2B /* Setup_ViewController.m */; };
@@ -344,7 +332,6 @@
 		6DD92F072264DDD80079A061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92E8C2264D0F80079A061 /* LaunchScreen.storyboard */; };
 		6DD92F082264DDDA0079A061 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92E8E2264D0F80079A061 /* Localizable.strings */; };
 		6DD92F0C2264DE310079A061 /* InBandVerification_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92F0B2264DE310079A061 /* InBandVerification_Logic.m */; };
-		6DD92F102264DE610079A061 /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6DD92F112264DE720079A061 /* BiometricId_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92EBC2264DAE80079A061 /* BiometricId_ViewController.m */; };
 		6DD92F122264DE750079A061 /* BiometricId_Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92ED42264DB530079A061 /* BiometricId_Logic.m */; };
 		6DD92F132264DE7E0079A061 /* AdvancedSetup_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92EA02264D2390079A061 /* AdvancedSetup_ViewController.m */; };
@@ -382,7 +369,6 @@
 		6DDB0613228183F10014D41F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92E8E2264D0F80079A061 /* Localizable.strings */; };
 		6DDB0615228183FD0014D41F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92E8F2264D0F80079A061 /* main.m */; };
 		6DDB06172281840F0014D41F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92E8C2264D0F80079A061 /* LaunchScreen.storyboard */; };
-		6DDB061B228185310014D41F /* EzioMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3A258E2251E88E00B62E2B /* EzioMobile.framework */; };
 		6DDB062A22840AB20014D41F /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DDB062822840AB20014D41F /* ResultView.xib */; };
 		6DDB062B22840AB20014D41F /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DDB062822840AB20014D41F /* ResultView.xib */; };
 		6DDB062E22840B110014D41F /* ResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB062D22840B110014D41F /* ResultView.m */; };
@@ -420,7 +406,192 @@
 		6DEA35402276EDB700C538EF /* ProvisionerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92FC5226750B70079A061 /* ProvisionerView.xib */; };
 		6DEA35422276EDC700C538EF /* SDKStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92FCA226750C60079A061 /* SDKStateView.xib */; };
 		6DEA354D22773B3400C538EF /* CommonAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA354C22773B3400C538EF /* CommonAssets.xcassets */; };
+		E06169C728EFC12700205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169C828EFC12700205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169CA28EFC12900205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169CB28EFC12900205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169CD28EFC12C00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169CE28EFC12C00205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169D028EFC12F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169D128EFC12F00205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169D328EFC13100205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169D428EFC13100205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169D628EFC13400205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169D728EFC13400205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169D928EFC13600205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169DA28EFC13600205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169DC28EFC13900205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169DD28EFC13900205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169DF28EFC13D00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169E028EFC13D00205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169E228EFC13F00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169E328EFC13F00205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169E528EFC14200205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169E628EFC14200205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169E828EFC14500205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169E928EFC14500205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169EB28EFC14800205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169EC28EFC14800205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06169EE28EFC14B00205220 /* EzioMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; };
+		E06169EF28EFC14B00205220 /* EzioMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06169B828EFC12400205220 /* EzioMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E06169C928EFC12700205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169C828EFC12700205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169CC28EFC12900205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169CB28EFC12900205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169CF28EFC12C00205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169CE28EFC12C00205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169D228EFC12F00205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169D128EFC12F00205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169D528EFC13100205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169D428EFC13100205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169D828EFC13400205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169D728EFC13400205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169DB28EFC13600205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169DA28EFC13600205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169DE28EFC13900205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169DD28EFC13900205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169E128EFC13D00205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169E028EFC13D00205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169E428EFC13F00205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169E328EFC13F00205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169E728EFC14200205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169E628EFC14200205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169EA28EFC14500205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169E928EFC14500205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169ED28EFC14800205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169EC28EFC14800205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06169F028EFC14B00205220 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06169EF28EFC14B00205220 /* EzioMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6D161B0D22A6AFB1006DB40D /* 03 - 02 - OOB Registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03 - 02 - OOB Registration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -461,7 +632,6 @@
 		6D3A257B2251E5E900B62E2B /* Setup_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Setup_ViewController.m; sourceTree = "<group>"; };
 		6D3A257E2251E5E900B62E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setup.storyboard; sourceTree = "<group>"; };
 		6D3A25852251E5EB00B62E2B /* Setup.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Setup.plist; sourceTree = "<group>"; };
-		6D3A258E2251E88E00B62E2B /* EzioMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EzioMobile.framework; path = Debug/EzioMobile.framework; sourceTree = "<group>"; };
 		6D3A25932251EA0800B62E2B /* Setup_Logic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Setup_Logic.h; sourceTree = "<group>"; };
 		6D3A25942251EA0800B62E2B /* Setup_Logic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Setup_Logic.m; sourceTree = "<group>"; };
 		6D48212F22AFF94D00637410 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -584,6 +754,7 @@
 		6DDB062C22840B110014D41F /* ResultView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultView.h; sourceTree = "<group>"; };
 		6DDB062D22840B110014D41F /* ResultView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultView.m; sourceTree = "<group>"; };
 		6DEA354C22773B3400C538EF /* CommonAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CommonAssets.xcassets; sourceTree = "<group>"; };
+		E06169B828EFC12400205220 /* EzioMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = EzioMobile.xcframework; path = $CONFIGURATION/EzioMobile.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -591,7 +762,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D161B3822A6B186006DB40D /* EzioMobile.framework in Frameworks */,
+				E06169CD28EFC12C00205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,7 +770,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D1D7FAF228D883C0054DB33 /* EzioMobile.framework in Frameworks */,
+				E06169E228EFC13F00205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,7 +778,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DDB061B228185310014D41F /* EzioMobile.framework in Frameworks */,
+				E06169D928EFC13600205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,7 +786,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D3A258F2251E88E00B62E2B /* EzioMobile.framework in Frameworks */,
+				E06169EE28EFC14B00205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +794,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D48222722B1481400637410 /* EzioMobile.framework in Frameworks */,
+				E06169C728EFC12700205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,7 +802,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D4821F122B1193E00637410 /* EzioMobile.framework in Frameworks */,
+				E06169CA28EFC12900205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,7 +810,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D51ABB122B78D470088F2BA /* EzioMobile.framework in Frameworks */,
+				E06169D028EFC12F00205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,7 +818,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D53D8D123EC5151002D5045 /* EzioMobile.framework in Frameworks */,
+				E06169D328EFC13100205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,7 +826,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D764AE12251F2D2008AFCCF /* EzioMobile.framework in Frameworks */,
+				E06169EB28EFC14800205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,7 +834,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D764B08225205F9008AFCCF /* EzioMobile.framework in Frameworks */,
+				E06169E828EFC14500205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +842,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D92E10B228C30F500F5D6D2 /* EzioMobile.framework in Frameworks */,
+				E06169D628EFC13400205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,7 +850,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DD92EAE2264D7500079A061 /* EzioMobile.framework in Frameworks */,
+				E06169E528EFC14200205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,7 +858,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DD92ED92264DB970079A061 /* EzioMobile.framework in Frameworks */,
+				E06169DF28EFC13D00205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,7 +866,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DD92F102264DE610079A061 /* EzioMobile.framework in Frameworks */,
+				E06169DC28EFC13900205220 /* EzioMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,7 +1013,7 @@
 		6D3A258D2251E84C00B62E2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6D3A258E2251E88E00B62E2B /* EzioMobile.framework */,
+				E06169B828EFC12400205220 /* EzioMobile.xcframework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -1231,6 +1402,7 @@
 				6D161B0922A6AFB1006DB40D /* Sources */,
 				6D161B0A22A6AFB1006DB40D /* Frameworks */,
 				6D161B0B22A6AFB1006DB40D /* Resources */,
+				E06169CF28EFC12C00205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1248,6 +1420,7 @@
 				6D1D7F8F228D876B0054DB33 /* Sources */,
 				6D1D7F90228D876B0054DB33 /* Frameworks */,
 				6D1D7F91228D876B0054DB33 /* Resources */,
+				E06169E428EFC13F00205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1265,6 +1438,7 @@
 				6D32CDDA228052D400AC962B /* Sources */,
 				6D32CDDB228052D400AC962B /* Frameworks */,
 				6D32CDDC228052D400AC962B /* Resources */,
+				E06169DB28EFC13600205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1282,6 +1456,7 @@
 				6D3A25702251E5E900B62E2B /* Sources */,
 				6D3A25712251E5E900B62E2B /* Frameworks */,
 				6D3A25722251E5E900B62E2B /* Resources */,
+				E06169F028EFC14B00205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1299,6 +1474,7 @@
 				6D48215622B10A8000637410 /* Sources */,
 				6D48215722B10A8000637410 /* Frameworks */,
 				6D48215822B10A8000637410 /* Resources */,
+				E06169C928EFC12700205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1316,6 +1492,7 @@
 				6D48218822B1162A00637410 /* Sources */,
 				6D48218922B1162A00637410 /* Frameworks */,
 				6D48218A22B1162A00637410 /* Resources */,
+				E06169CC28EFC12900205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1333,6 +1510,7 @@
 				6D51AB8122B7820A0088F2BA /* Sources */,
 				6D51AB8222B7820A0088F2BA /* Frameworks */,
 				6D51AB8322B7820A0088F2BA /* Resources */,
+				E06169D228EFC12F00205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1350,6 +1528,7 @@
 				6D53D8A723EC5151002D5045 /* Sources */,
 				6D53D8CD23EC5151002D5045 /* Frameworks */,
 				6D53D8D223EC5151002D5045 /* Resources */,
+				E06169D528EFC13100205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1367,6 +1546,7 @@
 				6D764AC32251F1F6008AFCCF /* Sources */,
 				6D764AC42251F1F6008AFCCF /* Frameworks */,
 				6D764AC52251F1F6008AFCCF /* Resources */,
+				E06169ED28EFC14800205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1384,6 +1564,7 @@
 				6D764AEB225205E5008AFCCF /* Sources */,
 				6D764AEC225205E5008AFCCF /* Frameworks */,
 				6D764AED225205E5008AFCCF /* Resources */,
+				E06169EA28EFC14500205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1401,6 +1582,7 @@
 				6D92E0D5228C2E5200F5D6D2 /* Sources */,
 				6D92E0D6228C2E5200F5D6D2 /* Frameworks */,
 				6D92E0D7228C2E5200F5D6D2 /* Resources */,
+				E06169D828EFC13400205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1418,6 +1600,7 @@
 				6DD92E6D2264D0B60079A061 /* Sources */,
 				6DD92E6E2264D0B60079A061 /* Frameworks */,
 				6DD92E6F2264D0B60079A061 /* Resources */,
+				E06169E728EFC14200205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1435,6 +1618,7 @@
 				6DD92EB22264DAE80079A061 /* Sources */,
 				6DD92EB32264DAE80079A061 /* Frameworks */,
 				6DD92EB42264DAE80079A061 /* Resources */,
+				E06169E128EFC13D00205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1452,6 +1636,7 @@
 				6DD92EE92264DD8C0079A061 /* Sources */,
 				6DD92EEA2264DD8C0079A061 /* Frameworks */,
 				6DD92EEB2264DD8C0079A061 /* Resources */,
+				E06169DE28EFC13900205220 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1468,7 +1653,7 @@
 		6D3A256C2251E5E900B62E2B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Gemalto;
 				TargetAttributes = {
 					6D161B0C22A6AFB1006DB40D = {
@@ -2320,6 +2505,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "03 - OOB Tutorials/02 - Oob Registration/Support Files/OobRegistration.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.oobtutorials;
 			};
 			name = Debug;
@@ -2328,6 +2517,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "03 - OOB Tutorials/02 - Oob Registration/Support Files/OobRegistration.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.oobtutorials;
 			};
 			name = Release;
@@ -2336,6 +2529,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/02 - QR Code Basic/Support Files/QRCodeBasic.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 			};
 			name = Debug;
@@ -2344,6 +2541,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/02 - QR Code Basic/Support Files/QRCodeBasic.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 			};
 			name = Release;
@@ -2352,6 +2553,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/05 - Change Pin/Support Files/ChangePin.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 			};
 			name = Debug;
@@ -2360,6 +2565,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/05 - Change Pin/Support Files/ChangePin.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 			};
 			name = Release;
@@ -2404,10 +2613,6 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/Debug",
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2424,7 +2629,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2483,10 +2688,6 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/Release",
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2497,13 +2698,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -2520,6 +2720,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "01 - Getting Started/01 - Setup/Support Files/Setup.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.gettingstarted;
 			};
 			name = Debug;
@@ -2528,6 +2732,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "01 - Getting Started/01 - Setup/Support Files/Setup.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.gettingstarted;
 			};
 			name = Release;
@@ -2536,6 +2744,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Secure Keypad Designer/Support Files/SecureKeypadDesigner.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.securekeypaddesigner;
 			};
 			name = Debug;
@@ -2544,6 +2756,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Secure Keypad Designer/Support Files/SecureKeypadDesigner.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.securekeypaddesigner;
 			};
 			name = Release;
@@ -2552,6 +2768,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "03 - OOB Tutorials/03 - Oob Messaging/Support Files/OobMessaging.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.oobtutorials;
 			};
 			name = Debug;
@@ -2560,6 +2780,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "03 - OOB Tutorials/03 - Oob Messaging/Support Files/OobMessaging.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.oobtutorials;
 			};
 			name = Release;
@@ -2568,6 +2792,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "03 - OOB Tutorials/01 - OOB Setup/Support Files/OOBSetup.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.oobtutorials;
 			};
 			name = Debug;
@@ -2576,6 +2804,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "03 - OOB Tutorials/01 - OOB Setup/Support Files/OOBSetup.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.oobtutorials;
 			};
 			name = Release;
@@ -2584,6 +2816,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/07 - Transaction Sign/Support Files/TransactionSign.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2593,6 +2829,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/07 - Transaction Sign/Support Files/TransactionSign.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2602,6 +2842,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "01 - Getting Started/02 - Provisioning/Support Files/Provisioning.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.gettingstarted;
 			};
 			name = Debug;
@@ -2610,6 +2854,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "01 - Getting Started/02 - Provisioning/Support Files/Provisioning.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.gettingstarted;
 			};
 			name = Release;
@@ -2618,6 +2866,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "01 - Getting Started/03 - OTP/Support Files/OTP.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.gettingstarted;
 			};
 			name = Debug;
@@ -2626,6 +2878,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "01 - Getting Started/03 - OTP/Support Files/OTP.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.gettingstarted;
 			};
 			name = Release;
@@ -2634,6 +2890,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/06 - Secure Keypad/Support Files/SecureKeypad.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 			};
 			name = Debug;
@@ -2642,6 +2902,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/06 - Secure Keypad/Support Files/SecureKeypad.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 			};
 			name = Release;
@@ -2650,6 +2914,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/01 - Advanced Setup/Support Files/AdvancedSetup.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 			};
 			name = Debug;
@@ -2658,6 +2926,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/01 - Advanced Setup/Support Files/AdvancedSetup.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 			};
 			name = Release;
@@ -2666,6 +2938,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/03 - Biometric Id/Support Files/BiometricId.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 			};
 			name = Debug;
@@ -2674,6 +2950,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/03 - Biometric Id/Support Files/BiometricId.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 			};
 			name = Release;
@@ -2682,6 +2962,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/04 - In Band Verification/Support Files/InBandVerification.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 			};
 			name = Debug;
@@ -2690,6 +2974,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "02 - Tutorials/04 - In Band Verification/Support Files/InBandVerification.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thalesgroup.mobileprotector.tutorials;
 			};
 			name = Release;
