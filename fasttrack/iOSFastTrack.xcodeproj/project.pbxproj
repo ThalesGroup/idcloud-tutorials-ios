@@ -2703,8 +2703,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-lc++",
-					"-ObjC",
-					"-all_load",
 					"-fprofile-arcs",
 				);
 				SDKROOT = iphoneos;
@@ -2765,8 +2763,6 @@
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = (
 					"-lc++",
-					"-ObjC",
-					"-all_load",
 					"-fprofile-arcs",
 				);
 				SDKROOT = iphoneos;
