@@ -26,6 +26,7 @@
 #import "OTP_ViewController.h"
 #import "Provisioning_Logic.h"
 #import "OTP_Logic.h"
+#import "Setup_Config.h"
 
 @interface OTP_ViewController()
 
@@ -103,6 +104,47 @@
 
 - (void)userPinWithCompletionHandler:(AuthPinHandler)completionHandler
 {
+    if (CFG_ACTIVATION_CODE()) {
+        [self userPinSecureKeypad:completionHandler];
+    } else {
+        [self userPinFromPlainInput:completionHandler];
+    }
+    
+    
+}
+
+- (void)userPinFromPlainInput:(AuthPinHandler)completionHandler {
+    UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"Pin"
+                                                                              message: @"Input pin for OTP calculation"
+                                                                       preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"pin";
+        textField.textColor = [UIColor blueColor];
+        textField.keyboardType = UIKeyboardTypeNumberPad;
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+    }];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        UITextField *pinField = alertController.textFields.firstObject;
+        if (!pinField.text.length) {
+            [self displayMessageDialog:@"Pin entry can't be empty"];
+            return;
+        }
+        
+        NSError *error;
+        EMPinAuthService *service = [EMPinAuthService serviceWithModule:[EMAuthModule authModule]];
+        id<EMPinAuthInput> pin = [service createAuthInputWithString:pinField.text error:&error];
+        if (pin && !error) {
+            completionHandler(pin);
+        } else {
+            [self displayMessageDialogError:error];
+        }
+    }]];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
+- (void)userPinSecureKeypad:(AuthPinHandler)completionHandler {
     // Get secure keypad builder.
     id<EMSecureInputBuilder> builder = [[EMSecureInputService serviceWithModule:[EMUIModule uiModule]] secureInputBuilder];
     
@@ -130,6 +172,7 @@
     // Push in secure input UI view controller to the current view controller
     [self.navigationController pushViewController:secureInput.viewController animated:YES];
 }
+
 
 // MARK: - User interface
 

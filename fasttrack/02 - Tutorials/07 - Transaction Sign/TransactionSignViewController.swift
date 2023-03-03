@@ -38,10 +38,13 @@ class TransactionSignViewController: ChangePinViewController, UITextFieldDelegat
         textBeneficiaryTextField.delegate = self
     }
     
-    func generateOtp(_ token: EMProtectorOathTokenDevice, pinAuthInput: EMProtectorAuthInput, amount: String, beneficiary: String) {
+    func generateOtp(_ token: EMProtectorOathTokenDevice,
+                     pinAuthInput: EMProtectorAuthInput?,
+                     pin: String?,
+                     amount: String, beneficiary: String) {
         var otpValue: OtpValue?
         do {
-            otpValue = try TransactionSignLogic.generateOtp(token, pinAuthInput: pinAuthInput, amount: amount, beneficiary: beneficiary)
+            otpValue = try TransactionSignLogic.generateOtp(token, pinAuthInput: pinAuthInput, pin: pin, amount: amount, beneficiary: beneficiary)
             displayOTP(value: otpValue!.otp, lifespan: otpValue!.lifespan)
         } catch let error as NSError {
             displayMessageDialogError(error: error)
@@ -59,8 +62,8 @@ class TransactionSignViewController: ChangePinViewController, UITextFieldDelegat
             }
         }
         
-        showSecureKeypadPinInput { [self] (pinAuthInput) in
-            self.generateOtp(token!, pinAuthInput: pinAuthInput, amount: self.textAmountTextField.text!, beneficiary: self.textBeneficiaryTextField.text!)
+        showPinInput { [self] authInput, pin in
+            generateOtp(token!, pinAuthInput: authInput, pin: pin, amount: textAmountTextField.text!, beneficiary: textBeneficiaryTextField.text!)
         }
     }
     

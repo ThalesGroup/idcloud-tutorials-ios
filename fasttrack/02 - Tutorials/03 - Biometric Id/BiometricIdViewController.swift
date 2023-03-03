@@ -62,13 +62,11 @@ class BiometricIdViewController: QRCodeBasicViewController {
             if biometricIdLogic.isSystemBiometricActivated() {
                 displayMessageDialog(result: "system biometric is already activated")
             } else {
-                showSecureKeypadPinInput { (pinAuthInput) in
-                    self.biometricIdLogic.activateSystemBiometric(pinAuthInput: pinAuthInput) { (isSucceed, error) in
+                showPinInput { pinAuthInput, pin in
+                    self.biometricIdLogic.activateSystemBiometric(pinAuthInput: pinAuthInput, pin: pin) { (isSucceed, error) in
                         self.otpWithSystemBiometricButton.isEnabled = isSucceed
                         sender.isOn = isSucceed
-                        if let error = error {
-                            self.displayMessageDialogError(error: error)
-                        }
+                        self.displayMessageDialogError(error: error)
                     }
                 }
             }
@@ -76,11 +74,8 @@ class BiometricIdViewController: QRCodeBasicViewController {
             biometricIdLogic.deactivateSystemBiometric { (isSucceed, error) in
                 self.otpWithSystemBiometricButton.isEnabled = !isSucceed
                 sender.isOn = !isSucceed
-                if let error = error {
-                    self.displayMessageDialogError(error: error)
-                }
+                self.displayMessageDialogError(error: error)
             }
-            
         }
     }
 }

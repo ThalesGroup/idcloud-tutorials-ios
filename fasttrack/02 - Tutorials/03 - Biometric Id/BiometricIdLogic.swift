@@ -42,11 +42,17 @@ class BiometricIdLogic {
         return oathTokenDevice?.isSystemBiometricModeActivated() ?? false
     }
     
-    func activateSystemBiometric(pinAuthInput: EMProtectorAuthInput, completion: @escaping (Bool, Error?) -> Void) {
+    func activateSystemBiometric(pinAuthInput: EMProtectorAuthInput?, pin: String?, completion: @escaping (Bool, Error?) -> Void) {
         do {
-            try oathTokenDevice?.activateSystemBiometricMode(pinAuthInput: pinAuthInput)
+            if let pinAuthInput = pinAuthInput {
+                try oathTokenDevice?.activateSystemBiometricMode(pinAuthInput: pinAuthInput)
+            } else if let pin = pin {
+                try oathTokenDevice?.activateSystemBiometricMode(pin: pin)
+            } else {
+                throw "Invalid application usage. One of the pin input values must be provided."
+            }
             completion(true, nil)
-        } catch let error as NSError {
+        } catch {
             completion(false, error)
         }
     }

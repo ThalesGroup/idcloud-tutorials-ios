@@ -37,12 +37,14 @@ class InBandVerificationViewController: BiometricIdViewController {
     }
     
     @IBAction private func buttonAuthenticatePressed(_ sender: Any) {
-        showSecureKeypadPinInput { (pinAuthInput) in
-            InBandVerificationLogic().verifyToken(withToken: ProvisioningLogic.getToken()!, pinAuthInput: pinAuthInput) { (_, message, error) in
+        showPinInput { pinAuthInput, pin in
+            InBandVerificationLogic().verifyToken(withToken: ProvisioningLogic.getToken()!,
+                                                  pinAuthInput: pinAuthInput,
+                                                  pin: pin) { _, message, error in
                 if let error = error {
                     self.displayMessageDialogError(error: error)
                 } else {
-                    self.displayMessageDialog(result: message!)
+                    self.displayMessageDialog(result: message ?? "Unknown result.")
                 }
             }
         }

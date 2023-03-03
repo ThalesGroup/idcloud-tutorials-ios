@@ -44,7 +44,11 @@ class OOBMessagingLogic:OOBSetupLogic {
         
     }
     
-    func signTransactionMessage(_ response: EMFetchMessageResponse, value: EMTransactionSigningResponseValue, pinAuthInput:EMProtectorAuthInput?, completion: @escaping (Error?) -> Void ) {
+    func signTransactionMessage(_ response: EMFetchMessageResponse,
+                                value: EMTransactionSigningResponseValue,
+                                pinAuthInput:EMProtectorAuthInput?,
+                                pin: String?,
+                                completion: @escaping (Error?) -> Void ) {
         guard let request = response.transactionSigningRequest else {
             return
         }
@@ -68,9 +72,23 @@ class OOBMessagingLogic:OOBSetupLogic {
                         return
                     }
                     // Generate OTP using server challenge, password hash and session
-                    otp = try tokenDevice.ocra(authInput: pinAuthInput!, serverChallengeQuestion: serverChallenge, clientChallengeQuestion: request.ocraClientChallenge, passwordHash: request.ocraPasswordHash, session: request.ocraSession)
+                    if let pinAuthInput = pinAuthInput {
+                        otp = try tokenDevice.ocra(authInput: pinAuthInput,
+                                                   serverChallengeQuestion: serverChallenge,
+                                                   clientChallengeQuestion: request.ocraClientChallenge,
+                                                   passwordHash: request.ocraPasswordHash,
+                                                   session: request.ocraSession)
+                    } else if let pin = pin {
+                        otp = try tokenDevice.ocra(pin: pin,
+                                                   serverChallengeQuestion: serverChallenge,
+                                                   clientChallengeQuestion: request.ocraClientChallenge,
+                                                   passwordHash: request.ocraPasswordHash,
+                                                   session: request.ocraSession)
+                    } else {
+                        throw "Invalid application usage. One of the pin input values must be provided."
+                    }
                 } else {
-                    otp = try OtpLogic.generateOtp(token: tokenDevice, pinAuthInput: pinAuthInput!)!.otp
+                    otp = try OtpLogic.generateOtp(token: tokenDevice, pinAuthInput: pinAuthInput, pin: pin).otp
                 }
                 
                 transactionSigningRequest = request.create(response: EMTransactionSigningResponseValue.accepted, otp: otp, meta: nil)

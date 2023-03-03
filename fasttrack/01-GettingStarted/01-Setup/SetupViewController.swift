@@ -52,8 +52,8 @@ class SetupViewController: UIViewController, MainViewProtocol {
     }
 
     func displayMessageDialogError(error: Error?) {
-        if error != nil {
-            displayMessageDialog(result: error!.localizedDescription)
+        if let error = error {
+            displayMessageDialog(result: error.localizedDescription)
         }
     }
     func displayOnCancelDialog(message: String, completionHandler: @escaping (Bool) -> Void) {

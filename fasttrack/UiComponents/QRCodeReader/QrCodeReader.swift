@@ -212,7 +212,7 @@ extension QrCodeReader: AVCaptureMetadataOutputObjectsDelegate {
     }
 }
 
-protocol QrCodeReaderDelegate: class {
+protocol QrCodeReaderDelegate: AnyObject {
     /**
      Triggered once QR code is successfully parsed.
      

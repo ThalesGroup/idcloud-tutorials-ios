@@ -53,9 +53,11 @@ class OtpViewController: ProvisioningViewController {
     /**
      Generates OTP.
      */
-    private func generateAndDisplayOtp(token: EMProtectorOathTokenDevice, pinAuthInput: EMProtectorAuthInput) {
+    private func generateAndDisplayOtp(token: EMProtectorOathTokenDevice,
+                                       pinAuthInput: EMProtectorAuthInput?,
+                                       pin: String?) {
         do {
-            let otpValue: OtpValue = try OtpLogic.generateOtp(token: token, pinAuthInput: pinAuthInput)
+            let otpValue: OtpValue = try OtpLogic.generateOtp(token: token, pinAuthInput: pinAuthInput, pin: pin)
             displayOTP(value: otpValue.otp, lifespan: otpValue.lifespan)
         } catch {
             displayMessageDialogError(error: error)
@@ -66,10 +68,12 @@ class OtpViewController: ProvisioningViewController {
      Retrieves user PIN and generates OTP.
      */
     private func getPinAndGenerateOtp() {
-        showSecureKeypadPinInput { (pinAuthInput) in
-            if let token: EMProtectorOathTokenDevice = ProvisioningLogic.getToken() {
-                self.generateAndDisplayOtp(token: token, pinAuthInput: pinAuthInput)
-            }
+        guard let token: EMProtectorOathTokenDevice = ProvisioningLogic.getToken() else  {
+            return
+        }
+        
+        showPinInput { (pinAuthInput, pin) in
+            self.generateAndDisplayOtp(token: token, pinAuthInput: pinAuthInput, pin: pin)
         }
     }
     
@@ -89,8 +93,16 @@ class OtpViewController: ProvisioningViewController {
         getPinAndGenerateOtp()
     }
     
-    // MARK: Show Secure Keypad
-    func showSecureKeypadPinInput(completion: @escaping (EMProtectorAuthInput) -> Void) {
+    // MARK: Show Pin Input
+    func showPinInput(completion: @escaping (EMProtectorAuthInput?, String?) -> Void) {
+        if SetupConfig.getActivationCode() != nil {
+            userPinSecureKeypad(completion: completion)
+        } else {
+            userPinFromPlainInput(completion: completion)
+        }
+    }
+    
+    private func userPinSecureKeypad(completion: @escaping (EMProtectorAuthInput?, String?) -> Void) {
         /* SDK Limitation: Reference for dismissing modal view on finish, although self.presentedViewController could do the work */
         var keyPadVC: UIViewController!
         // 1. Create the builder for the keypad
@@ -107,12 +119,33 @@ class OtpViewController: ProvisioningViewController {
                 sBuilder.wipe()
                 keyPadVC = nil
                 let pinInput = EMProtectorAuthInput.init(authInput: firstPin!)
-                completion(pinInput)
+                completion(pinInput, nil)
             }
         }
         /* 3.1 Get the view controller from the EMSecureInputUi object and present accordingly */
         keyPadVC = inputUI.viewController
         /* 3.2 Present according presentation style */
         self.present(keyPadVC, animated: true, completion: nil)
+    }
+    
+    private func userPinFromPlainInput(completion: @escaping (EMProtectorAuthInput?, String?) -> Void) {
+        let alertController = UIAlertController(title: "Pin", message: "Input pin for OTP calculation", preferredStyle: .alert)
+        alertController.addTextField { textField -> Void in
+            textField.placeholder = "pin"
+            textField.textColor = UIColor.blue
+            textField.keyboardType = .numberPad
+            textField.clearButtonMode = .whileEditing
+            textField.borderStyle = .roundedRect
+        }
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            guard let pinField = alertController.textFields?.first, let pin = pinField.text, !pin.isEmpty else {
+                self.displayMessageDialog(result: "Pin entry can't be empty")
+                return
+            }
+            
+            completion(nil, pin)
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(alertController, animated: true)
     }
 }

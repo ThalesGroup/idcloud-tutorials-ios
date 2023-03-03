@@ -28,10 +28,11 @@ typealias HTTPResponse   = (Data?, URLResponse?, Error?) -> Void
 
 class InBandVerificationLogic {
     
-    func verifyToken(withToken tokenDevice: EMProtectorOathTokenDevice, pinAuthInput: EMProtectorAuthInput, completion: @escaping GenericOTPHandler) {
-        var otpValue: OtpValue
+    func verifyToken(withToken tokenDevice: EMProtectorOathTokenDevice,
+                     pinAuthInput: EMProtectorAuthInput?, pin: String?,
+                     completion: @escaping GenericOTPHandler) {
         do {
-            otpValue = try OtpLogic.generateOtp(token: tokenDevice, pinAuthInput: pinAuthInput)
+            let otpValue = try OtpLogic.generateOtp(token: tokenDevice, pinAuthInput: pinAuthInput, pin: pin)
             verifyToken(withTokenName: ProvisioningLogic.getTokenName(), otpValue: otpValue, completion: completion)
         } catch let error as NSError {
             completion(false, nil, error)

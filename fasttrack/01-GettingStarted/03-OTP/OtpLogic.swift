@@ -37,10 +37,26 @@ class OtpLogic {
      *         PIN.
      * @return Generated OTP.
      */
-    class func generateOtp(token: EMProtectorOathTokenDevice, pinAuthInput: EMProtectorAuthInput) throws -> OtpValue! {
+    class func generateOtp(token: EMProtectorOathTokenDevice,
+                           pinAuthInput: EMProtectorAuthInput?,
+                           pin: String?) throws -> OtpValue {
         if EMFastTrack.isJailbroken() {
             // Handle root status according to app policy.
         }
-        return try OtpValue(otp: token.otp(authInput: pinAuthInput), lifespan: Lifespan(current: token.lastOtpLifeSpan(), max: ProvisioningConfig.getTimeStep()))
+        
+        var otp: String
+        if let pinAuthInput = pinAuthInput {
+            otp = try token.otp(authInput: pinAuthInput)
+        } else if let pin = pin {
+            otp = try token.otp(pin: pin)
+        } else {
+            throw "Invalid application usage. One of the pin input values must be provided."
+        }
+        
+        return OtpValue(otp: otp, lifespan: Lifespan(current: token.lastOtpLifeSpan(), max: ProvisioningConfig.getTimeStep()))
     }
+}
+
+extension String: LocalizedError {
+    public var errorDescription: String? { return self }
 }

@@ -34,8 +34,8 @@ class SetupConfig {
 
      @return Activation code.
      */
-    class func getActivationCode() -> String {
-        return ""
+    class func getActivationCode() -> String? {
+        return nil
     }
 
     /**

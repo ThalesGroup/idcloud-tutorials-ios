@@ -91,20 +91,24 @@ class OOBMessagingViewController: OOBRegistrationViewController {
         case .transactionSigningRequest:
             // If the message is asking to sign a transaction the user could decide to accept or reject it
             if (value) {
-                self.showSecureKeypadPinInput { (pinAuthInput) in
-                    self.signTransactionMessage(response, value: .accepted, pinAuthInput: pinAuthInput)
+                self.showPinInput { authInput, pin in
+                    self.signTransactionMessage(response, value: .accepted, pinAuthInput: authInput, pin: pin)
+
                 }
             } else {
                 // Reject the transaction
-                self.signTransactionMessage(response, value: .rejected, pinAuthInput: nil)
+                self.signTransactionMessage(response, value: .rejected, pinAuthInput: nil, pin: nil)
             }
         @unknown default:
             return
         }
     }
     
-    private func signTransactionMessage(_ response: EMFetchMessageResponse, value: EMTransactionSigningResponseValue, pinAuthInput: EMProtectorAuthInput?) {
-        self.oOBMessagingLogic.signTransactionMessage(response, value: value, pinAuthInput: pinAuthInput, completion: { (error) in
+    private func signTransactionMessage(_ response: EMFetchMessageResponse,
+                                        value: EMTransactionSigningResponseValue,
+                                        pinAuthInput: EMProtectorAuthInput?,
+                                        pin: String?) {
+        self.oOBMessagingLogic.signTransactionMessage(response, value: value, pinAuthInput: pinAuthInput, pin: pin, completion: { (error) in
             if let error = error {
                 self.displayMessageDialogError(error: error)
             } else {

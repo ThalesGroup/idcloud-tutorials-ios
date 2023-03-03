@@ -26,12 +26,28 @@
 import CommonCrypto
 
 class TransactionSignLogic {
-    class func generateOtp(_ token: EMProtectorOathTokenDevice, pinAuthInput: EMProtectorAuthInput, amount: String, beneficiary: String) throws -> OtpValue? {
-        let ocraOtp: String = try token.ocra(authInput: pinAuthInput,
-                                             serverChallengeQuestion:serverChallenge(amount: amount, beneficiary: beneficiary),
-                                             clientChallengeQuestion:nil,
-                                             passwordHash: nil,
-                                             session: nil)
+    class func generateOtp(_ token: EMProtectorOathTokenDevice,
+                           pinAuthInput: EMProtectorAuthInput?,
+                           pin: String?,
+                           amount: String, beneficiary: String) throws -> OtpValue? {
+        var ocraOtp: String
+        let serverChallenge = serverChallenge(amount: amount, beneficiary: beneficiary)
+        if let pinAuthInput = pinAuthInput {
+            ocraOtp = try token.ocra(authInput: pinAuthInput,
+                                     serverChallengeQuestion:serverChallenge,
+                                     clientChallengeQuestion:nil,
+                                     passwordHash: nil,
+                                     session: nil)
+        } else if let pin = pin {
+            ocraOtp = try token.ocra(pin: pin,
+                                     serverChallengeQuestion:serverChallenge,
+                                     clientChallengeQuestion:nil,
+                                     passwordHash: nil,
+                                     session: nil)
+        } else {
+            throw "Invalid application usage. One of the pin input values must be provided."
+        }
+        
         return OtpValue(otp: ocraOtp, lifespan: Lifespan(current: token.lastOtpLifeSpan(), max: ProvisioningConfig.getTimeStep()))
     }
     
